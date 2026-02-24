@@ -1,0 +1,23 @@
+# Sensitive/Personal
+.openclaw/
+credentials/
+*.pem
+*.key
+*.env
+*-token.txt
+
+# Personal files
+MEMORY.md
+memory/
+inbox/
+
+# PDFs and docs that might contain personal info
+*.pdf
+xero-chart-of-accounts.txt
+
+# Output and temp
+output/
+.DS_Store
+
+# Telegram debugging (contains tokens/config details)
+telegram-*.md
