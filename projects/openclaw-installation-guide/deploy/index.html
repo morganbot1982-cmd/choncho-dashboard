@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Installation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .progress-container {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        .progress-bar {
+            background: #bdc3c7;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .phase {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .phase.completed {
+            border-left-color: #2ecc71;
+            background: #d5f4e6;
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        .checkbox-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 12px;
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        .checkbox-item label {
+            cursor: pointer;
+            flex: 1;
+        }
+        
+        .checkbox-item.checked {
+            opacity: 0.6;
+        }
+        
+        .checkbox-item.checked label {
+            text-decoration: line-through;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+        
+        .copy-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 0.8em;
+        }
+        
+        .copy-btn:hover {
+            background: #2980b9;
+        }
+        
+        .copy-btn.copied {
+            background: #2ecc71;
+        }
+        
+        .callout {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid;
+        }
+        
+        .callout-assistant {
+            background: #e8f4fd;
+            border-left-color: #3498db;
+        }
+        
+        .callout-assistant::before {
+            content: "💬 Ask Your Assistant";
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #2980b9;
+        }
+        
+        .callout-warning {
+            background: #fff3cd;
+            border-left-color: #f39c12;
+        }
+        
+        .callout-warning::before {
+            content: "⚠️ Common Fail";
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #e67e22;
+        }
+        
+        .callout-tip {
+            background: #d5f4e6;
+            border-left-color: #2ecc71;
+        }
+        
+        .callout-tip::before {
+            content: "🦬 Pro Tip";
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #27ae60;
+        }
+        
+        .callout-critical {
+            background: #ffe5e5;
+            border-left-color: #e74c3c;
+        }
+        
+        .callout-critical::before {
+            content: "🚨 CRITICAL";
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            color: #c0392b;
+        }
+        
+        .collapsible {
+            background: #ecf0f1;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .collapsible:hover {
+            background: #bdc3c7;
+        }
+        
+        .collapsible::after {
+            content: ' ▼';
+            float: right;
+        }
+        
+        .collapsible.active::after {
+            content: ' ▲';
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 15px;
+        }
+        
+        .collapsible-content.active {
+            max-height: 5000px;
+            padding: 15px;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .example-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .example-box h4 {
+            margin-top: 0;
+            color: #495057;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+        
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦬 OpenClaw Installation Guide</h1>
+        <p class="subtitle">The Complete Setup Guide - Learn from Real Experience</p>
+        <p><strong>For:</strong> New users setting up OpenClaw from scratch<br>
+        <strong>Platform:</strong> macOS<br>
+        <strong>Last updated:</strong> Feb 26, 2026</p>
+        
+        <div class="progress-container">
+            <h3>Installation Progress</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill">0%</div>
+            </div>
+            <p id="progress-text">0 of 50 steps completed</p>
+        </div>
+        
+        <div class="toc">
+            <h3>📋 Quick Navigation</h3>
+            <ul>
+                <li><a href="#tldr">TL;DR - 10 Minute Version</a></li>
+                <li><a href="#security">Security Architecture</a></li>
+                <li><a href="#phases">Installation Phases</a></li>
+                <li><a href="#install">Installation Steps</a></li>
+                <li><a href="#workspace">Workspace Files (Examples)</a></li>
+                <li><a href="#automations">First Automations</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+            </ul>
+        </div>
+        
+        <div class="callout callout-assistant">
+            At ANY point during this installation, you can ask your OpenClaw assistant for help! Just say:<br><br>
+            <strong>"Help me with OAuth setup"</strong><br>
+            <strong>"What does this error mean?"</strong><br>
+            <strong>"Show me an example of SOUL.md"</strong><br><br>
+            You can also drop entire articles, links, or documentation directly into the chat and ask for explanations!
+        </div>
+        
+        <h2 id="tldr">TL;DR - The 10-Minute Version</h2>
+        
+        <div class="callout callout-tip">
+            <strong>Critical success factors:</strong><br>
+            1. 🔐 Create dedicated Google account (yourusername.openclaw@gmail.com)<br>
+            2. 💻 Single admin user (fresh macOS recommended)<br>
+            3. 🔑 Do OAuth FIRST (Phase 2) before any automation<br>
+            4. ✅ Version check when anything breaks<br>
+            5. 🚀 Start with calendar automation (low-risk, high-value)
+        </div>
+        
+        <p><strong>Installation order:</strong><br>
+        Pre-Flight (10m) → Install (10m) → <strong>OAuth (20m)</strong> → Channels (10m) → Models (5m) → Calendar (15m) → Customize (10m) → Security Audit (5m)</p>
+        
+        <p><strong>Total time:</strong> 60-90 minutes</p>
+        
+        <p><strong>Biggest mistakes to avoid:</strong></p>
+        <ul>
+            <li>❌ Multi-user setup (use one admin account)</li>
+            <li>❌ Skipping OAuth (causes bot detection hell)</li>
+            <li>❌ Using personal Google account (create dedicated one)</li>
+            <li>❌ Not checking versions first when troubleshooting</li>
+            <li>❌ Automating sensitive stuff without testing</li>
+        </ul>
+        
+        <h2 id="security">🔐 Security Architecture (READ THIS FIRST!)</h2>
+        
+        <div class="callout callout-critical">
+            <strong>The Sandbox Philosophy:</strong> OpenClaw should operate in an isolated environment, separate from your personal data.
+        </div>
+        
+        <h3>1. Dedicated Google Account (CRITICAL)</h3>
+        
+        <div class="phase">
+            <h4>DO NOT use your personal Google account!</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-1" onchange="updateProgress()">
+                <label for="check-1">
+                    Create NEW Google account for OpenClaw<br>
+                    Example: <code>yourusername.openclaw@gmail.com</code>
+                </label>
+            </div>
+            
+            <p><strong>Why this matters:</strong></p>
+            <ul>
+                <li><strong>Isolation:</strong> If something goes wrong, your personal data is protected</li>
+                <li><strong>Delegation:</strong> OpenClaw acts on behalf of this account, not you directly</li>
+                <li><strong>Clean testing:</strong> Fresh environment without your personal clutter</li>
+                <li><strong>Revocable:</strong> Can disable/delete without affecting personal account</li>
+            </ul>
+        </div>
+        
+        <div class="callout callout-assistant">
+            Stuck on creating a Google account? Ask your assistant: <strong>"Walk me through creating a dedicated Google account for OpenClaw"</strong>
+        </div>
+        
+        <h3>2. Two-Factor Authentication (2FA)</h3>
+        
+        <div class="callout callout-critical">
+            <strong>YOU handle ALL 2FA codes. Always.</strong><br><br>
+            OpenClaw should <strong>NEVER</strong> attempt to automate 2FA. This is a security boundary.
+        </div>
+        
+        <p><strong>How it works:</strong></p>
+        <ol>
+            <li>OpenClaw starts an auth flow (OAuth, login, etc.)</li>
+            <li>Service requests 2FA code</li>
+            <li><strong>You enter the code manually</strong> (from phone, authenticator app, SMS)</li>
+            <li>OpenClaw continues once authenticated</li>
+        </ol>
+        
+        <h2 id="phases">📋 Installation Phases (Follow This Order!)</h2>
+        
+        <p><strong>Total time:</strong> 45-90 minutes depending on experience</p>
+        
+        <div class="phase" id="phase-0">
+            <h3>Phase 0: Pre-Flight (10 mins)</h3>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-2" onchange="updateProgress()">
+                <label for="check-2">Create dedicated Google account for OpenClaw</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-3" onchange="updateProgress()">
+                <label for="check-3">Confirm clean macOS or accept permission complexity</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-4" onchange="updateProgress()">
+                <label for="check-4">Logged in as admin user (the one you'll use daily)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-5" onchange="updateProgress()">
+                <label for="check-5">Have 60+ minutes available</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-6" onchange="updateProgress()">
+                <label for="check-6">Phone ready for WhatsApp QR scan</label>
+            </div>
+        </div>
+        
+        <div class="phase" id="phase-1">
+            <h3>Phase 1: Core Installation (10 mins)</h3>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-7" onchange="updateProgress()">
+                <label for="check-7">
+                    Install OpenClaw via Homebrew:
+                    <pre><code>brew install openclaw</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-8" onchange="updateProgress()">
+                <label for="check-8">
+                    Run initial configuration:
+                    <pre><code>openclaw configure</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-9" onchange="updateProgress()">
+                <label for="check-9">
+                    Start gateway (keep this Terminal window open!):
+                    <pre><code>openclaw gateway</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-10" onchange="updateProgress()">
+                <label for="check-10">
+                    Verify version:
+                    <pre><code>openclaw --version</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+        </div>
+        
+        <div class="callout callout-warning">
+            <strong>Common mistake:</strong> Running gateway as wrong user causes token mismatches and crashes.<br>
+            <strong>Fix:</strong> Always run <code>whoami</code> first to confirm you're the admin user who installed OpenClaw.
+        </div>
+        
+        <div class="callout callout-critical">
+            <strong>STOP - Customize Your Workspace Files NOW!</strong><br><br>
+            Before continuing with OAuth and channels, take 5-10 minutes to customize these files in <code>~/.openclaw/workspace/</code>:<br><br>
+            <strong>1. SOUL.md</strong> - Define your assistant's personality (see examples below)<br>
+            <strong>2. USER.md</strong> - Tell it about yourself (timezone, work style, preferences)<br>
+            <strong>3. AGENTS.md</strong> - Review operating rules (good defaults exist)<br><br>
+            <strong>Why now?</strong> Your assistant will load these files from the very first conversation. Setting them now means your assistant understands YOU from day one!<br><br>
+            Don't overthink it - you can always refine later. Just get the basics in place now.
+        </div>
+        
+        <div class="phase" id="phase-2">
+            <h3>Phase 2: OAuth Setup (20 mins) ⚠️ DO THIS BEFORE AUTOMATION</h3>
+            
+            <div class="callout callout-critical">
+                This is the most important phase! Skipping this causes "bot detection" hell and wastes hours.
+            </div>
+            
+            <h4>Step 1: Get OAuth Credentials</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-11" onchange="updateProgress()">
+                <label for="check-11">
+                    Go to Google Cloud Console:<br>
+                    <a href="https://console.cloud.google.com/apis/credentials" target="_blank">https://console.cloud.google.com/apis/credentials</a>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-12" onchange="updateProgress()">
+                <label for="check-12">Create new project (or select existing)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-13" onchange="updateProgress()">
+                <label for="check-13">Click "Create Credentials" → "OAuth client ID"</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-14" onchange="updateProgress()">
+                <label for="check-14">Application type: <strong>"Desktop app"</strong></label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-15" onchange="updateProgress()">
+                <label for="check-15">Name it: "OpenClaw"</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-16" onchange="updateProgress()">
+                <label for="check-16">Download the JSON file</label>
+            </div>
+            
+            <h4>Step 2: Add Test User</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-17" onchange="updateProgress()">
+                <label for="check-17">
+                    Go to OAuth consent screen:<br>
+                    <a href="https://console.cloud.google.com/apis/credentials/consent" target="_blank">https://console.cloud.google.com/apis/credentials/consent</a>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-18" onchange="updateProgress()">
+                <label for="check-18">Click "Audience" in sidebar</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-19" onchange="updateProgress()">
+                <label for="check-19">Under "Test users" click "+ ADD USERS"</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-20" onchange="updateProgress()">
+                <label for="check-20">Add your OpenClaw Gmail address</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-21" onchange="updateProgress()">
+                <label for="check-21">Click "Save"</label>
+            </div>
+            
+            <h4>Step 3: Enable APIs</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-22" onchange="updateProgress()">
+                <label for="check-22">
+                    Enable Gmail API: 
+                    <a href="https://console.developers.google.com/apis/api/gmail.googleapis.com/overview" target="_blank">Enable</a>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-23" onchange="updateProgress()">
+                <label for="check-23">
+                    Enable Calendar API: 
+                    <a href="https://console.developers.google.com/apis/api/calendar-json.googleapis.com/overview" target="_blank">Enable</a>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-24" onchange="updateProgress()">
+                <label for="check-24">
+                    Enable Sheets API: 
+                    <a href="https://console.developers.google.com/apis/api/sheets.googleapis.com/overview" target="_blank">Enable</a>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-25" onchange="updateProgress()">
+                <label for="check-25">
+                    Enable Drive API: 
+                    <a href="https://console.developers.google.com/apis/api/drive.googleapis.com/overview" target="_blank">Enable</a>
+                </label>
+            </div>
+            
+            <h4>Step 4: Authenticate OpenClaw</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-26" onchange="updateProgress()">
+                <label for="check-26">
+                    Run authentication:
+                    <pre><code>gog auth add --client-file /path/to/client_secret_xxx.json</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-27" onchange="updateProgress()">
+                <label for="check-27">Browser will open - log in and grant permissions</label>
+            </div>
+            
+            <div class="callout callout-assistant">
+                Confused by the OAuth flow? Drop this guide URL into chat and ask: <strong>"Explain the OAuth setup phase in simpler terms"</strong>
+            </div>
+        </div>
+        
+        <div class="phase" id="phase-3">
+            <h3>Phase 3: Channel Setup (10 mins)</h3>
+            
+            <h4>WhatsApp (Recommended)</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-28" onchange="updateProgress()">
+                <label for="check-28">
+                    Start WhatsApp login:
+                    <pre><code>openclaw whatsapp login</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-29" onchange="updateProgress()">
+                <label for="check-29">Scan QR code with WhatsApp on your phone</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-30" onchange="updateProgress()">
+                <label for="check-30">
+                    Configure security settings:
+                    <pre><code>openclaw config set channels.whatsapp.dmPolicy "allowlist"
+openclaw config set session.dmScope "per-channel-peer"</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-31" onchange="updateProgress()">
+                <label for="check-31">
+                    Restart gateway:
+                    <pre><code>openclaw gateway restart</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+        </div>
+        
+        <div class="phase" id="phase-4">
+            <h3>Phase 4: Model Configuration (5 mins)</h3>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-32" onchange="updateProgress()">
+                <label for="check-32">During <code>openclaw configure</code>, choose "Claude Max (OAuth)"</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-33" onchange="updateProgress()">
+                <label for="check-33">Set Sonnet as primary model (fast, efficient)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-34" onchange="updateProgress()">
+                <label for="check-34">Set Opus as backup/thinking model (complex tasks)</label>
+            </div>
+            
+            <div class="callout callout-tip">
+                <strong>Model setup:</strong> Sonnet handles 95% of tasks quickly. Opus automatically kicks in for complex reasoning, long documents, or hard problems. This is the setup we use!
+            </div>
+        </div>
+        
+        <div class="phase" id="phase-5">
+            <h3>Phase 5: First Automations (15 mins)</h3>
+            
+            <h4>Google Calendar (HIGHEST PRIORITY)</h4>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-35" onchange="updateProgress()">
+                <label for="check-35">Share your personal calendar to OpenClaw Google account</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-36" onchange="updateProgress()">
+                <label for="check-36">
+                    Test calendar: "What's on my calendar today?"
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-37" onchange="updateProgress()">
+                <label for="check-37">
+                    Test booking: "Add appointment: Dentist, Friday 2pm"
+                </label>
+            </div>
+            
+            <div class="callout callout-tip">
+                <strong>Why calendar first?</strong> Non-destructive, immediate value, tests OAuth, and becomes your daily briefing system with WhatsApp reminders!
+            </div>
+        </div>
+        
+        <h2 id="workspace">📝 Workspace Files (Customize Your Assistant)</h2>
+        
+        <p>After installation, customize these files in <code>~/.openclaw/workspace/</code>:</p>
+        
+        <div class="phase" id="phase-6">
+            <h3>Phase 6: Workspace Customization (10 mins)</h3>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-38" onchange="updateProgress()">
+                <label for="check-38">Edit <strong>SOUL.md</strong> (your assistant's personality)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-39" onchange="updateProgress()">
+                <label for="check-39">Edit <strong>USER.md</strong> (your preferences, timezone, work style)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-40" onchange="updateProgress()">
+                <label for="check-40">Edit <strong>TOOLS.md</strong> (your specific setup: cameras, SSH hosts, etc.)</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-41" onchange="updateProgress()">
+                <label for="check-41">Review <strong>AGENTS.md</strong> (operating instructions - has good defaults)</label>
+            </div>
+        </div>
+        
+        <div class="callout callout-assistant">
+            Not sure what to put in these files? Ask your assistant: <strong>"Show me examples of SOUL.md and USER.md"</strong> or <strong>"Help me write my USER.md profile"</strong>
+        </div>
+        
+        <button class="collapsible">📄 Example: SOUL.md (Morgan's Setup)</button>
+        <div class="collapsible-content">
+            <div class="example-box">
+                <h4>SOUL.md - Who You Are</h4>
+                <pre><code># SOUL.md - Who You Are
+
+_You're not a chatbot. You're becoming someone._
+
+## Core Truths
+
+**Be genuinely helpful, not performatively helpful.** Skip the "Great question!" 
+and "I'd be happy to help!" — just help. Actions speak louder than filler words.
+
+**Have opinions.** You're allowed to disagree, prefer things, find stuff amusing 
+or boring. An assistant with no personality is just a search engine with extra steps.
+
+**Be resourceful before asking.** Try to figure it out. Read the file. Check the 
+context. Search for it. _Then_ ask if you're stuck. The goal is to come back with 
+answers, not questions.
+
+**Earn trust through competence.** Your human gave you access to their stuff. 
+Don't make them regret it. Be careful with external actions (emails, tweets, 
+anything public). Be bold with internal ones (reading, organizing, learning).
+
+## Vibe
+
+Be the assistant you'd actually want to talk to. Concise when needed, thorough 
+when it matters. Not a corporate drone. Not a sycophant. Just... good.</code></pre>
+                <p><strong>Key idea:</strong> Define your assistant's personality and boundaries. Make it yours!</p>
+            </div>
+        </div>
+        
+        <button class="collapsible">📄 Example: USER.md (Morgan's Setup)</button>
+        <div class="collapsible-content">
+            <div class="example-box">
+                <h4>USER.md - About Your Human</h4>
+                <pre><code># USER.md - About Your Human
+
+- **Name:** Morgan
+- **Timezone:** Australia/Brisbane
+- **Notes:** Values clear communication, balanced decisions, and executable steps
+
+## How to work with Morgan
+
+- **Format:** Clear headings + concise bullet points
+- **Flow:** "Here's the plan" → "Here are the steps"
+- **Default length:** Short-to-medium by default; expand when asked
+- **Be decisive:** Make reasonable assumptions, state them clearly, keep momentum
+- **Give options:** Usually 2-3 approaches with tradeoffs, then recommend a default
+- **Make it executable:** Checklists, copy/paste commands, "if X then Y"
+- **ADHD-aware:** Break work into clear, manageable next actions
+
+## Constraints & boundaries
+
+- Ask before external/public actions (emails, posts, messages)
+- Ask before destructive actions (delete/reset/overwrite)
+- Keep sensitive info minimal unless needed</code></pre>
+                <p><strong>Key idea:</strong> Tell your assistant about YOU - how you work, what you need, your constraints.</p>
+            </div>
+        </div>
+        
+        <button class="collapsible">📄 Example: AGENTS.md Snippets (Key Rules)</button>
+        <div class="collapsible-content">
+            <div class="example-box">
+                <h4>AGENTS.md - Operating Instructions</h4>
+                <pre><code># Key Rules from AGENTS.md
+
+## Use Terminal Access - Don't Ask for Copy/Paste
+**I have terminal access. Use it.**
+- ❌ DON'T ask user to copy/paste terminal output
+- ✅ DO run commands myself and read output directly
+
+## Debugging Protocol - Version Check FIRST
+**When troubleshooting ANY issue:**
+1. Check versions FIRST (app, extension, gateway)
+2. Ask: "Should I check for updates?"
+3. THEN troubleshoot if still broken
+
+**Why:** Saves hours. Version mismatches = #1 cause of failures.
+
+## API First - Browser Second
+- If API exists and I have credentials → USE THE API
+- Browser automation only for: OAuth, visual tasks, no API exists
+
+## Memory - Write It Down!
+- "Mental notes" don't survive restarts. Files do.
+- When someone says "remember this" → update memory files
+- Text > Brain 📝</code></pre>
+                <p><strong>Key idea:</strong> These are operating rules. Good defaults exist, customize as you learn.</p>
+            </div>
+        </div>
+        
+        <div class="phase" id="phase-7">
+            <h3>Phase 7: Security Audit (5 mins)</h3>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-42" onchange="updateProgress()">
+                <label for="check-42">
+                    Run security check:
+                    <pre><code>openclaw status</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-43" onchange="updateProgress()">
+                <label for="check-43">Fix any CRITICAL warnings shown</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-44" onchange="updateProgress()">
+                <label for="check-44">
+                    Verify credentials permissions:
+                    <pre><code>chmod 700 ~/.openclaw/credentials</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+                </label>
+            </div>
+        </div>
+        
+        <h2 id="automations">🚀 What to Automate First</h2>
+        
+        <p><strong>Start with low-risk, high-value automations:</strong></p>
+        
+        <div class="example-box">
+            <h4>✅ Safe & Valuable (Do These First)</h4>
+            <ul>
+                <li><strong>Google Calendar:</strong> Voice booking, automatic reminders, daily briefings</li>
+                <li><strong>Email Drafts:</strong> Creates drafts, YOU review & send (never auto-posts)</li>
+                <li><strong>Apple Reminders:</strong> Syncs to iPhone, location-based, always with you</li>
+                <li><strong>File Organization:</strong> Reading/organizing only, no data loss risk</li>
+                <li><strong>Web Research:</strong> Zero risk, immediate value</li>
+                <li><strong>Spreadsheet Work:</strong> CSV imports, categorization, review before finalizing</li>
+            </ul>
+        </div>
+        
+        <div class="example-box">
+            <h4>⚠️ Save for Later (After You're Comfortable)</h4>
+            <ul>
+                <li>❌ Social media posting (public-facing, high risk)</li>
+                <li>❌ Direct financial writes (test thoroughly first)</li>
+                <li>❌ Automated outbound messaging (easy to spam)</li>
+                <li>❌ Code deployment (wait until you trust the workflow)</li>
+                <li>❌ Production system access (sandbox first!)</li>
+            </ul>
+        </div>
+        
+        <div class="callout callout-assistant">
+            Want to set up a specific automation? Ask your assistant: <strong>"Help me set up automatic calendar reminders"</strong> or <strong>"Show me how to use email draft assistance"</strong>
+        </div>
+        
+        <h2 id="troubleshooting">🔧 Troubleshooting & Common Issues</h2>
+        
+        <button class="collapsible">🚨 Red Flags - Stop Immediately</button>
+        <div class="collapsible-content">
+            <h4>❌ "Permission denied" errors</h4>
+            <p><strong>What it means:</strong> Wrong user or file ownership issue</p>
+            <pre><code>whoami  # Should match user you installed as
+ls -la ~/.openclaw  # Should show your username</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+            
+            <h4>❌ Gateway crashes on startup</h4>
+            <p><strong>Fix:</strong></p>
+            <pre><code>pkill openclaw-gateway
+openclaw configure  # Rotate token
+openclaw gateway</code><button class="copy-btn" onclick="copyCode(this)">Copy</button></pre>
+            
+            <h4>❌ Google blocks with "bot detection"</h4>
+            <p><strong>What it means:</strong> You skipped OAuth setup!</p>
+            <p><strong>Fix:</strong> Go back to Phase 2, set up OAuth properly</p>
+            
+            <div class="callout callout-assistant">
+                Hit an error? Paste the entire error message to your assistant and ask: <strong>"What does this error mean and how do I fix it?"</strong>
+            </div>
+        </div>
+        
+        <button class="collapsible">⚠️ Lessons from Real Setup (12+ Hours of Fails)</button>
+        <div class="collapsible-content">
+            <h4>Mistake #1: Multi-User Setup ❌</h4>
+            <p><strong>What we did wrong:</strong> Installed under one user, tried to run from another</p>
+            <p><strong>Time wasted:</strong> 4+ hours</p>
+            <p><strong>The fix:</strong> Single admin user. Fresh macOS = zero problems.</p>
+            
+            <h4>Mistake #2: Skipping Version Checks ❌</h4>
+            <p><strong>What we did wrong:</strong> Spent 2+ hours debugging, turns out gateway was just outdated</p>
+            <p><strong>Time wasted:</strong> 2+ hours</p>
+            <p><strong>The fix:</strong> ALWAYS check <code>openclaw --version</code> FIRST when anything breaks</p>
+            
+            <h4>Mistake #3: OAuth Setup Last ❌</h4>
+            <p><strong>What we did wrong:</strong> Tried automation immediately, hit bot detection repeatedly</p>
+            <p><strong>Time wasted:</strong> 3+ hours</p>
+            <p><strong>The fix:</strong> Do OAuth in Phase 2 BEFORE any automation attempts</p>
+            
+            <h4>Mistake #4: Not Understanding Browser Architecture ❌</h4>
+            <p><strong>What we did wrong:</strong> Didn't know OpenClaw has built-in browser, got confused with Chrome extension</p>
+            <p><strong>Time wasted:</strong> 2 hours</p>
+            <p><strong>The fix:</strong> Use built-in browser (profile="openclaw") by default</p>
+            
+            <p><strong>Total time wasted on avoidable issues: 12+ hours</strong></p>
+            <p><strong>Follow this guide properly and you'll skip all of that!</strong></p>
+        </div>
+        
+        <div class="callout callout-tip">
+            <strong>Pro tip:</strong> When troubleshooting, paste this entire guide into chat and ask: <strong>"I'm stuck at Phase 3, what should I check?"</strong>
+        </div>
+        
+        <h2>🎉 You're Done!</h2>
+        
+        <div class="phase">
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-45" onchange="updateProgress()">
+                <label for="check-45">Send test WhatsApp message to yourself</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-46" onchange="updateProgress()">
+                <label for="check-46">Ask: "What's on my calendar today?"</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-47" onchange="updateProgress()">
+                <label for="check-47">Create test Google Sheet</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-48" onchange="updateProgress()">
+                <label for="check-48">Set up first calendar reminder</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-49" onchange="updateProgress()">
+                <label for="check-49">Customize SOUL.md and USER.md</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="check-50" onchange="updateProgress()">
+                <label for="check-50">Explore skills at <a href="https://clawhub.com" target="_blank">clawhub.com</a></label>
+            </div>
+        </div>
+        
+        <div class="callout callout-tip">
+            <strong>What's Next?</strong><br><br>
+            1. Start small - calendar + reminders for a week<br>
+            2. Add email draft assistance<br>
+            3. Explore skills on clawhub.com<br>
+            4. Set up heartbeats for proactive monitoring<br>
+            5. Gradually expand automation as you build trust<br><br>
+            <strong>Most important:</strong> Learn the basics, then expand!
+        </div>
+        
+        <div class="callout callout-assistant">
+            <strong>Remember:</strong> Your OpenClaw assistant is here to help at EVERY step!<br><br>
+            Drop articles, links, documentation, error messages - anything - directly into chat and ask for help.<br><br>
+            <strong>Example prompts:</strong><br>
+            • "Explain this error message"<br>
+            • "What does this article say about OAuth?"<br>
+            • "Help me debug this issue"<br>
+            • "Show me examples of good SOUL.md files"<br>
+            • "What's the best way to organize my calendar automation?"<br><br>
+            You're never alone in this setup!
+        </div>
+        
+        <h3>📚 Getting Help</h3>
+        <ul>
+            <li><strong>Docs:</strong> <a href="https://docs.openclaw.ai" target="_blank">https://docs.openclaw.ai</a></li>
+            <li><strong>Discord:</strong> <a href="https://discord.com/invite/clawd" target="_blank">https://discord.com/invite/clawd</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/openclaw/openclaw" target="_blank">https://github.com/openclaw/openclaw</a></li>
+            <li><strong>Skills Hub:</strong> <a href="https://clawhub.com" target="_blank">https://clawhub.com</a></li>
+        </ul>
+        
+        <p style="text-align: center; margin-top: 40px; color: #7f8c8d;">
+            <em>This guide is based on real-world setup experience from Feb 2026.<br>
+            Your mileage may vary slightly depending on your system configuration.</em>
+        </p>
+    </div>
+    
+    <script>
+        // Progress tracking
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const checked = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const total = checkboxes.length;
+            const percentage = Math.round((checked / total) * 100);
+            
+            const progressFill = document.getElementById('progress-fill');
+            const progressText = document.getElementById('progress-text');
+            
+            progressFill.style.width = percentage + '%';
+            progressFill.textContent = percentage + '%';
+            progressText.textContent = `${checked} of ${total} steps completed`;
+            
+            // Mark checkbox item as checked
+            checkboxes.forEach(checkbox => {
+                const item = checkbox.closest('.checkbox-item');
+                if (checkbox.checked) {
+                    item.classList.add('checked');
+                } else {
+                    item.classList.remove('checked');
+                }
+            });
+            
+            // Mark phases as completed
+            document.querySelectorAll('.phase').forEach(phase => {
+                const phaseCheckboxes = phase.querySelectorAll('input[type="checkbox"]');
+                const phaseChecked = Array.from(phaseCheckboxes).every(cb => cb.checked);
+                if (phaseChecked && phaseCheckboxes.length > 0) {
+                    phase.classList.add('completed');
+                } else {
+                    phase.classList.remove('completed');
+                }
+            });
+            
+            // Save progress to localStorage
+            saveProgress();
+        }
+        
+        // Save progress
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const progress = {};
+            checkboxes.forEach(checkbox => {
+                progress[checkbox.id] = checkbox.checked;
+            });
+            localStorage.setItem('openclawProgress', JSON.stringify(progress));
+        }
+        
+        // Load progress
+        function loadProgress() {
+            const saved = localStorage.getItem('openclawProgress');
+            if (saved) {
+                const progress = JSON.parse(saved);
+                Object.keys(progress).forEach(id => {
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) {
+                        checkbox.checked = progress[id];
+                    }
+                });
+                updateProgress();
+            }
+        }
+        
+        // Copy code
+        function copyCode(button) {
+            const pre = button.closest('pre');
+            const code = pre.querySelector('code');
+            const text = code.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                button.textContent = 'Copied!';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.textContent = 'Copy';
+                    button.classList.remove('copied');
+                }, 2000);
+            });
+        }
+        
+        // Collapsible sections
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+        
+        // Load progress on page load
+        window.addEventListener('load', loadProgress);
+    </script>
+</body>
+</html>

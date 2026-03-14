@@ -1,0 +1,9 @@
+"TransferWise ID",Date,"Date Time",Amount,Currency,Description,"Payment Reference","Running Balance","Exchange From","Exchange To","Exchange Rate","Payer Name","Payee Name","Payee Account Number",Merchant,"Card Last Four Digits","Card Holder Full Name",Attachment,Note,"Total fees","Exchange To Amount","Transaction Type","Transaction Details Type"
+CARD-2570199896,10-06-2025,"10-06-2025 18:59:11.132",-112.02,AED,"Card transaction of 47.52 AUD issued by Uber *Eats Help.uber.com Sydney (fee: 0.77 AED)",,12.53,AED,AUD,0.41795,,,,"Uber *Eats Help.uber.com Sydney",2910,"Morgan Schoermer",,,0.77,46.82,DEBIT,CARD
+FEE-CARD-2570199896,10-06-2025,"10-06-2025 18:59:11.131",-0.77,AED,"Wise Charges for: CARD-2570199896",,124.55,,,,,,,"Uber *Eats Help.uber.com Sydney",2910,"Morgan Schoermer",,,0,,DEBIT,CARD
+BALANCE-3549979707,09-06-2025,"09-06-2025 23:26:25.589",124.95,AED,"Converted 30.00 EUR to 124.95 AED",,125.32,EUR,AED,4.18325,,,,,,,,,0.00,124.95,CREDIT,CONVERSION
+BALANCE-3539646334,07-06-2025,"07-06-2025 07:41:22.070",-138.04,AED,"Converted 139.00 AED to 32.98 EUR (fee: 0.96 AED)",,0.37,AED,EUR,0.23893,,,,,,,,,0.96,32.98,DEBIT,CONVERSION
+FEE-BALANCE-3539646334,07-06-2025,"07-06-2025 07:41:22.069",-0.96,AED,"Wise Charges for: BALANCE-3539646334",,138.41,,,,,,,,,,,,0,,DEBIT,CONVERSION
+CARD-2540281116,01-06-2025,"01-06-2025 04:46:09.360",-94.95,AED,"Card transaction of 81.70 EUR issued by Pyd*Gofood Nova Gorica (fee: 0.67 AED)",,139.37,AED,EUR,0.23992,,,,"Pyd*Gofood Nova Gorica",2910,"Morgan Schoermer",,,0.67,22.78,DEBIT,CARD
+FEE-CARD-2540281116,01-06-2025,"01-06-2025 04:46:09.359",-0.67,AED,"Wise Charges for: CARD-2540281116",,234.32,,,,,,,"Pyd*Gofood Nova Gorica",2910,"Morgan Schoermer",,,0,,DEBIT,CARD
+BALANCE-3442538544,16-05-2025,"16-05-2025 13:43:48.430",234.99,AED,"Converted 100.00 AUD to 234.99 AED",,234.99,AUD,AED,2.35865,,,,,,,,,0.00,234.99,CREDIT,CONVERSION

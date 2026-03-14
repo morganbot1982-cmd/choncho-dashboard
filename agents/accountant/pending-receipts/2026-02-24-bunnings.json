@@ -1,0 +1,37 @@
+{
+  "date": "2026-02-24",
+  "time": "11:19:59",
+  "vendor": "Bunnings Warehouse",
+  "location": "Newstead, WH",
+  "total": 65.94,
+  "gst_included": true,
+  "payment_method": "Card (Credit •••509)",
+  "items": [
+    {
+      "description": "Powerboard 6 outlet 2pk",
+      "amount": 29.00
+    },
+    {
+      "description": "Cordtech U Surge & Master",
+      "amount": null
+    },
+    {
+      "description": "Finish Quantum All in 1 60pk Lemon Sparkle",
+      "amount": 16.95
+    },
+    {
+      "description": "Storage container Ezy Storage 26.5L Solutions Plus",
+      "amount": 17.99
+    }
+  ],
+  "category_suggestion": "Office Expenses",
+  "category_options": [
+    "Office Expenses",
+    "Equipment - Office",
+    "Cleaning Supplies"
+  ],
+  "notes": "Mix of electrical supplies (powerboards), cleaning (dishwasher tablets), and storage. Likely workshop/office supplies.",
+  "status": "pending",
+  "submitted_via": "whatsapp",
+  "photo_path": "pending-receipts/2026-02-24-bunnings.jpg"
+}

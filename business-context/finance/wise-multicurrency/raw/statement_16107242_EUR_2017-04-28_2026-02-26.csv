@@ -1,0 +1,303 @@
+"TransferWise ID",Date,"Date Time",Amount,Currency,Description,"Payment Reference","Running Balance","Exchange From","Exchange To","Exchange Rate","Payer Name","Payee Name","Payee Account Number",Merchant,"Card Last Four Digits","Card Holder Full Name",Attachment,Note,"Total fees","Exchange To Amount","Transaction Type","Transaction Details Type"
+BALANCE-3549979707,09-06-2025,"09-06-2025 23:26:25.589",-29.87,EUR,"Converted 30.00 EUR to 124.95 AED (fee: 0.13 EUR)",,0.73,EUR,AED,4.18325,,,,,,,,,0.13,124.95,DEBIT,CONVERSION
+FEE-BALANCE-3549979707,09-06-2025,"09-06-2025 23:26:25.588",-0.13,EUR,"Wise Charges for: BALANCE-3549979707",,30.60,,,,,,,,,,,,0,,DEBIT,CONVERSION
+CARD-2565895706,09-06-2025,"09-06-2025 05:16:18.453",-86.75,EUR,"Card transaction of 86.75 EUR issued by Restaurant Austria BERLIN",,30.73,,,,,,,"Restaurant Austria BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2565615252,09-06-2025,"09-06-2025 03:17:41.775",-30.69,EUR,"Card transaction of 30.69 EUR issued by Zaher S Lounge - Cafe BERLIN",,117.48,,,,,,,"Zaher S Lounge - Cafe BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-1574937250,09-06-2025,"09-06-2025 02:13:57.628",-50.00,EUR,"Sent money to Faye Brown","Sent via Wise",148.17,,,,,"Faye Brown",339025,,,,,,0.00,,DEBIT,TRANSFER
+BALANCE-3546176742,09-06-2025,"09-06-2025 00:43:28.689",198.17,EUR,"Converted 349.00 AUD to 198.17 EUR",,198.17,AUD,EUR,0.56981,,,,,,,,,0.00,198.17,CREDIT,CONVERSION
+CARD-2564436987,08-06-2025,"08-06-2025 20:19:48.652",-3.21,EUR,"Card transaction of 9.90 EUR issued by Sumup  *East Eatery Kl Berlin",,0.00,,,,,,,"Sumup  *East Eatery Kl Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2564310439,08-06-2025,"08-06-2025 19:32:14.860",-40.50,EUR,"Card transaction of 40.50 EUR issued by Ddr Museum Berlin Gmbh BERLIN",,3.21,,,,,,,"Ddr Museum Berlin Gmbh BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2561849107,07-06-2025,"07-06-2025 23:21:08.330",-35.00,EUR,"Card transaction of 35.00 EUR issued by Azem Bistro BERLIN",,43.71,,,,,,,"Azem Bistro BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3542042517,07-06-2025,"07-06-2025 23:14:41.880",50.00,EUR,"Converted 88.06 AUD to 50.00 EUR",,78.71,AUD,EUR,0.56981,,,,,,,,,0.00,50.00,CREDIT,CONVERSION
+CARD-2559914944,07-06-2025,"07-06-2025 07:43:58.531",-13.00,EUR,"Card transaction of 13.00 EUR issued by The Black Lodge BERLIN",,28.71,,,,,,,"The Black Lodge BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3539646334,07-06-2025,"07-06-2025 07:41:22.070",32.98,EUR,"Converted 139.00 AED to 32.98 EUR",,41.71,AED,EUR,0.23893,,,,,,,,,0.00,32.98,CREDIT,CONVERSION
+CARD-2559755146,07-06-2025,"07-06-2025 06:23:02.678",-20.00,EUR,"Card transaction of 20.00 EUR issued by The Black Lodge BERLIN",,8.73,,,,,,,"The Black Lodge BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2559689958,07-06-2025,"07-06-2025 05:54:05.595",-13.00,EUR,"Card transaction of 13.00 EUR issued by The Black Lodge BERLIN",,28.73,,,,,,,"The Black Lodge BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2559486498,07-06-2025,"07-06-2025 04:35:06.265",-24.57,EUR,"Card transaction of 24.57 EUR issued by Zum Bohmischen Dorf BERLIN",,41.73,,,,,,,"Zum Bohmischen Dorf BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2558556288,06-06-2025,"06-06-2025 23:46:49.477",-10.50,EUR,"Card transaction of 10.50 EUR issued by Konak Grill BERLIN",,66.30,,,,,,,"Konak Grill BERLIN",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2558378470,06-06-2025,"06-06-2025 22:53:20.150",-8.45,EUR,"Card transaction of 8.45 EUR issued by Bezirksapotheke Berlin",,76.80,,,,,,,"Bezirksapotheke Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2558283036,06-06-2025,"06-06-2025 22:25:02.452",-716.00,EUR,"Card transaction of 716.00 EUR issued by Supreme Berlin Berlin",,85.25,,,,,,,"Supreme Berlin Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3537389396,06-06-2025,"06-06-2025 22:23:53.682",8.09,EUR,"Converted 14.28 AUD to 8.09 EUR",,801.25,AUD,EUR,0.56847,,,,,,,,,0.00,8.09,CREDIT,CONVERSION
+BALANCE-3537301338,06-06-2025,"06-06-2025 22:06:26.080",793.16,EUR,"Converted 1,400.00 AUD to 793.16 EUR",,793.16,AUD,EUR,0.56853,,,,,,,,,0.00,793.16,CREDIT,CONVERSION
+CARD-2556197762,06-06-2025,"06-06-2025 04:51:56.268",-77.07,EUR,"Card transaction of 117.81 EUR issued by Salumeria Lamuri Berlin",,0.00,,,,,,,"Salumeria Lamuri Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2555827942,06-06-2025,"06-06-2025 02:44:45.412",-5.86,EUR,"Card transaction of 5.86 EUR issued by Uber *Lime Help.uber.com Amsterdam",,77.07,,,,,,,"Uber *Lime Help.uber.com Amsterdam",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2555490513,06-06-2025,"06-06-2025 00:58:40.936",-2.62,EUR,"Card transaction of 2.62 EUR issued by Uber *Lime Help.uber.com Amsterdam",,82.93,,,,,,,"Uber *Lime Help.uber.com Amsterdam",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2554838207,05-06-2025,"05-06-2025 21:33:43.962",-28.05,EUR,"Card transaction of 28.05 EUR issued by Burgermeister Berlin",,85.55,,,,,,,"Burgermeister Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+"CARD_ORDER_CHECKOUT-invoice-18124438",05-06-2025,"05-06-2025 16:02:38.911",-3.42,EUR,"Wise Card Acquisition",,113.60,,,,,,,,,,,,0.00,,DEBIT,CARD_ORDER_CHECKOUT
+CARD-2553284940,05-06-2025,"05-06-2025 07:15:07.926",-100.00,EUR,"Card transaction of 100.00 EUR issued by Spelu Zale - Elizabetes 5 Riga",,117.02,,,,,,,"Spelu Zale - Elizabetes 5 Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2552852809,05-06-2025,"05-06-2025 03:59:12.355",-57.60,EUR,"Card transaction of 57.60 EUR issued by Restorans Da Sergio RIGA",,217.02,,,,,,,"Restorans Da Sergio RIGA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2552510634,05-06-2025,"05-06-2025 02:05:37.278",-10.00,EUR,"Card transaction of 10.00 EUR issued by Pyd*Kafejnica Kase Riga",,274.62,,,,,,,"Pyd*Kafejnica Kase Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2552023668,04-06-2025,"04-06-2025 23:28:35.136",-20.00,EUR,"Card transaction of 20.00 EUR issued by Pyd*Zefirs Riga",,284.62,,,,,,,"Pyd*Zefirs Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2551709227,04-06-2025,"04-06-2025 21:50:07.036",-9.46,EUR,"Card transaction of 9.46 EUR issued by Circle K Daugava RIGA",,304.62,,,,,,,"Circle K Daugava RIGA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2551041737,04-06-2025,"04-06-2025 18:09:27.944",-30.00,EUR,"Card transaction of 30.00 EUR issued by Pyd*Tpdnan Antonijas Riga",,314.08,,,,,,,"Pyd*Tpdnan Antonijas Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2549566595,04-06-2025,"04-06-2025 03:14:10.698",-23.75,EUR,"Card transaction of 23.75 EUR issued by Bistro ""vermanitis"" Riga",,344.08,,,,,,,"Bistro ""vermanitis"" Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2549522219,04-06-2025,"04-06-2025 02:59:19.848",-220.00,EUR,"Card transaction of 220.00 EUR issued by Itk-Veikals-Meierovica Riga",,367.83,,,,,,,"Itk-Veikals-Meierovica Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2549415329,04-06-2025,"04-06-2025 02:24:24.881",-22.90,EUR,"Card transaction of 22.90 EUR issued by Ixis Sia RIGA",,587.83,,,,,,,"Ixis Sia RIGA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3524219289,04-06-2025,"04-06-2025 02:22:48.371",565.75,EUR,"Converted 1,000.00 AUD to 565.75 EUR",,610.73,AUD,EUR,0.56773,,,,,,,,,0.00,565.75,CREDIT,CONVERSION
+CARD-2549066982,04-06-2025,"04-06-2025 00:33:05.133",-37.20,EUR,"Card transaction of 37.20 EUR issued by Major Market Riga Riga",,44.98,,,,,,,"Major Market Riga Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-1566999317,03-06-2025,"03-06-2025 17:28:21.512",50.00,EUR,"Received money from Uzziah Leslie Woods with reference ",,82.18,,,,"Uzziah Leslie Woods",,,,,,,,0.00,,CREDIT,DEPOSIT
+CARD-2547455332,03-06-2025,"03-06-2025 13:57:34.588",-4.70,EUR,"Card transaction of 4.70 EUR issued by S-Bahn Berlin Automat Bal Berlin",,32.18,,,,,,,"S-Bahn Berlin Automat Bal Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2547444938,03-06-2025,"03-06-2025 13:47:38.532",-50.00,EUR,"Card transaction of 50.00 EUR issued by Berliner Sparkasse 001 897145",,36.88,,,,,,,"Berliner Sparkasse 001 897145",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2546802797,03-06-2025,"03-06-2025 05:46:47.147",-6.76,EUR,"Card transaction of 6.76 EUR issued by Rewe Markt Gmbh-Zw Berlin",,86.88,,,,,,,"Rewe Markt Gmbh-Zw Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2546740052,03-06-2025,"03-06-2025 05:18:03.342",-72.20,EUR,"Card transaction of 72.20 EUR issued by Otito Restaurant Berlin",,93.64,,,,,,,"Otito Restaurant Berlin",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2544618542,02-06-2025,"02-06-2025 17:35:06.362",-4.30,EUR,"Card transaction of 4.30 EUR issued by Backerei Wienerroith VILLACH",,165.84,,,,,,,"Backerei Wienerroith VILLACH",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3515197392,02-06-2025,"02-06-2025 17:33:43.405",170.14,EUR,"Converted 300.66 AUD to 170.14 EUR",,170.14,AUD,EUR,0.56786,,,,,,,,,0.00,170.14,CREDIT,CONVERSION
+CARD-2540281116,01-06-2025,"01-06-2025 04:46:09.307",-58.92,EUR,"Card transaction of 81.70 EUR issued by Pyd*Gofood Nova Gorica",,0.00,,,,,,,"Pyd*Gofood Nova Gorica",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2539381612,31-05-2025,"31-05-2025 23:57:48.998",-17.64,EUR,"Card transaction of 17.64 EUR issued by Spar Bovec BOVEC",,58.92,,,,,,,"Spar Bovec BOVEC",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2538243964,31-05-2025,"31-05-2025 18:05:28.012",-51.73,EUR,"Card transaction of 50.00 EUR issued by Dh Atm Kranjska Gora KRANJSKA GORA",,76.56,,,,,,,"Dh Atm Kranjska Gora KRANJSKA GORA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2538240718,31-05-2025,"31-05-2025 18:04:08.273",-4.76,EUR,"Card transaction of 4.76 EUR issued by Supermarket Kranjska Gora KRANJSKA GORA",,128.29,,,,,,,"Supermarket Kranjska Gora KRANJSKA GORA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-1562643239,31-05-2025,"31-05-2025 18:00:23.712",-17.00,EUR,"Sent money to Uzziah Leslie Woods (fee: 0.07 EUR)",263589,133.05,EUR,AUD,1.76444,,"Uzziah Leslie Woods",67330341,,,,,,0.07,30.00,DEBIT,TRANSFER
+FEE-TRANSFER-1562643239,31-05-2025,"31-05-2025 18:00:23.711",-0.07,EUR,"Wise Charges for: TRANSFER-1562643239",263589,150.05,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-1562642214,31-05-2025,"31-05-2025 17:58:53.696",-17.00,EUR,"Sent money to Uzziah Leslie Woods (fee: 0.07 EUR)",263589,150.12,EUR,AUD,1.76444,,"Uzziah Leslie Woods",67330341,,,,,,0.07,30.00,DEBIT,TRANSFER
+FEE-TRANSFER-1562642214,31-05-2025,"31-05-2025 17:58:53.695",-0.07,EUR,"Wise Charges for: TRANSFER-1562642214",263589,167.12,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+CARD-2534888918,30-05-2025,"30-05-2025 18:16:01.500",-14.09,EUR,"Card transaction of 14.09 EUR issued by Supermarket Kranjska Gora KRANJSKA GORA",,167.19,,,,,,,"Supermarket Kranjska Gora KRANJSKA GORA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3502091183,30-05-2025,"30-05-2025 18:10:03.979",175.46,EUR,"Converted 311.00 AUD to 175.46 EUR",,181.28,AUD,EUR,0.56614,,,,,,,,,0.00,175.46,CREDIT,CONVERSION
+TRANSFER-1560432844,30-05-2025,"30-05-2025 08:33:41.698",-40.00,EUR,"Sent money to Uzziah Leslie Woods",586054,5.82,,,,,"Uzziah Leslie Woods",67330341,,,,,,0.00,,DEBIT,TRANSFER
+CARD-2532261178,29-05-2025,"29-05-2025 21:08:21.527",-5.00,EUR,"Card transaction of 5.00 EUR issued by Parkirna Hisa LJUBLJANA",,45.82,,,,,,,"Parkirna Hisa LJUBLJANA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2532091945,29-05-2025,"29-05-2025 20:12:55.689",-35.00,EUR,"Card transaction of 35.00 EUR issued by Tnf Shop Lj-Center Ljubljana",,50.82,,,,,,,"Tnf Shop Lj-Center Ljubljana",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2532006279,29-05-2025,"29-05-2025 19:43:29.116",-32.90,EUR,"Card transaction of 32.90 EUR issued by Kibuba, Pe Lj-Center LJUBLJANA",,85.82,,,,,,,"Kibuba, Pe Lj-Center LJUBLJANA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2531742379,29-05-2025,"29-05-2025 18:00:50.668",-38.70,EUR,"Card transaction of 38.70 EUR issued by Pe Cafe Capri Ljubljana",,118.72,,,,,,,"Pe Cafe Capri Ljubljana",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2528463509,28-05-2025,"28-05-2025 16:46:46.483",-101.75,EUR,"Card transaction of 100.00 EUR issued by Vle Bonaria 33 CAGLIARI",,157.42,,,,,,,"Vle Bonaria 33 CAGLIARI",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2528411369,28-05-2025,"28-05-2025 16:17:12.229",-10.20,EUR,"Card transaction of 10.20 EUR issued by Lidl 1620 OLBIA",,259.17,,,,,,,"Lidl 1620 OLBIA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2527428391,28-05-2025,"28-05-2025 04:40:34.883",-50.00,EUR,"Card transaction of 50.00 EUR issued by Trattoria Il Genovese LA MADDALENA",,269.37,,,,,,,"Trattoria Il Genovese LA MADDALENA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3491333219,28-05-2025,"28-05-2025 04:39:23.465",283.34,EUR,"Converted 500.00 AUD to 283.34 EUR",,319.37,AUD,EUR,0.56865,,,,,,,,,0.00,283.34,CREDIT,CONVERSION
+CARD-2526433863,27-05-2025,"27-05-2025 22:55:37.850",-85.00,EUR,"Card transaction of 85.00 EUR issued by Pufferfish S.a.s. LA MADDALENA",,36.03,,,,,,,"Pufferfish S.a.s. LA MADDALENA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2525498734,27-05-2025,"27-05-2025 17:29:48.626",-19.00,EUR,"Card transaction of 19.00 EUR issued by Nautica Sabatini S.r.l. LA MADDALENA",,121.03,,,,,,,"Nautica Sabatini S.r.l. LA MADDALENA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2521512374,26-05-2025,"26-05-2025 05:39:17.132",-94.00,EUR,"Card transaction of 94.00 EUR issued by Pufferfish S.a.s. LA MADDALENA",,140.03,,,,,,,"Pufferfish S.a.s. LA MADDALENA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2518126305,25-05-2025,"25-05-2025 02:32:33.931",99.22,EUR,"Card transaction of 50.78 EUR issued by Ip OLBIA",,234.03,,,,,,,"Ip OLBIA",2910,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-2518126305,25-05-2025,"25-05-2025 02:28:43.382",-150.00,EUR,"Card transaction of 50.78 EUR issued by Ip OLBIA",,134.81,,,,,,,"Ip OLBIA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2518115435,25-05-2025,"25-05-2025 02:28:12.301",150.00,EUR,"Card transaction of 150.00 EUR issued by Ip OLBIA",,284.81,,,,,,,"Ip OLBIA",2910,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-2518115435,25-05-2025,"25-05-2025 02:25:08.884",-150.00,EUR,"Card transaction of 150.00 EUR issued by Ip OLBIA",,134.81,,,,,,,"Ip OLBIA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3476761096,24-05-2025,"24-05-2025 17:07:02.529",284.81,EUR,"Converted 500.00 AUD to 284.81 EUR",,284.81,AUD,EUR,0.57161,,,,,,,,,0.00,284.81,CREDIT,CONVERSION
+CARD-2510040676,22-05-2025,"22-05-2025 17:12:38.712",-426.99,EUR,"Card transaction of 450.00 EUR issued by Pza Iv Novembre 1 BOSA",,0.00,,,,,,,"Pza Iv Novembre 1 BOSA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3467675184,22-05-2025,"22-05-2025 16:01:46.330",283.37,EUR,"Converted 500.00 AUD to 283.37 EUR",,426.99,AUD,EUR,0.56871,,,,,,,,,0.00,283.37,CREDIT,CONVERSION
+CARD-2507845516,21-05-2025,"21-05-2025 22:24:21.667",55.79,EUR,"Card transaction of 47.50 EUR issued by Puddu Carburanti DORGALI",,143.62,,,,,,,"Puddu Carburanti DORGALI",2910,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-2507845516,21-05-2025,"21-05-2025 22:21:09.022",-103.29,EUR,"Card transaction of 47.50 EUR issued by Puddu Carburanti DORGALI",,87.83,,,,,,,"Puddu Carburanti DORGALI",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2505486013,21-05-2025,"21-05-2025 02:08:44.358",-3.00,EUR,"Card transaction of 3.00 EUR issued by 10 DORGALI",,191.12,,,,,,,"10 DORGALI",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2500973715,19-05-2025,"19-05-2025 17:40:14.411",-76.94,EUR,"Card transaction of 76.94 EUR issued by Decathlon  00002033 OLBIA",,194.12,,,,,,,"Decathlon  00002033 OLBIA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2498722208,18-05-2025,"18-05-2025 21:21:02.969",-17.49,EUR,"Card transaction of 17.49 EUR issued by Conad ROMA",,271.06,,,,,,,"Conad ROMA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2497391635,18-05-2025,"18-05-2025 07:43:03.341",-235.98,EUR,"Card transaction of 235.98 EUR issued by Airbaltic.com Riga",,288.55,,,,,,,"Airbaltic.com Riga",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2493714368,17-05-2025,"17-05-2025 04:35:34.140",-4.20,EUR,"Card transaction of 4.20 EUR issued by Salcedolindo De Estela Sa ROMA",,524.53,,,,,,,"Salcedolindo De Estela Sa ROMA",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-2492756626,16-05-2025,"16-05-2025 23:27:24.775",-42.00,EUR,"Card transaction of 42.00 EUR issued by Fiumicino Aeroporto Ss D FIUMICINO",,528.73,,,,,,,"Fiumicino Aeroporto Ss D FIUMICINO",2910,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-3444513032,16-05-2025,"16-05-2025 23:04:27.630",570.73,EUR,"Converted 1,000.00 AUD to 570.73 EUR",,570.73,AUD,EUR,0.57272,,,,,,,,,0.00,570.73,CREDIT,CONVERSION
+TRANSFER-898626537,13-12-2023,"13-12-2023 21:58:49.317",-60.51,EUR,"Sent money to Alexandra Dominic",,0.00,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.00,,DEBIT,TRANSFER
+BALANCE-1584568333,13-12-2023,"13-12-2023 20:40:10.978",60.51,EUR,"Converted 100.00 AUD to 60.51 EUR",,60.51,AUD,EUR,0.60794,,,,,,,,,0.00,60.51,CREDIT,CONVERSION
+BALANCE-682900931,29-10-2022,"29-10-2022 10:09:07.267",-655.90,EUR,"Converted 658.98 EUR to 1,019.50 AUD (fee: 3.08 EUR)",,0.00,EUR,AUD,1.55435,,,,,,,,,3.08,1019.50,DEBIT,CONVERSION
+FEE-BALANCE-682900931,29-10-2022,"29-10-2022 10:09:07.266",-3.08,EUR,"Wise Charges for: BALANCE-682900931",,655.90,,,,,,,,,,,,0,,DEBIT,CONVERSION
+BALANCE-605274979,06-09-2022,"06-09-2022 20:55:31.323",236.95,EUR,"Converted 348.70 AUD to 236.95 EUR",,658.98,AUD,EUR,0.68251,,,,,,,,,0.00,236.95,CREDIT,CONVERSION
+BALANCE-605252180,06-09-2022,"06-09-2022 20:40:01.731",422.03,EUR,"Converted 620.73 AUD to 422.03 EUR",,422.03,AUD,EUR,0.68288,,,,,,,,,0.00,422.03,CREDIT,CONVERSION
+BALANCE-568965283,11-08-2022,"11-08-2022 18:28:32.624",-12.81,EUR,"Converted 12.87 EUR to 18.64 AUD (fee: 0.06 EUR)",,0.00,EUR,AUD,1.45512,,,,,,,,,0.06,18.64,DEBIT,CONVERSION
+FEE-BALANCE-568965283,11-08-2022,"11-08-2022 18:28:32.623",-0.06,EUR,"Wise Charges for: BALANCE-568965283",,12.81,,,,,,,,,,,,0,,DEBIT,CONVERSION
+CARD-386000411,07-08-2022,"07-08-2022 13:14:36.535",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,12.87,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-386007115,07-08-2022,"07-08-2022 13:13:46.898",-7.24,EUR,"Card transaction of 7.24 EUR issued by Uber *Lime Help.uber. Amsterdam",,8.87,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-386000411,07-08-2022,"07-08-2022 12:47:41.295",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,16.11,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385580311,07-08-2022,"07-08-2022 11:47:33.330",0.84,EUR,"Card transaction of 3.16 EUR issued by Uber * Pending Amsterdam",,20.11,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385304256,07-08-2022,"07-08-2022 11:47:33.295",1.08,EUR,"Card transaction of 2.92 EUR issued by Uber * Pending Amsterdam",,19.27,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385398869,07-08-2022,"07-08-2022 11:47:33.255",2.04,EUR,"Card transaction of 1.96 EUR issued by Uber * Pending Amsterdam",,18.19,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385916885,07-08-2022,"07-08-2022 09:09:27.343",-50.50,EUR,"Card transaction of 50.50 EUR issued by Beuster Bar Berlin",,16.15,,,,,,,"Beuster Bar Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385825665,07-08-2022,"07-08-2022 06:32:34.846",-104.99,EUR,"Card transaction of 104.99 EUR issued by Ic Cash 01011862 Berlin",,66.65,,,,,,,"Ic Cash 01011862 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-563122878,07-08-2022,"07-08-2022 06:32:30.841",135.22,EUR,"Converted 200.00 AUD to 135.22 EUR",,171.64,AUD,EUR,0.67908,,,,,,,,,0.00,135.22,CREDIT,CONVERSION
+CARD-385648341,07-08-2022,"07-08-2022 04:09:34.296",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,36.42,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385699035,07-08-2022,"07-08-2022 04:02:36.202",-13.24,EUR,"Card transaction of 13.24 EUR issued by Uber *Lime Help.uber. Amsterdam",,32.42,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385648341,07-08-2022,"07-08-2022 03:11:48.972",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,45.66,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385596767,07-08-2022,"07-08-2022 02:21:50.685",-22.00,EUR,"Card transaction of 22.00 EUR issued by Dashi Berlin",,49.66,,,,,,,"Dashi Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385580311,07-08-2022,"07-08-2022 02:06:18.551",-4.00,EUR,"Card transaction of 3.16 EUR issued by Uber * Pending Amsterdam",,71.66,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385178221,07-08-2022,"07-08-2022 01:28:08.408",0.36,EUR,"Card transaction of 3.64 EUR issued by Uber * Pending Amsterdam",,75.66,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385439448,07-08-2022,"07-08-2022 00:28:18.199",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,75.30,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385474727,07-08-2022,"07-08-2022 00:27:22.600",-8.92,EUR,"Card transaction of 8.92 EUR issued by Uber *Lime Help.uber. Amsterdam",,71.30,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385439448,06-08-2022,"06-08-2022 23:54:48.703",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,80.22,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385398869,06-08-2022,"06-08-2022 23:17:43.720",-4.00,EUR,"Card transaction of 1.96 EUR issued by Uber * Pending Amsterdam",,84.22,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385304256,06-08-2022,"06-08-2022 21:53:07.643",-4.00,EUR,"Card transaction of 2.92 EUR issued by Uber * Pending Amsterdam",,88.22,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385267459,06-08-2022,"06-08-2022 21:19:20.036",-65.00,EUR,"Card transaction of 65.00 EUR issued by Fusionart Berlin",,92.22,,,,,,,"Fusionart Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-562454608,06-08-2022,"06-08-2022 20:59:48.798",106.39,EUR,"Converted 157.36 AUD to 106.39 EUR",,157.22,AUD,EUR,0.67908,,,,,,,,,0.00,106.39,CREDIT,CONVERSION
+CARD-385190502,06-08-2022,"06-08-2022 20:36:01.775",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,50.83,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-385203595,06-08-2022,"06-08-2022 20:18:43.231",-4.12,EUR,"Card transaction of 4.12 EUR issued by Uber *Lime Help.uber. Amsterdam",,46.83,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385190502,06-08-2022,"06-08-2022 20:05:57.333",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,50.95,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385178221,06-08-2022,"06-08-2022 19:53:53.659",-4.00,EUR,"Card transaction of 3.64 EUR issued by Uber * Pending Amsterdam",,54.95,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-385163209,06-08-2022,"06-08-2022 19:38:24.892",-24.99,EUR,"Card transaction of 24.99 EUR issued by Ic Cash 01011685 Berlin",,58.95,,,,,,,"Ic Cash 01011685 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-384537718,06-08-2022,"06-08-2022 02:12:44.348",-28.00,EUR,"Card transaction of 28.00 EUR issued by Kaufland Berlin Neuko BERLIN NEUKOE",,83.94,,,,,,,"Kaufland Berlin Neuko BERLIN NEUKOE",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-384276463,05-08-2022,"05-08-2022 22:11:09.855",-7.95,EUR,"Card transaction of 7.95 EUR issued by World Of Delights Schiphol Airp",,111.94,,,,,,,"World Of Delights Schiphol Airp",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-383631154,05-08-2022,"05-08-2022 04:13:02.095",-6.50,EUR,"Card transaction of 6.50 EUR issued by Mercato Centrale Tori TORINO",,119.89,,,,,,,"Mercato Centrale Tori TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-383571460,05-08-2022,"05-08-2022 03:13:32.358",-21.70,EUR,"Card transaction of 21.70 EUR issued by Excelsa-Torino-Via Ga TORINO",,126.39,,,,,,,"Excelsa-Torino-Via Ga TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-383546744,05-08-2022,"05-08-2022 02:50:12.556",-1.50,EUR,"Card transaction of 1.50 EUR issued by Carrefour Express TORINO",,148.09,,,,,,,"Carrefour Express TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-383342675,04-08-2022,"04-08-2022 23:32:31.521",-30.00,EUR,"Card transaction of 30.00 EUR issued by Museo Naz. Dell'autom TORINO",,149.59,,,,,,,"Museo Naz. Dell'autom TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-383170584,04-08-2022,"04-08-2022 20:47:41.605",-3.90,EUR,"Card transaction of 3.90 EUR issued by 12oz Coffee Joint TORINO",,179.59,,,,,,,"12oz Coffee Joint TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-382734197,04-08-2022,"04-08-2022 06:28:23.842",-6.00,EUR,"Card transaction of 6.00 EUR issued by Mercato Centrale Tori TORINO",,183.49,,,,,,,"Mercato Centrale Tori TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-382672917,04-08-2022,"04-08-2022 05:11:31.958",-12.00,EUR,"Card transaction of 12.00 EUR issued by Mokita Lounge TORINO",,189.49,,,,,,,"Mokita Lounge TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-382115907,03-08-2022,"03-08-2022 20:22:23.955",-3.68,EUR,"Card transaction of 3.68 EUR issued by Borello Torino Aldo M TORINO",,201.49,,,,,,,"Borello Torino Aldo M TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-381659615,03-08-2022,"03-08-2022 05:29:51.176",-70.00,EUR,"Card transaction of 70.00 EUR issued by Ivo1958 TORINO",,205.17,,,,,,,"Ivo1958 TORINO",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379751556,01-08-2022,"01-08-2022 12:43:00.889",6.89,EUR,"Card transaction of 30.11 EUR issued by Uber   * Pending Amsterdam",,275.17,,,,,,,"Uber   * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-379588138,01-08-2022,"01-08-2022 11:20:46.402",1.32,EUR,"Card transaction of 2.68 EUR issued by Uber * Pending Amsterdam",,268.28,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-379597938,01-08-2022,"01-08-2022 11:20:46.362",1.56,EUR,"Card transaction of 2.44 EUR issued by Uber * Pending Amsterdam",,266.96,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-379751556,01-08-2022,"01-08-2022 10:20:03.417",-37.00,EUR,"Card transaction of 30.11 EUR issued by Uber   * Pending Amsterdam",,265.40,,,,,,,"Uber   * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379597938,01-08-2022,"01-08-2022 05:15:54.805",-4.00,EUR,"Card transaction of 2.44 EUR issued by Uber * Pending Amsterdam",,302.40,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379588138,01-08-2022,"01-08-2022 05:02:39.441",-4.00,EUR,"Card transaction of 2.68 EUR issued by Uber * Pending Amsterdam",,306.40,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379103941,31-07-2022,"31-07-2022 22:47:56.655",1.80,EUR,"Card transaction of 2.20 EUR issued by Uber * Pending Amsterdam",,310.40,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-379150435,31-07-2022,"31-07-2022 20:41:57.085",-109.89,EUR,"Card transaction of 106.99 EUR issued by Rsb Herzbergstr.",,308.60,,,,,,,"Rsb Herzbergstr.",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379108986,31-07-2022,"31-07-2022 20:15:26.701",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,418.49,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-379127098,31-07-2022,"31-07-2022 20:14:34.616",-6.28,EUR,"Card transaction of 6.28 EUR issued by Uber *Lime Help.uber. Amsterdam",,414.49,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379108986,31-07-2022,"31-07-2022 19:52:28.175",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,420.77,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-379103941,31-07-2022,"31-07-2022 19:46:04.485",-4.00,EUR,"Card transaction of 2.20 EUR issued by Uber * Pending Amsterdam",,424.77,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378956577,31-07-2022,"31-07-2022 19:30:26.492",2.04,EUR,"Card transaction of 1.96 EUR issued by Uber * Pending Amsterdam",,428.77,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-378956577,31-07-2022,"31-07-2022 13:57:02.492",-4.00,EUR,"Card transaction of 1.96 EUR issued by Uber * Pending Amsterdam",,426.73,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378937767,31-07-2022,"31-07-2022 13:04:40.686",-18.00,EUR,"Card transaction of 18.00 EUR issued by Gel Goer Koefte Berlin",,430.73,,,,,,,"Gel Goer Koefte Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-377832647,31-07-2022,"31-07-2022 12:42:38.101",-0.01,EUR,"Card transaction of 103.95 EUR issued by Transact,22208120 Berlin",,448.73,,,,,,,"Transact,22208120 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378928072,31-07-2022,"31-07-2022 12:34:16.743",-23.00,EUR,"Card transaction of 23.00 EUR issued by Gel Goer Koefte Berlin",,448.74,,,,,,,"Gel Goer Koefte Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378895077,31-07-2022,"31-07-2022 10:37:27.002",-50.00,EUR,"Card transaction of 50.00 EUR issued by Kirk Bar Berlin Berlin",,471.74,,,,,,,"Kirk Bar Berlin Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378603343,31-07-2022,"31-07-2022 03:44:12.111",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,521.74,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-378620362,31-07-2022,"31-07-2022 03:43:19.229",-5.08,EUR,"Card transaction of 5.08 EUR issued by Uber *Lime Help.uber. Amsterdam",,517.74,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378603343,31-07-2022,"31-07-2022 03:26:42.631",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,522.82,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378174643,31-07-2022,"31-07-2022 01:02:10.586",1.08,EUR,"Card transaction of 2.92 EUR issued by Uber * Pending Amsterdam",,526.82,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-378196368,31-07-2022,"31-07-2022 01:02:10.538",0.12,EUR,"Card transaction of 3.88 EUR issued by Uber * Pending Amsterdam",,525.74,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-378307296,30-07-2022,"30-07-2022 22:57:11.669",-33.36,EUR,"Card transaction of 33.36 EUR issued by Saturn Electro-Handel Berlin",,525.62,,,,,,,"Saturn Electro-Handel Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378273791,30-07-2022,"30-07-2022 22:27:40.288",-35.00,EUR,"Card transaction of 35.00 EUR issued by Tnf Berlin",,558.98,,,,,,,"Tnf Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378241162,30-07-2022,"30-07-2022 21:58:15.156",-368.00,EUR,"Card transaction of 368.00 EUR issued by Supreme Berlin",,593.98,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-552487619,30-07-2022,"30-07-2022 21:56:49.627",680.69,EUR,"Converted 1,000.00 AUD to 680.69 EUR",,961.98,AUD,EUR,0.68368,,,,,,,,,0.00,680.69,CREDIT,CONVERSION
+CARD-378196368,30-07-2022,"30-07-2022 21:18:47.674",-4.00,EUR,"Card transaction of 3.88 EUR issued by Uber * Pending Amsterdam",,281.29,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-378174643,30-07-2022,"30-07-2022 20:58:48.698",-4.00,EUR,"Card transaction of 2.92 EUR issued by Uber * Pending Amsterdam",,285.29,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-377832647,30-07-2022,"30-07-2022 09:54:59.576",-106.79,EUR,"Card transaction of 103.95 EUR issued by Transact,22208120 Berlin",,289.29,,,,,,,"Transact,22208120 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-377594137,30-07-2022,"30-07-2022 05:03:24.368",4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,396.08,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-377613463,30-07-2022,"30-07-2022 04:44:36.050",-26.00,EUR,"Card transaction of 26.00 EUR issued by Iz *Weinhandlung Am H BERLIN",,392.08,,,,,,,"Iz *Weinhandlung Am H BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-551676367,30-07-2022,"30-07-2022 04:42:48.233",414.61,EUR,"Converted 608.70 AUD to 414.61 EUR",,418.08,AUD,EUR,0.68413,,,,,,,,,0.00,414.61,CREDIT,CONVERSION
+CARD-377607519,30-07-2022,"30-07-2022 04:38:31.898",-4.36,EUR,"Card transaction of 4.36 EUR issued by Uber *Lime Help.uber. Amsterdam",,3.47,,,,,,,"Uber *Lime Help.uber. Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-377594137,30-07-2022,"30-07-2022 04:25:04.546",-4.00,EUR,"Card transaction of 4.00 EUR issued by Uber * Pending Amsterdam",,7.83,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-375076502,27-07-2022,"27-07-2022 21:28:01.841",-13.90,EUR,"Card transaction of 13.90 EUR issued by Five Guys Germany Gmb Berlin",,11.83,,,,,,,"Five Guys Germany Gmb Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-374705708,27-07-2022,"27-07-2022 09:00:41.395",-10.79,EUR,"Card transaction of 10.79 EUR issued by Miles Mobility Gmbh +493083799699",,25.73,,,,,,,"Miles Mobility Gmbh +493083799699",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-374675886,27-07-2022,"27-07-2022 08:38:54.393",0.01,EUR,"Card transaction of 0.01 EUR issued by Miles Mobility Gmbh +493083799699",,36.52,,,,,,,"Miles Mobility Gmbh +493083799699",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-374697443,27-07-2022,"27-07-2022 08:38:51.783",-20.58,EUR,"Card transaction of 20.58 EUR issued by Miles Mobility Gmbh +493083799699",,36.51,,,,,,,"Miles Mobility Gmbh +493083799699",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-374675886,27-07-2022,"27-07-2022 07:48:45.131",-0.01,EUR,"Card transaction of 0.01 EUR issued by Miles Mobility Gmbh +493083799699",,57.09,,,,,,,"Miles Mobility Gmbh +493083799699",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373984374,26-07-2022,"26-07-2022 19:02:24.426",-20.90,EUR,"Card transaction of 20.90 EUR issued by La Maison BERLIN",,57.10,,,,,,,"La Maison BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373720375,26-07-2022,"26-07-2022 07:46:24.037",-14.74,EUR,"Card transaction of 14.74 EUR issued by Uber * Pending Amsterdam",,78.00,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373503275,26-07-2022,"26-07-2022 02:59:21.967",-18.46,EUR,"Card transaction of 18.46 EUR issued by Edeka Siebert Berlin",,92.74,,,,,,,"Edeka Siebert Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373314252,25-07-2022,"25-07-2022 23:48:44.089",-21.20,EUR,"Card transaction of 21.20 EUR issued by Modulor Gmbh Berlin",,111.20,,,,,,,"Modulor Gmbh Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373249835,25-07-2022,"25-07-2022 22:43:35.992",-176.00,EUR,"Card transaction of 176.00 EUR issued by Supreme Berlin",,132.40,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-373104979,25-07-2022,"25-07-2022 20:21:54.145",-145.26,EUR,"Card transaction of 145.26 EUR issued by Tk Maxx BERLIN",,308.40,,,,,,,"Tk Maxx BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-544947838,25-07-2022,"25-07-2022 20:15:59.543",453.66,EUR,"Converted 670.71 AUD to 453.66 EUR",,453.66,AUD,EUR,0.67936,,,,,,,,,0.00,453.66,CREDIT,CONVERSION
+CARD-369328100,21-07-2022,"21-07-2022 21:23:08.270",-41.31,EUR,"Card transaction of 79.90 EUR issued by Uniqlo 201 Berlin",,0.00,,,,,,,"Uniqlo 201 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-368725010,21-07-2022,"21-07-2022 11:19:19.359",0.36,EUR,"Card transaction of 3.64 EUR issued by Uber * Pending Amsterdam",,41.31,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-368725010,21-07-2022,"21-07-2022 03:05:11.019",-4.00,EUR,"Card transaction of 3.64 EUR issued by Uber * Pending Amsterdam",,40.95,,,,,,,"Uber * Pending Amsterdam",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-367956468,20-07-2022,"20-07-2022 06:22:58.570",-106.78,EUR,"Card transaction of 103.95 EUR issued by Transact,22208198 Berlin",,44.95,,,,,,,"Transact,22208198 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-538042844,20-07-2022,"20-07-2022 06:21:49.217",134.36,EUR,"Converted 200.00 AUD to 134.36 EUR",,151.73,AUD,EUR,0.67478,,,,,,,,,0.00,134.36,CREDIT,CONVERSION
+CARD-367225571,19-07-2022,"19-07-2022 16:40:59.530",-6.00,EUR,"Card transaction of 6.00 EUR issued by Easyjet Dnata In Flig MANCHESTER",,17.37,,,,,,,"Easyjet Dnata In Flig MANCHESTER",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-529353238,13-07-2022,"13-07-2022 12:22:30.827",-398.13,EUR,"Converted 400.00 EUR to 335.90 GBP (fee: 1.87 EUR)",,23.37,EUR,GBP,0.84370,,,,,,,,,1.87,335.90,DEBIT,CONVERSION
+FEE-BALANCE-529353238,13-07-2022,"13-07-2022 12:22:30.826",-1.87,EUR,"Wise Charges for: BALANCE-529353238",,421.50,,,,,,,,,,,,0,,DEBIT,CONVERSION
+CARD-361095620,12-07-2022,"12-07-2022 23:49:50.334",-118.00,EUR,"Card transaction of 118.00 EUR issued by Supreme Berlin",,423.37,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-361094585,12-07-2022,"12-07-2022 23:48:43.687",-552.40,EUR,"Card transaction of 552.40 EUR issued by Supreme Berlin",,541.37,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-360856294,12-07-2022,"12-07-2022 19:36:13.270",-130.40,EUR,"Card transaction of 130.40 EUR issued by Uniqlo 208 Berlin",,1093.77,,,,,,,"Uniqlo 208 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-360494380,12-07-2022,"12-07-2022 05:22:36.092",-238.93,EUR,"Card transaction of 238.93 EUR issued by Sp Sporadic 4917634313722",,1224.17,,,,,,,"Sp Sporadic 4917634313722",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-527451284,12-07-2022,"12-07-2022 00:56:04.633",1330.72,EUR,"Converted 2,000.00 AUD to 1,330.72 EUR",,1463.10,AUD,EUR,0.66829,,,,,,,,,0.00,1330.72,CREDIT,CONVERSION
+CARD-359980448,11-07-2022,"11-07-2022 20:16:22.966",-305.15,EUR,"Card transaction of 303.95 EUR issued by Transact,Adalbertstr9 Berlin GA 702",,132.38,,,,,,,"Transact,Adalbertstr9 Berlin GA 702",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-524647865,09-07-2022,"09-07-2022 17:14:28.190",437.53,EUR,"Converted 652.82 AUD to 437.53 EUR",,437.53,AUD,EUR,0.67318,,,,,,,,,0.00,437.53,CREDIT,CONVERSION
+BALANCE-388304882,06-03-2022,"06-03-2022 11:46:43.579",-41.65,EUR,"Converted 41.82 EUR to 61.76 AUD (fee: 0.17 EUR)",,0.00,EUR,AUD,1.48291,,,,,,,,,0.17,61.76,DEBIT,CONVERSION
+FEE-BALANCE-388304882,06-03-2022,"06-03-2022 11:46:43.578",-0.17,EUR,"Wise Charges for: BALANCE-388304882",,41.65,,,,,,,,,,,,0,,DEBIT,CONVERSION
+CARD-262832249,05-03-2022,"05-03-2022 06:05:52.788",14.80,EUR,"Card transaction of 14.80 EUR issued by Wolt Enterprises Deuts Berlin",,41.82,,,,,,,"Wolt Enterprises Deuts Berlin",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-262841094,05-03-2022,"05-03-2022 06:03:21.102",-16.30,EUR,"Card transaction of 16.30 EUR issued by Wolt Enterprises Deuts Berlin",,27.02,,,,,,,"Wolt Enterprises Deuts Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-262832249,05-03-2022,"05-03-2022 05:45:48.058",-14.80,EUR,"Card transaction of 14.80 EUR issued by Wolt Enterprises Deuts Berlin",,43.32,,,,,,,"Wolt Enterprises Deuts Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-262399853,04-03-2022,"04-03-2022 17:31:46.750",-7.08,EUR,"Card transaction of 7.08 EUR issued by Starbucks  1208146 Sch nefeld",,58.12,,,,,,,"Starbucks  1208146 Sch nefeld",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-374411684,04-03-2022,"04-03-2022 16:20:17.662",-35.00,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",,65.20,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-374411684,04-03-2022,"04-03-2022 16:20:17.661",-0.28,EUR,"Wise Charges for: TRANSFER-374411684",,100.20,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+CARD-262047646,04-03-2022,"04-03-2022 01:00:39.605",-128.00,EUR,"Card transaction of 128.00 EUR issued by Supreme Berlin",,100.48,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-262047373,04-03-2022,"04-03-2022 01:00:13.149",-28.80,EUR,"Card transaction of 28.80 EUR issued by Supreme Berlin",,228.48,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-385980070,03-03-2022,"03-03-2022 21:55:03.522",200.00,EUR,"Converted 305.05 AUD to 200.00 EUR",,257.28,AUD,EUR,0.65852,,,,,,,,,0.00,200.00,CREDIT,CONVERSION
+CARD-261169387,02-03-2022,"02-03-2022 17:26:37.193",54.00,EUR,"Card transaction of -54.00 EUR issued by Bauhaus 814            BERLIN",,57.28,,,,,,,"Bauhaus 814            BERLIN",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-260789293,02-03-2022,"02-03-2022 00:33:58.716",-280.90,EUR,"Card transaction of 280.00 EUR issued by *Deutsche Bank Ag B-HERM-PL",,3.28,,,,,,,"*Deutsche Bank Ag B-HERM-PL",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-260186555,01-03-2022,"01-03-2022 00:59:06.882",-30.00,EUR,"Card transaction of 30.00 EUR issued by Jysk Se Berlin",,284.18,,,,,,,"Jysk Se Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-383119391,01-03-2022,"01-03-2022 00:55:42.618",308.34,EUR,"Converted 480.00 AUD to 308.34 EUR",,314.18,AUD,EUR,0.64520,,,,,,,,,0.00,308.34,CREDIT,CONVERSION
+CARD-260012454,28-02-2022,"28-02-2022 20:10:02.054",-3.32,EUR,"Card transaction of 3.32 EUR issued by Bio Company Se BERLIN",,5.84,,,,,,,"Bio Company Se BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-260003027,28-02-2022,"28-02-2022 19:52:35.895",-24.90,EUR,"Card transaction of 24.90 EUR issued by Uzr*Easyapotheke Kottb Berlin",,9.16,,,,,,,"Uzr*Easyapotheke Kottb Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-259997051,28-02-2022,"28-02-2022 19:40:55.917",-19.60,EUR,"Card transaction of 19.60 EUR issued by Bauhaus 814 BERLIN",,34.06,,,,,,,"Bauhaus 814 BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-257469648,24-02-2022,"24-02-2022 02:24:46.467",-713.21,EUR,"Card transaction of 700.00 EUR issued by Spk Vest Recklinghause MECKINGH.",,53.66,,,,,,,"Spk Vest Recklinghause MECKINGH.",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-379000993,24-02-2022,"24-02-2022 02:20:46.932",764.14,EUR,"Converted 1,200.00 AUD to 764.14 EUR",,766.87,AUD,EUR,0.63958,,,,,,,,,0.00,764.14,CREDIT,CONVERSION
+CARD-257329523,23-02-2022,"23-02-2022 22:14:42.978",-611.46,EUR,"Card transaction of 600.00 EUR issued by Volksbank Eg Velpke",,2.73,,,,,,,"Volksbank Eg Velpke",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-378787539,23-02-2022,"23-02-2022 22:14:20.937",572.56,EUR,"Converted 898.00 AUD to 572.56 EUR",,614.19,AUD,EUR,0.64040,,,,,,,,,0.00,572.56,CREDIT,CONVERSION
+CARD-257214419,23-02-2022,"23-02-2022 18:11:29.476",-507.64,EUR,"Card transaction of 500.00 EUR issued by Volksbank Eg Velpke",,41.63,,,,,,,"Volksbank Eg Velpke",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-257192046,23-02-2022,"23-02-2022 16:53:47.254",-62.51,EUR,"Card transaction of 62.51 EUR issued by Shell   8937 Ziesar",,549.27,,,,,,,"Shell   8937 Ziesar",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-378488280,23-02-2022,"23-02-2022 12:54:48.255",611.78,EUR,"Converted 962.76 AUD to 611.78 EUR",,611.78,AUD,EUR,0.63824,,,,,,,,,0.00,611.78,CREDIT,CONVERSION
+CARD-256809736,22-02-2022,"22-02-2022 22:37:24.817",-175.25,EUR,"Card transaction of 306.40 EUR issued by Supreme Berlin",,0.00,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-255433380,20-02-2022,"20-02-2022 03:35:05.472",-21.88,EUR,"Card transaction of 21.88 EUR issued by Ac Euro Gida Gmbh Berlin",,175.25,,,,,,,"Ac Euro Gida Gmbh Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-255174037,19-02-2022,"19-02-2022 20:23:19.062",-562.80,EUR,"Card transaction of 562.80 EUR issued by Supreme Berlin",,197.13,,,,,,,"Supreme Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-375661654,19-02-2022,"19-02-2022 20:13:32.791",315.35,EUR,"Converted 500.00 AUD to 315.35 EUR",,759.93,AUD,EUR,0.63347,,,,,,,,,0.00,315.35,CREDIT,CONVERSION
+BALANCE-375621741,19-02-2022,"19-02-2022 18:59:54.135",252.28,EUR,"Converted 400.00 AUD to 252.28 EUR",,444.58,AUD,EUR,0.63347,,,,,,,,,0.00,252.28,CREDIT,CONVERSION
+CARD-254936603,19-02-2022,"19-02-2022 05:50:59.614",-6.52,EUR,"Card transaction of 6.52 EUR issued by Rewe Markt Gmbh-Zw Berlin",,192.30,,,,,,,"Rewe Markt Gmbh-Zw Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-254756425,19-02-2022,"19-02-2022 00:26:45.973",-3.80,EUR,"Card transaction of 3.80 EUR issued by Db Automaten Schoenefeld",,198.82,,,,,,,"Db Automaten Schoenefeld",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-366609584,18-02-2022,"18-02-2022 19:54:17.634",-20.00,EUR,"Sent money to karlis ulmanis (fee: 0.28 EUR)",,202.62,,,,,"karlis ulmanis",LV38HABA0551044427758,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-366609584,18-02-2022,"18-02-2022 19:54:17.633",-0.28,EUR,"Wise Charges for: TRANSFER-366609584",,222.62,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-374878647,18-02-2022,"18-02-2022 19:51:31.932",209.14,EUR,"Converted 331.00 AUD to 209.14 EUR",,222.90,AUD,EUR,0.63463,,,,,,,,,0.00,209.14,CREDIT,CONVERSION
+CARD-253776672,17-02-2022,"17-02-2022 03:24:47.814",-60.00,EUR,"Card transaction of 60.00 EUR issued by Wlln0001-Lidosta Riga Marupes nov.",,13.76,,,,,,,"Wlln0001-Lidosta Riga Marupes nov.",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-253665251,17-02-2022,"17-02-2022 00:05:43.060",-3.80,EUR,"Card transaction of 3.80 EUR issued by Db Automaten Berlin",,73.76,,,,,,,"Db Automaten Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-253421339,16-02-2022,"16-02-2022 12:07:44.474",59.00,EUR,"Card transaction of -59.00 EUR issued by Bauhaus 814            BERLIN",,77.56,,,,,,,"Bauhaus 814            BERLIN",7829,"Morgan Schoermer",,,0.00,,CREDIT,CARD
+CARD-252622245,15-02-2022,"15-02-2022 00:41:28.414",-1.98,EUR,"Card transaction of 1.98 EUR issued by Bio Company Se BERLIN",,18.56,,,,,,,"Bio Company Se BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-252242604,14-02-2022,"14-02-2022 05:08:30.396",-43.95,EUR,"Card transaction of 43.95 EUR issued by Transact,22207991 Berlin",,20.54,,,,,,,"Transact,22207991 Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-251647174,13-02-2022,"13-02-2022 01:50:54.638",-64.45,EUR,"Card transaction of 64.45 EUR issued by Bauhaus 814 BERLIN",,64.49,,,,,,,"Bauhaus 814 BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-251432732,12-02-2022,"12-02-2022 19:44:53.909",-1.59,EUR,"Card transaction of 1.59 EUR issued by Bio Company Se BERLIN",,128.94,,,,,,,"Bio Company Se BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-251431892,12-02-2022,"12-02-2022 19:43:02.546",-23.91,EUR,"Card transaction of 23.91 EUR issued by Bio Company Se BERLIN",,130.53,,,,,,,"Bio Company Se BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+TRANSFER-362659381,10-02-2022,"10-02-2022 20:40:39.405",-100.00,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",,154.44,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-362659381,10-02-2022,"10-02-2022 20:40:39.404",-0.28,EUR,"Wise Charges for: TRANSFER-362659381",,254.44,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-368661213,10-02-2022,"10-02-2022 20:39:34.360",250.46,EUR,"Converted 400.00 AUD to 250.46 EUR",,254.72,AUD,EUR,0.62889,,,,,,,,,0.00,250.46,CREDIT,CONVERSION
+TRANSFER-361273044,08-02-2022,"08-02-2022 06:04:03.471",-75.00,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",,4.26,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-361273044,08-02-2022,"08-02-2022 06:04:03.470",-0.28,EUR,"Wise Charges for: TRANSFER-361273044",,79.26,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+CARD-248867605,07-02-2022,"07-02-2022 22:09:11.593",-5.46,EUR,"Card transaction of 5.46 EUR issued by Bio Company Se BERLIN",,79.54,,,,,,,"Bio Company Se BERLIN",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-248568702,07-02-2022,"07-02-2022 04:15:53.035",-39.90,EUR,"Card transaction of 39.90 EUR issued by Wolt Enterprises Deuts Berlin",,85.00,,,,,,,"Wolt Enterprises Deuts Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-248089332,06-02-2022,"06-02-2022 03:50:05.664",-6.67,EUR,"Card transaction of 6.67 EUR issued by Rewe Markt Gmbh-Zw Berlin",,124.90,,,,,,,"Rewe Markt Gmbh-Zw Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-246949732,04-02-2022,"04-02-2022 02:16:41.541",-120.28,EUR,"Card transaction of 120.28 EUR issued by Tk Maxx Gmbh & Co.kg Berlin",,131.57,,,,,,,"Tk Maxx Gmbh & Co.kg Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-246343437,02-02-2022,"02-02-2022 23:43:21.262",-32.80,EUR,"Card transaction of 32.80 EUR issued by Takumi Nine Berlin",,251.85,,,,,,,"Takumi Nine Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+CARD-245714831,01-02-2022,"01-02-2022 20:51:06.069",-27.71,EUR,"Card transaction of 27.71 EUR issued by Rewe Markt Gmbh-Zw Berlin",,284.65,,,,,,,"Rewe Markt Gmbh-Zw Berlin",7829,"Morgan Schoermer",,,0.00,,DEBIT,CARD
+BALANCE-359192480,29-01-2022,"29-01-2022 18:28:49.389",312.36,EUR,"Converted 500.00 AUD to 312.36 EUR",,312.36,AUD,EUR,0.62747,,,,,,,,,0.00,312.36,CREDIT,CONVERSION
+BALANCE-327169367,15-12-2021,"15-12-2021 10:33:58.678",-352.88,EUR,"Converted 354.33 EUR to 558.88 AUD (fee: 1.45 EUR)",,0.00,EUR,AUD,1.58378,,,,,,,,,1.45,558.88,DEBIT,CONVERSION
+FEE-BALANCE-327169367,15-12-2021,"15-12-2021 10:33:58.677",-1.45,EUR,"Wise Charges for: BALANCE-327169367",,352.88,,,,,,,,,,,,0,,DEBIT,CONVERSION
+TRANSFER-334788937,15-12-2021,"15-12-2021 01:37:02.133",350.00,EUR,"Received money from Alexandra Dominic with reference Sent from N26/a53390c7e14348919b15dbca21deada6","Sent from N26/a53390c7e14348919b15dbca21deada6",354.33,,,,"Alexandra Dominic",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-330372475,05-12-2021,"05-12-2021 23:45:47.786",-65.00,EUR,"Sent money to Florian Simon (fee: 0.28 EUR)","W124 Wurzelholz",4.33,,,,,"Florian Simon",DE09663500360007109277,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-330372475,05-12-2021,"05-12-2021 23:45:47.785",-0.28,EUR,"Wise Charges for: TRANSFER-330372475","W124 Wurzelholz",69.33,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-330371844,05-12-2021,"05-12-2021 23:43:18.605",-41.00,EUR,"Sent money to Michael Seifert (fee: 0.28 EUR)","W124 Wurzelholz",69.61,,,,,"Michael Seifert",DE54700202700015169096,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-330371844,05-12-2021,"05-12-2021 23:43:18.604",-0.28,EUR,"Wise Charges for: TRANSFER-330371844","W124 Wurzelholz",110.61,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-320203049,05-12-2021,"05-12-2021 23:40:49.816",110.89,EUR,"Converted 180.00 AUD to 110.89 EUR",,110.89,AUD,EUR,0.61874,,,,,,,,,0.00,110.89,CREDIT,CONVERSION
+TRANSFER-289168178,03-09-2021,"03-09-2021 15:07:18.067",-223.24,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",Papsey,0.00,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-289168178,03-09-2021,"03-09-2021 15:07:18.066",-0.28,EUR,"Wise Charges for: TRANSFER-289168178",Papsey,223.24,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-259758664,03-09-2021,"03-09-2021 15:05:57.272",223.52,EUR,"Converted 360.00 AUD to 223.52 EUR",,223.52,AUD,EUR,0.62363,,,,,,,,,0.00,223.52,CREDIT,CONVERSION
+TRANSFER-276067687,01-08-2021,"01-08-2021 22:08:25.008",-216.57,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",Morgina,0.00,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-276067687,01-08-2021,"01-08-2021 22:08:25.007",-0.28,EUR,"Wise Charges for: TRANSFER-276067687",Morgina,216.57,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-241334299,01-08-2021,"01-08-2021 22:01:53.667",216.85,EUR,"Converted 351.92 AUD to 216.85 EUR",,216.85,AUD,EUR,0.61890,,,,,,,,,0.00,216.85,CREDIT,CONVERSION
+BALANCE-209049621,27-05-2021,"27-05-2021 20:39:08.825",-1194.93,EUR,"Converted 1,199.83 EUR to 1,882.49 AUD (fee: 4.90 EUR)",,0.00,EUR,AUD,1.57540,,,,,,,,,4.90,1882.49,DEBIT,CONVERSION
+FEE-BALANCE-209049621,27-05-2021,"27-05-2021 20:39:08.824",-4.90,EUR,"Wise Charges for: BALANCE-209049621",,1194.93,,,,,,,,,,,,0,,DEBIT,CONVERSION
+TRANSFER-234847110,09-04-2021,"09-04-2021 01:14:15.366",-198.82,EUR,"Sent money to Morgan Schoermer (fee: 1.18 EUR)",,1199.83,EUR,AUD,1.55885,,"Morgan Schoermer",451821,,,,,,1.18,309.93,DEBIT,TRANSFER
+FEE-TRANSFER-234847110,09-04-2021,"09-04-2021 01:14:15.365",-1.18,EUR,"Wise Charges for: TRANSFER-234847110",,1398.65,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+"CARD_ORDER_CHECKOUT-invoice-1028869",09-04-2021,"09-04-2021 00:28:28.525",-4.72,EUR,"Wise Card Acquisition",,1399.83,,,,,,,,,,,,0.00,,DEBIT,CARD_ORDER_CHECKOUT
+TRANSFER-231923016,01-04-2021,"01-04-2021 00:37:06.019",309.40,EUR,"Received money from u-institut fur unternehmerisches Denken und Handeln e.V. with reference Rechnung 0221-6","Rechnung 0221-6",1404.55,,,,"u-institut fur unternehmerisches Denken und Handeln e.V.",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-230709884,29-03-2021,"29-03-2021 07:21:56.491",-115.00,EUR,"Sent money to Marleen Fitterer (fee: 0.28 EUR)",,1095.15,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-230709884,29-03-2021,"29-03-2021 07:21:56.490",-0.28,EUR,"Wise Charges for: TRANSFER-230709884",,1210.15,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-227215608,17-03-2021,"17-03-2021 23:41:17.230",-40.00,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",,1210.43,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-227215608,17-03-2021,"17-03-2021 23:41:17.229",-0.28,EUR,"Wise Charges for: TRANSFER-227215608",,1250.43,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-179991077,17-03-2021,"17-03-2021 00:17:15.509",-325.10,EUR,"Converted 326.43 EUR to 500.00 AUD (fee: 1.33 EUR)",,1250.71,EUR,AUD,1.53801,,,,,,,,,1.33,500.00,DEBIT,CONVERSION
+FEE-BALANCE-179991077,17-03-2021,"17-03-2021 00:17:15.508",-1.33,EUR,"Wise Charges for: BALANCE-179991077",,1575.81,,,,,,,,,,,,0,,DEBIT,CONVERSION
+TRANSFER-225652014,12-03-2021,"12-03-2021 19:10:24.197",-25.00,EUR,"Sent money to Alexandra Dominic (fee: 0.28 EUR)",,1577.14,,,,,"Alexandra Dominic",DE76100110012621870907,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-225652014,12-03-2021,"12-03-2021 19:10:24.196",-0.28,EUR,"Wise Charges for: TRANSFER-225652014",,1602.14,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-224023826,08-03-2021,"08-03-2021 17:16:40.002",1048.82,EUR,"Received money from Jonathan Ritzmann with reference Deposit",Deposit,1602.42,,,,"Jonathan Ritzmann",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-223775692,07-03-2021,"07-03-2021 11:23:45.672",-20.00,EUR,"Sent money to ewan waddell (fee: 0.28 EUR)",,553.60,,,,,"ewan waddell",DE59100110012625220720,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-223775692,07-03-2021,"07-03-2021 11:23:45.671",-0.28,EUR,"Wise Charges for: TRANSFER-223775692",,573.60,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-223399569,05-03-2021,"05-03-2021 22:47:37.481",-85.00,EUR,"Sent money to Patrick Ganser (fee: 0.28 EUR)",,573.88,,,,,"Patrick Ganser",DE27200411440713214500,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-223399569,05-03-2021,"05-03-2021 22:47:37.480",-0.28,EUR,"Wise Charges for: TRANSFER-223399569",,658.88,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-220728648,27-02-2021,"27-02-2021 01:41:45.028",654.50,EUR,"Received money from u-institut fur unternehmerisches Denken und Handeln e.V. with reference Rechnung 0221-3, KuKPi","Rechnung 0221-3, KuKPi",659.16,,,,"u-institut fur unternehmerisches Denken und Handeln e.V.",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-220227625,26-02-2021,"26-02-2021 01:21:54.563",-40.00,EUR,"Sent money to Alina Walter (fee: 0.28 EUR)",,4.66,,,,,"Alina Walter",DE79100500001063209036,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-220227625,26-02-2021,"26-02-2021 01:21:54.562",-0.28,EUR,"Wise Charges for: TRANSFER-220227625",,44.66,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-172848407,25-02-2021,"25-02-2021 20:28:49.543",-298.78,EUR,"Converted 300.00 EUR to 457.15 AUD (fee: 1.22 EUR)",,44.94,EUR,AUD,1.53006,,,,,,,,,1.22,457.15,DEBIT,CONVERSION
+FEE-BALANCE-172848407,25-02-2021,"25-02-2021 20:28:49.542",-1.22,EUR,"Wise Charges for: BALANCE-172848407",,343.72,,,,,,,,,,,,0,,DEBIT,CONVERSION
+TRANSFER-218815871,22-02-2021,"22-02-2021 17:08:51.163",238.00,EUR,"Received money from u-institut fur unternehmerisches Denken und Handeln e.V. with reference Rechnung 0221-2","Rechnung 0221-2",344.94,,,,"u-institut fur unternehmerisches Denken und Handeln e.V.",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-215679296,11-02-2021,"11-02-2021 18:41:26.364",-30.50,EUR,"Sent money to Marleen Fitterer (fee: 0.28 EUR)",,106.94,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-215679296,11-02-2021,"11-02-2021 18:41:26.363",-0.28,EUR,"Wise Charges for: TRANSFER-215679296",,137.44,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-215677975,11-02-2021,"11-02-2021 18:37:16.635",-100.00,EUR,"Sent money to Marleen Fitterer (fee: 0.28 EUR)",,137.72,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-215677975,11-02-2021,"11-02-2021 18:37:16.634",-0.28,EUR,"Wise Charges for: TRANSFER-215677975",,237.72,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-215475034,11-02-2021,"11-02-2021 01:38:25.696",238.00,EUR,"Received money from u-institut fur unternehmerisches Denken und Handeln e.V. with reference Rechnung 0221-1","Rechnung 0221-1",238.00,,,,"u-institut fur unternehmerisches Denken und Handeln e.V.",,,,,,,,0.00,,CREDIT,DEPOSIT
+TRANSFER-211904092,31-01-2021,"31-01-2021 21:17:14.164",-451.80,EUR,"Sent money to THORSTEN ALBERS (fee: 0.28 EUR)",,0.00,,,,,"THORSTEN ALBERS",DE09280501000024123887,,,,,,0.28,,DEBIT,TRANSFER
+FEE-TRANSFER-211904092,31-01-2021,"31-01-2021 21:17:14.163",-0.28,EUR,"Wise Charges for: TRANSFER-211904092",,451.80,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-164331079,31-01-2021,"31-01-2021 20:25:10.497",365.00,EUR,"Converted 582.19 AUD to 365.00 EUR",,452.08,AUD,EUR,0.62970,,,,,,,,,0.00,365.00,CREDIT,CONVERSION
+TRANSFER-207515690,17-01-2021,"17-01-2021 04:22:28.025",-50.00,EUR,"Sent money to Marleen Fitterer (fee: 0.35 EUR)",,87.08,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.35,,DEBIT,TRANSFER
+FEE-TRANSFER-207515690,17-01-2021,"17-01-2021 04:22:28.024",-0.35,EUR,"Wise Charges for: TRANSFER-207515690",,137.08,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-204259658,06-01-2021,"06-01-2021 10:44:07.113",-120.00,EUR,"Sent money to Iveta Lipina (fee: 0.35 EUR)",balls,137.43,,,,,"Iveta Lipina",LT903250029184874128,,,,,,0.35,,DEBIT,TRANSFER
+FEE-TRANSFER-204259658,06-01-2021,"06-01-2021 10:44:07.112",-0.35,EUR,"Wise Charges for: TRANSFER-204259658",balls,257.43,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-202991364,02-01-2021,"02-01-2021 06:48:25.855",-55.00,EUR,"Sent money to Marleen Fitterer (fee: 0.35 EUR)",,257.78,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.35,,DEBIT,TRANSFER
+FEE-TRANSFER-202991364,02-01-2021,"02-01-2021 06:48:25.854",-0.35,EUR,"Wise Charges for: TRANSFER-202991364",,312.78,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-197216794,14-12-2020,"14-12-2020 18:27:43.885",-120.00,EUR,"Sent money to Marleen Fitterer (fee: 0.35 EUR)",,313.13,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.35,,DEBIT,TRANSFER
+FEE-TRANSFER-197216794,14-12-2020,"14-12-2020 18:27:43.884",-0.35,EUR,"Wise Charges for: TRANSFER-197216794",,433.13,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+TRANSFER-191541820,26-11-2020,"26-11-2020 19:09:38.961",-120.00,EUR,"Sent money to Marleen Fitterer (fee: 0.35 EUR)",,433.48,,,,,"Marleen Fitterer",DE17120300001011039557,,,,,,0.35,,DEBIT,TRANSFER
+FEE-TRANSFER-191541820,26-11-2020,"26-11-2020 19:09:38.960",-0.35,EUR,"Wise Charges for: TRANSFER-191541820",,553.48,,,,,Wise,,,,,,,0,,DEBIT,TRANSFER
+BALANCE-143297243,26-11-2020,"26-11-2020 09:16:10.189",553.83,EUR,"Converted 900.00 AUD to 553.83 EUR",,553.83,AUD,EUR,0.61807,,,,,,,,,0.00,553.83,CREDIT,CONVERSION

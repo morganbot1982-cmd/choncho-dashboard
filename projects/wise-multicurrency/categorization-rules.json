@@ -1,0 +1,96 @@
+{
+  "newAccountsToCreate": [
+    {
+      "name": "Income - Robert Cleary",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["JODIE ANN EHMER ATF JAMES ROBERT CLEARY", "JAMES ROBERT CLEARY BUSINESS EVERYDAY AC", "JAMES ROBERT CLEARY", "J CLEARY"]
+    },
+    {
+      "name": "Income - Dan Smith",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["MR DANIEL THOMAS SMITH", "SMITH D T"]
+    },
+    {
+      "name": "Income - Sky Point Roofing",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["SKY POINT ROOFING PTY LTD ATF JM STEVENS FAMILY TRUST"]
+    },
+    {
+      "name": "Income - Car Loan",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["ERWIN EDWARD MACDOWELL"]
+    },
+    {
+      "name": "Income - Car Payment",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["GARY LEE TRIGGS"]
+    },
+    {
+      "name": "Income - Morgan Williams",
+      "code": "TBD",
+      "type": "Revenue",
+      "taxType": "GST on Income",
+      "payers": ["WILLIAMS MORGAN SAM", "WILLIAMS MORGAN"]
+    }
+  ],
+  "existingAccountCoding": {
+    "201": {
+      "name": "Income - Sean Maxwell Ferguson",
+      "taxType": "GST on Income",
+      "payers": ["SEAN MAXWELL FERGUSON"]
+    },
+    "204": {
+      "name": "Income - Maxine Pemble",
+      "taxType": "GST on Income",
+      "payers": ["MAXINE LUCIA PEMBLE"]
+    },
+    "200": {
+      "name": "Sales",
+      "taxType": "GST on Income",
+      "payers": ["Mr ANDREW JAMES FRENCH", "BEN ARTHUR GALLETT", "TURNER BRENLEY", "CORY GENE EATON", "DANIEL LUKE JOHNSON", "MARK WILLIAM GOLDBY", "JAY RAYNER", "WARRICK BRUCE TREWAVAS", "COTTON MATILDA ROSE", "Matilda  Cotton", "JONESPAYNE JOSHUA AARON", "BENJAMIN DOUGLAS BLAKERS", "HAYLEE MAY MAYNE", "EWAN JOMAIN", "MICHELINI CARA", "JOSEPH MATTHEW POWER", "R J TOWNSEND", "RYAN J HETERICK", "MR GARTH STONE", "LUCA A ROMANET", "A J WEEKES", "LILY T M BENSON", "Lundgaard, Calli Susanne Craven", "Calotte PM P L P", "Uzziah Leslie Woods", "CRAIG WAH DAY", "Gleeson, Jessica & Stone, Garth"]
+    },
+    "200_NO_GST": {
+      "name": "Sales",
+      "taxType": "BAS Excluded",
+      "payers": ["Windthrow LLC"]
+    },
+    "SKY_POINT_NEW": {
+      "name": "Income - Sky Point Roofing (NEW ACCOUNT)",
+      "taxType": "GST on Income",
+      "payers": ["STEVENS JAMAAL MAX"]
+    },
+    "265": {
+      "name": "Refunds",
+      "taxType": "GST on Income",
+      "payers": ["_CARD_REFUNDS_"]
+    }
+  },
+  "leaveUncoded": {
+    "reason": "Owner decision - handle separately",
+    "payers": ["MORGAN SCHOERMER", "MORGAN K SCHOERMER", "schoermer, corey reed"]
+  },
+  "specialHandling": {
+    "companyTransfers": {
+      "action": "Mark as transfer to LOLD bank account (not coded)",
+      "payers": ["LEIF OH LEIF DISTRIBUTION PTY LTD"]
+    },
+    "conversions": {
+      "action": "Leave uncoded - Jason to advise",
+      "transactionType": "CONVERSION"
+    },
+    "moneyAdded": {
+      "action": "Leave uncoded - verify source",
+      "transactionType": "MONEY_ADDED"
+    }
+  }
+}

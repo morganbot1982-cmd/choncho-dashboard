@@ -1,0 +1,98 @@
+{
+  "merchantRules": {
+    "sper_qld_treasury": {
+      "pattern": ["sper", "qld treasury"],
+      "accountCode": "TBD_FINES",
+      "accountName": "Fines",
+      "taxType": "BAS Excluded",
+      "notes": "QLD Fines - not deductible"
+    },
+    "rakutenpay_tokyo": {
+      "pattern": ["rakutenpay", "tokyo", "japan"],
+      "accountCode": "429",
+      "accountName": "General Expenses",
+      "taxType": "GST Free Imports",
+      "notes": "Japan purchases"
+    },
+    "uber_eats": {
+      "pattern": ["uber *eats", "uber eats"],
+      "accountCode": "SPLIT_BY_AMOUNT",
+      "rules": [
+        {"condition": "amount <= -35", "accountCode": "421", "accountName": "Meals & Food", "taxType": "GST on Expenses"},
+        {"condition": "amount > -35", "accountCode": "880", "accountName": "Owner A Drawings", "taxType": "BAS Excluded"}
+      ],
+      "notes": "Under $35 = Meals, Over $35 = Drawings"
+    },
+    "apple_subscriptions": {
+      "pattern": ["apple.com/bill", "apple bill"],
+      "accountCode": "429",
+      "accountName": "General Expenses",
+      "taxType": "GST on Expenses",
+      "notes": "Apple subscriptions"
+    },
+    "ikea": {
+      "pattern": ["ikea"],
+      "accountCode": "TBD_OFFICE_FURNITURE",
+      "accountName": "Office Furniture",
+      "taxType": "GST on Expenses",
+      "notes": "Office furniture purchases"
+    },
+    "bunnings": {
+      "pattern": ["bunnings"],
+      "accountCode": "TBD_OFFICE_EQUIPMENT",
+      "accountName": "Office Equipment/Supplies",
+      "taxType": "GST on Expenses",
+      "notes": "Hardware/office supplies"
+    },
+    "clo3d": {
+      "pattern": ["clo/clo3d", "clo3d"],
+      "accountCode": "TBD_SOFTWARE",
+      "accountName": "Software/Subscriptions",
+      "taxType": "GST on Expenses",
+      "notes": "Design software - CLO3D"
+    },
+    "post_office": {
+      "pattern": ["my post business", "post office", "australia post"],
+      "accountCode": "TBD_POSTAGE",
+      "accountName": "Postage & Shipping",
+      "taxType": "GST on Expenses",
+      "notes": "Shipping costs"
+    },
+    "flights_hotels": {
+      "pattern": ["flights on booking", "hotel at booking", "jetstar", "qantas", "virgin", "ace ", "booking.com"],
+      "accountCode": "REQUIRES_SPLIT",
+      "domesticCode": "492",
+      "domesticName": "Travel - National",
+      "internationalCode": "494",
+      "internationalName": "Travel - International",
+      "taxType": "GST on Expenses",
+      "notes": "Split by destination - need review"
+    }
+  },
+  "generalRules": {
+    "groceries": {
+      "merchants": ["coles", "woolworths", "aldi", "iga"],
+      "accountCode": "880",
+      "accountName": "Owner A Drawings",
+      "taxType": "BAS Excluded",
+      "notes": "Groceries - personal"
+    },
+    "uber_trips": {
+      "merchants": ["uber *trip", "uber   *trip"],
+      "accountCode": "493",
+      "accountName": "Travel - Local",
+      "taxType": "GST on Expenses",
+      "notes": "Uber rides - business related"
+    },
+    "transfers_to_people": {
+      "accountCode": "880",
+      "accountName": "Owner A Drawings",
+      "taxType": "BAS Excluded",
+      "notes": "Personal transfers out"
+    },
+    "conversions": {
+      "accountCode": "UNCODED",
+      "notes": "Currency conversions - Jason to advise"
+    }
+  }
+}

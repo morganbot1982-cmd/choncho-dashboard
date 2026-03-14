@@ -1,0 +1,18 @@
+# WISE Reconciliation Draft Summary
+- Total rows: 2113
+- NeedsReview=yes: 1765
+- Rows by currency:
+  - AED: 5
+  - AUD: 1700
+  - CNY: 86
+  - EUR: 268
+  - GBP: 17
+  - HKD: 17
+  - USD: 20
+- Rows by mapped account code (top):
+  - 453: 905
+  - UNMAPPED: 432
+  - 200: 346
+  - 493: 301
+  - 485: 126
+  - 508: 3

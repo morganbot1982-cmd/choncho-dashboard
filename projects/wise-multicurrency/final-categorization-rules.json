@@ -1,0 +1,171 @@
+{
+  "conversions": {
+    "CNY": {
+      "accountCode": "NEW_WISE_CNY",
+      "accountName": "Wise CNY (Transfer Account)",
+      "taxType": "BAS Excluded",
+      "pattern": "to.*CNY"
+    },
+    "EUR": {
+      "accountCode": "NEW_WISE_EUR",
+      "accountName": "Wise EUR (Transfer Account)",
+      "taxType": "BAS Excluded",
+      "pattern": "to.*EUR"
+    },
+    "USD": {
+      "accountCode": "NEW_WISE_USD",
+      "accountName": "Wise USD (Transfer Account)",
+      "taxType": "BAS Excluded",
+      "pattern": "to.*USD"
+    },
+    "GBP": {
+      "accountCode": "NEW_WISE_GBP",
+      "accountName": "Wise GBP (Transfer Account)",
+      "taxType": "BAS Excluded",
+      "pattern": "to.*GBP"
+    },
+    "FEES": {
+      "accountCode": "NEW_BANK_FEES",
+      "accountName": "Bank Fees",
+      "taxType": "GST on Expenses",
+      "pattern": "charge|fee"
+    }
+  },
+  "transfers": {
+    "family": {
+      "Morgan Schoermer": {
+        "accountCode": "",
+        "notes": "Leave uncoded - Morgan to assign account manually"
+      },
+      "Teresa Helen Schoermer": {
+        "accountCode": "NEW_LOAN_TERESA",
+        "accountName": "Loan - Teresa Schoermer",
+        "taxType": "BAS Excluded"
+      },
+      "terese schoermer": {
+        "accountCode": "NEW_LOAN_TERESA",
+        "accountName": "Loan - Teresa Schoermer",
+        "taxType": "BAS Excluded"
+      },
+      "Therese Schoermer": {
+        "accountCode": "NEW_LOAN_TERESA",
+        "accountName": "Loan - Teresa Schoermer",
+        "taxType": "BAS Excluded"
+      },
+      "Ronald Schoermer": {
+        "accountCode": "NEW_LOAN_RONALD",
+        "accountName": "Loan - Ronald Schoermer",
+        "taxType": "BAS Excluded"
+      }
+    },
+    "companies": {
+      "CALOTTE PTY LTD": {
+        "accountCode": "NEW_RENT",
+        "accountName": "Rent",
+        "taxType": "GST on Expenses"
+      },
+      "STARIT LIMITED": {
+        "accountCode": "NEW_FREIGHT",
+        "accountName": "Freight & Shipping",
+        "taxType": "GST on Expenses"
+      },
+      "Startit Limited AUD": {
+        "accountCode": "NEW_FREIGHT",
+        "accountName": "Freight & Shipping",
+        "taxType": "GST on Expenses"
+      },
+      "Peter Industrial Sewing Machine": {
+        "accountCode": "NEW_SEWING_EQUIP",
+        "accountName": "Sewing Equipment/Machines",
+        "taxType": "GST on Expenses"
+      }
+    },
+    "rent": {
+      "DEFT REAL ESTATE": {
+        "accountCode": "NEW_RENT",
+        "accountName": "Rent",
+        "taxType": "GST on Expenses"
+      },
+      "Queenstown Luxury property Mngmnt": {
+        "accountCode": "NEW_PHOTOSHOOT",
+        "accountName": "Photoshoot Expenses",
+        "taxType": "GST on Expenses",
+        "notes": "Accommodation for photoshoot"
+      }
+    },
+    "other": {
+      "MAXINE LUCIA PEMBLE": {
+        "accountCode": "NEW_LOAN_MAXINE",
+        "accountName": "Loan - Maxine Pemble",
+        "taxType": "BAS Excluded"
+      },
+      "jdm motorsport": {
+        "accountCode": "880",
+        "accountName": "Owner A Drawings",
+        "taxType": "BAS Excluded"
+      },
+      "Campbell Wyers": {
+        "accountCode": "NEW_MODEL_FEES",
+        "accountName": "Model Fees",
+        "taxType": "GST on Expenses",
+        "notes": "Model payment"
+      }
+    },
+    "wiseFees": {
+      "pattern": "WISE FEES",
+      "accountCode": "NEW_BANK_FEES",
+      "accountName": "Bank Fees",
+      "taxType": "GST on Expenses"
+    },
+    "chineseSuppliers": {
+      "accountCode": "310",
+      "accountName": "Cost of Goods Sold",
+      "taxType": "GST on Expenses",
+      "note": "All Chinese names = fabric/material suppliers"
+    }
+  },
+  "remainingMerchants": {
+    "Newstead Branch": {
+      "accountCode": "880",
+      "accountName": "Owner A Drawings",
+      "taxType": "BAS Excluded",
+      "notes": "Bank withdrawal"
+    },
+    "Transportmainrds": {
+      "accountCode": "880",
+      "accountName": "Owner A Drawings",
+      "taxType": "BAS Excluded"
+    },
+    "Elite Focus Dr": {
+      "accountCode": "880",
+      "accountName": "Owner A Drawings",
+      "taxType": "BAS Excluded"
+    },
+    "Spotlight": {
+      "accountCode": "310",
+      "accountName": "Cost of Goods Sold",
+      "taxType": "GST on Expenses",
+      "notes": "Fabric store"
+    },
+    "Rad Stickers": {
+      "accountCode": "NEW_OFFICE_EQUIP",
+      "accountName": "Office Equipment/Supplies",
+      "taxType": "GST on Expenses",
+      "notes": "Stickers for shipping"
+    },
+    "Nosq Pty Ltd": {
+      "accountCode": "",
+      "notes": "REVIEW - unknown"
+    },
+    "Ebay": {
+      "accountCode": "310",
+      "accountName": "Cost of Goods Sold",
+      "taxType": "GST on Expenses"
+    },
+    "Amazon": {
+      "accountCode": "NEW_OFFICE_EQUIP",
+      "accountName": "Office Equipment/Supplies",
+      "taxType": "GST on Expenses"
+    }
+  }
+}

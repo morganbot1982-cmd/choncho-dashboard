@@ -1,0 +1,50 @@
+PROJECT 2: HEALTH & FITNESS AGENT
+
+=== PROJECT DETAILS ===
+
+Name: Health & Fitness Agent
+
+Description:
+Personal health tracking system - AI sub-agent for food/calorie logging, personal spending tracker, and daily movement habit building. Focus on awareness and gentle accountability rather than restrictive rules.
+
+Core features:
+- Food tracking via photo analysis (WhatsApp/Telegram)
+- Personal spending tracker (text-based logging)
+- Movement reminders (pushups, water, walks - progressive phases)
+- Gentle accountability (streaks, no shame, data-focused)
+
+Current status:
+- GP health check COMPLETED (Feb 26, 2026)
+- 3 specialist referrals issued (cardiology booked, gastro + ENT pending)
+- Blood work pending (4Cyte pathology, walk-in)
+- Baseline assessment in progress
+
+Next phases:
+1. Complete baseline health metrics (weight, measurements, TDEE)
+2. Set up food tracking (WhatsApp photo handler + calorie estimation)
+3. Implement spending tracker
+4. Launch movement reminders (Phase 1: 10 pushups 3x/day, water every 2h)
+5. Build dashboard integration
+
+=== LEANTIME SETUP ===
+
+Client: Personal (or Leif Oh Leif Distribution if business-related)
+
+Project Type: Health/Personal Development
+
+Status: Planning/Design Phase
+
+Key Milestones:
+1. GP Health Check & Referrals - COMPLETE
+2. Baseline Assessment - IN PROGRESS
+3. Food Tracking MVP - NOT STARTED
+4. Spending Tracker - NOT STARTED
+5. Movement Reminders - NOT STARTED
+6. Dashboard Integration - NOT STARTED
+
+Team: Morgan + AI sub-agent
+
+Start Date: Feb 23, 2026
+Target Completion: Phase 1 by March 15, 2026 (3 weeks)
+
+Priority: Medium (after Xero work, alongside Ecommerce JV)

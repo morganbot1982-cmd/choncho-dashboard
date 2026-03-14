@@ -1,0 +1,318 @@
+NewAccount,NewAccountCode,Date,Contact,Amount,Description,TransactionID
+Meals_Food,421,2019-07-08,Netto,11.92,,9d1e1105-6864-437f-9e42-d49698a80599
+Meals_Food,421,2019-07-11,REWE,22.68,,45d593b3-6e51-4e9b-a5bf-e7bddc0e1b9a
+Meals_Food,421,2019-07-12,Bio Company,9.56,,d4c15b15-ac5d-476c-87a3-92872542822d
+Meals_Food,421,2019-07-15,Vin Aquq,14.8,,bde1d2b9-a482-4dad-bc07-893a644c5857
+Meals_Food,421,2019-07-15,REWE,16.42,,42873c32-3cc4-48e8-a448-c4d55fd96142
+Meals_Food,421,2019-09-27,Mc Donald's,8.66,,29c9ff3c-ae81-4543-ac95-aa39e7c14f83
+Meals_Food,421,2019-11-18,Mc Donald's,16.2,,ae214d18-c992-40e9-ba7f-43b1d7e19398
+Meals_Food,421,2019-11-21,Mc Donald's,4.0,,a0107e96-f97a-410a-b2f9-0b2cf449dedd
+Meals_Food,421,2019-11-22,REWE,16.19,,cfcc0321-513c-4e7e-9383-7d16da3327d7
+Meals_Food,421,2019-11-26,Netto,20.1,,353528f4-486f-4a18-8c29-6d258346fb8f
+Meals_Food,421,2020-06-22,Takeaway.com,33.95,,73a99535-6752-470f-a19b-798fadbb3827
+Meals_Food,421,2022-07-04,Morgan Schoermer,20.33,Owner's Lunch,12a7ef97-a6d2-4294-8d28-0ef407eb0e14
+Meals_Food,421,2022-07-05,Cairns Bulk Meats,25.7,Owner's Lunch,f0ef0dd8-5fbd-4fec-a85c-a4492f1d754d
+Meals_Food,421,2022-07-11,LIVIN KAALVOETKIND,15.6,Owner's Lunch,b2685e9a-f217-4b76-86ae-76a03f7de4d9
+Meals_Food,421,2022-08-16,Cairns Bulk Meats,19.85,Owner's Lunch,3c617dc5-ce8f-49be-9f64-0e44d925d801
+Meals_Food,421,2022-08-16,Collin's Restuarants,10.95,Owner's Lunch,33a79523-9a46-4251-b035-7f8efb1a20c3
+Meals_Food,421,2022-08-19,Tia's,22.5,Owner's Lunch,7463e25f-41da-46cd-b079-e8ff84b026e0
+Meals_Food,421,2022-08-22,Kebab House,17.64,Owner's Lunch,344a1304-53a1-4906-87f3-30887d136395
+Meals_Food,421,2022-08-29,Robin's Kitchen,29.99,Owner's Lunch,fddc018a-ec2d-428a-a0aa-f5cb4dce36c8
+Meals_Food,421,2022-08-31,Subway,20.65,Owner's Lunch,24bc2acf-02b7-48bf-ada1-21c2b0f6a033
+Meals_Food,421,2022-09-01,BURGERD,12.5,Owner's Lunch,4cf24311-b5ae-486e-8ec8-2919394652c7
+Meals_Food,421,2022-09-05,GYG,19.4,Owner's Lunch,ef1a40e4-fec7-402a-b007-a20f565a7c4c
+Meals_Food,421,2022-09-06,Freddy's,12.07,Owner's Lunch,0672cfa7-d6f2-4015-b63a-7d15ce7b1d59
+Meals_Food,421,2022-09-12,Syd's Pies,29.69,Owner's Lunch,8cea696a-d30d-416e-897c-163fa5c475dc
+Meals_Food,421,2022-09-12,McDonalds,11.95,Owner's Lunch,fab26260-e19b-4f9a-bdfb-47a548a80c9c
+Meals_Food,421,2022-09-26,Yardie's,15.0,Owner's Lunch,f47c68f6-2987-4275-b159-8f9d8d3f8279
+Meals_Food,421,2022-09-26,Food Chain Leaders,24.0,Owner's  Lunch,51ada656-0cb0-4242-b12b-526cba13e6d7
+Meals_Food,421,2022-09-27,Galactic Donuts,18.2,Owners Lunch,ed9277d2-634d-4e5d-9b4f-32768f6c6a2e
+Meals_Food,421,2022-09-27,V & Amp Cafe,18.4,Owner's Lunch,cb5434d1-08e2-47f4-b763-5ac0427c936a
+Meals_Food,421,2022-09-27,Bar Metro,14.5,Owner's Lunch,8dcb0a91-a62f-42ce-ac20-d6d52c772b2c
+Meals_Food,421,2022-09-30,Yardie's,12.0,Owner's Lunch,74c3d6a2-9b1c-4c64-aaa8-0390170e0fba
+Meals_Food,421,2022-09-30,PJs Roast,4.0,Owner's Lunch,688ea432-fa29-4198-be76-51919d67e873
+Meals_Food,421,2022-09-30,Golden BBQ,18.8,Owner's Lunch,c3dfab07-6e16-47ae-8ebe-c9f0bf010cc2
+Meals_Food,421,2022-10-03,Galactic Donuts,24.27,Owners Lunch,e3d3075f-9cee-4df8-a7a5-df3f90c36639
+Meals_Food,421,2022-11-03,Galactic Donuts,9.1,Owners Lunch,6873a251-f10a-4747-b1e0-8d581a6dfbe0
+Meals_Food,421,2022-11-03,Hey Mr.,33.53,Owner's Lunch,892eca26-9a19-4f39-b684-da5b868a37f6
+Meals_Food,421,2022-11-04,Asian Supermarket,8.92,Owner's Lunch,5eb6e0f9-74ad-4a6d-a1bb-2be2dbc05926
+Meals_Food,421,2022-11-04,Mc Donald's,10.0,Owner's Lunch,6c014c43-8488-4e93-9f5c-adbb19bb5894
+Meals_Food,421,2022-11-04,Yardie's,19.0,Owner's Lunch,71be490d-0d10-45ae-889c-b9dcdcf04211
+Meals_Food,421,2022-11-07,Mc Donald's,9.45,Owner's Lunch,ca876a1a-fe28-4d88-a625-87d5d9d83e8a
+Meals_Food,421,2022-11-07,Yardie's,30.0,Owner's Lunch,b52c1e21-34b0-48b1-a78b-790412989677
+Meals_Food,421,2022-11-07,Yardie's,6.0,Owner's Lunch,255f6de9-4374-46e9-b98c-7d02fc18a3e0
+Meals_Food,421,2022-11-07,Golden BBQ,16.1,Owner's Lunch,6319773d-5855-4f86-ad20-6f8d427d272f
+Meals_Food,421,2022-11-07,Dominos,22.54,Owner's Lunch,025bec53-9584-4f22-8439-d285ad7e27bd
+Meals_Food,421,2022-11-08,Chi Mc,20.23,Owner's Lunch,a8579fba-11ae-4dd0-9be8-3bc26e78ffbb
+Meals_Food,421,2022-11-09,Jee's Burger,13.0,Owner's Lunch,db2943a8-c9ca-40c7-9735-810fbf72bc5b
+Meals_Food,421,2022-11-14,Yardie's,32.0,Owner's Lunch,d7dc7296-f37e-4d06-9a71-39bfdd8a3321
+Meals_Food,421,2022-11-14,GYG,23.5,Owner's Lunch,b56dfcae-1aee-4392-a8d6-774ad57dbdc4
+Meals_Food,421,2022-11-14,Yardie's,12.0,Owner's Lunch,b2df3006-bc2f-4dae-9d01-7b3880a15d35
+Meals_Food,421,2022-11-14,KFC,5.9,Owners Lunch,650c579e-0c8f-4d76-a326-f14979d0df1b
+Meals_Food,421,2022-11-15,Sushi Miru,11.9,Owner's Lunch,09f0b803-b29a-46f1-93ba-74900d7c5572
+Meals_Food,421,2022-11-15,Vegerama,19.4,Owner's Lunch,b12b5fe0-260c-4840-b2b9-bebfd6a8419d
+Meals_Food,421,2022-11-15,PJs Roast,6.5,Owner's Lunch,e8a131cf-5304-44d3-9094-d9ee2ff5eb4d
+Meals_Food,421,2022-11-16,PJs Roast,7.0,Owner's Lunch,f1362c3d-af0d-4256-bda9-378c8d9e851c
+Meals_Food,421,2022-11-25,HSW,28.0,Owner's Lunch,01b27a6c-5f11-4310-9879-97c1ecaa1575
+Meals_Food,421,2022-11-28,Night Owl,7.45,Owner's Lunch,7a87b709-1ee1-4fd8-b6d9-30f38a4c42d6
+Meals_Food,421,2022-11-28,Hot Star Chicken,15.12,Owner's Lunch,63965a19-59e6-4738-be2d-72876f8669cc
+Meals_Food,421,2022-11-28,Share Tea,14.9,Owner's Lunch,674ebe29-f23a-4419-81b9-9b0fd9665e76
+Meals_Food,421,2022-11-29,GYG,9.5,Owner's Lunch,7f0a64e2-1282-4bef-8644-1782f0f78246
+Meals_Food,421,2022-11-29,GYG,18.5,Owner's Lunch,6a4adfc8-294e-4d2d-a5a9-4b44814b0ad8
+Meals_Food,421,2022-11-30,Regatta,33.0,Owner's Lunch,e5cdbf1e-398a-4d6e-8ea3-f490f252ec14
+Meals_Food,421,2022-12-01,Yardie's,12.0,Owner's Lunch,17820bec-2cf1-4d0b-8268-0ccafd26836c
+Meals_Food,421,2022-12-01,Sunshine Sushi,14.1,Owner's Lunch,f57e49f4-aa9f-40d8-8c8d-2abd8c3dca2f
+Meals_Food,421,2022-12-01,Kung Fu Fryer,13.16,Owner's Lunch,898c42f4-a3c3-402b-b6aa-d6763b87b237
+Meals_Food,421,2022-12-05,Yardie's,6.0,Owner's Lunch,a1820756-f6bb-4722-8ab5-3b9276065dbd
+Meals_Food,421,2022-12-05,Nini Guo,6.02,Owner's Lunch,012d5c92-3e06-4488-bc72-4defd892ec23
+Meals_Food,421,2022-12-05,Yardie's,18.0,Owner's Lunch,4ac1a3d4-b034-4954-9855-d082546716dd
+Meals_Food,421,2022-12-06,Morgan Schoermer,15.0,Owner's Lunch,1d109088-97e9-494c-b6a8-122cd4e69a5a
+Meals_Food,421,2022-12-06,KFC,5.95,Owner's Lunch,97c06cf2-8400-4558-a7a2-2eab8f2ee843
+Meals_Food,421,2022-12-07,PJs Roast,11.0,Owner's Lunch,2d54ad0a-abaa-4977-8761-9e2838a04999
+Meals_Food,421,2022-12-07,GYG,9.5,Owner's Lunch,66f25354-0a31-43f7-8b24-c7123361c153
+Meals_Food,421,2022-12-08,Nini Guo,31.91,Owner's Lunch,9fabf5aa-d4ed-4760-accc-2e11250e96f0
+Meals_Food,421,2022-12-08,Yardie's,8.0,Owner's Lunch,daa4f695-023e-4624-a9be-f8c70e5ae658
+Meals_Food,421,2022-12-09,Super What Not,2.5,Owner's Lunch,2198f31f-9977-4496-bf2a-982af1cac329
+Meals_Food,421,2022-12-12,BreadTop,9.39,Owner's Lunch,6c655cdf-26c3-4ab9-ae54-6701c4c7dcba
+Meals_Food,421,2022-12-12,Shipwrecked,26.0,Owner's Lunch,4070786a-8f9b-4516-a5d1-80f212bc047f
+Meals_Food,421,2022-12-12,Cj White Cafe,16.5,Owner's Lunch,64a82dc2-68cd-49cb-a62a-b0c5b4788b27
+Meals_Food,421,2022-12-12,7 11,13.5,Owner's Lunch,93e4c64d-ef2c-4a4c-84e9-bebb111bb5d4
+Meals_Food,421,2022-12-13,PJs Roast,11.0,Owner's Lunch,823b8938-1a2c-48cb-8ee3-618139c3abd5
+Meals_Food,421,2022-12-14,KFC,5.9,Owners Lunch,967ac642-be28-41f0-ae29-15abe6363ae0
+Meals_Food,421,2022-12-14,GYG,9.5,Owner's Lunch,e0474ecd-6437-4102-8ec1-c2758b44125a
+Meals_Food,421,2022-12-15,Yardie's,15.0,Owner's Lunch,394c1207-0dc5-4c66-8025-37f101e3e48e
+Meals_Food,421,2022-12-15,Yardie's,16.0,Owner's Lunch,41547482-905d-48a5-b4b2-5484291a1385
+Meals_Food,421,2022-12-15,Yardie's,6.0,Owner's Lunch,263e3240-2320-497c-bd7a-69b0856b0877
+Meals_Food,421,2022-12-16,Night Owl,9.4,Owner's Lunch,0c335955-39ea-4a91-a887-34d5e1a19a85
+Meals_Food,421,2022-12-19,Yardie's,18.0,Owner's Lunch,4ea7ab3e-d5b4-4bde-9320-2a7c1e61297e
+Meals_Food,421,2022-12-19,GYG,30.0,Owner's Lunch,2a894c89-c94d-447d-a6c2-71bcc4f3e80a
+Meals_Food,421,2022-12-19,Yardie's,12.0,Owner's Lunch,9e141fda-ee31-4087-838a-4ad3e2904b7e
+Meals_Food,421,2022-12-19,Yardie's,6.0,Owner's Lunch,8c90ea99-3f04-4f4f-9fea-709b67a73d6e
+Meals_Food,421,2022-12-19,Yardie's,6.0,Owner's Lunch,0b69aa10-2e20-420d-ade4-8c0840683730
+Meals_Food,421,2022-12-22,Yo My Goodness,20.62,Lunch,db014888-f32f-4cb9-b38c-9f129fa98d7b
+Meals_Food,421,2022-12-23,Churro Time,13.5,Lunch,a7620ee0-3127-462a-8d40-7935967ff9b4
+Meals_Food,421,2022-12-23,Baked Red Hill,23.66,Lunch,5cfa928f-8282-4fc2-a6cc-dcd1639f08f6
+Meals_Food,421,2022-12-23,Mc Donald's,5.1,Lunch,28d37288-9946-42ad-81bc-b5ff349c4695
+Meals_Food,421,2022-12-28,Johnsons Farm Cafe,26.96,Lunch,2e8cb0f3-0543-40d6-a617-993187097bf3
+Meals_Food,421,2022-12-28,Banjos,22.85,Lunch,8171a9b4-dfc3-4a92-8733-de2344c35b79
+Meals_Food,421,2022-12-30,V & Amp Cafe,11.5,Owner's Lunch,16ec91a6-a1d7-453c-8cd8-2b3223326a38
+Meals_Food,421,2022-12-30,GYG,6.5,Owner's Lunch,fc46616e-70fc-4b9e-beb1-6fd3765bbe09
+Meals_Food,421,2023-01-03,Nini Guo,13.55,Lunch,b59d4066-efd5-41ea-9ce0-0d7a2a3b9e6a
+Meals_Food,421,2023-01-03,KFC,2.95,Owners Lunch,d0dcc8a0-2de5-4f3e-9f6b-3d2f28e79a92
+Meals_Food,421,2023-01-03,Kebab Corner,16.0,Lunch,5c4845d6-1aa7-43a7-b6da-443face9aa4d
+Meals_Food,421,2023-01-03,GYG,10.58,Lunch,7bf86484-3311-4210-8109-fd8c4436ed9b
+Meals_Food,421,2023-01-04,Breakfast Creek,25.9,Owner's Lunch,d8c1b00d-dcbc-4a81-978b-32a9ad0c09e0
+Meals_Food,421,2023-01-04,Night Owl,6.0,Owner's Lunch,19fb77e9-5785-47d6-a3c1-b3bf5daeeb1d
+Meals_Food,421,2023-01-04,ALH,16.4,Lunch,6e92d7e6-a75e-4ac8-a88e-d61a933c77e0
+Meals_Food,421,2023-01-05,BreadTop,6.97,Lunch,11edc9a7-dad0-4a4f-b3b1-8e3dee448b24
+Meals_Food,421,2023-01-09,Tivoli,33.35,Lunch,3ae17876-9078-4554-96f5-234a41672c31
+Meals_Food,421,2023-01-09,Paciific Conce,31.25,Lunch,000faed1-800a-45e7-8966-24bfb18d3bd4
+Meals_Food,421,2023-01-09,Night Owl,8.0,Owner's Lunch,0b25ed8b-a1e6-49fb-8f08-d8324c3823a9
+Meals_Food,421,2023-01-13,Yardie's,10.0,Owner's Lunch,6c13a242-be95-4d1a-a93a-4d35060d8020
+Meals_Food,421,2023-01-13,Yardie's,20.0,Owner's Lunch,9d742fea-9463-44db-a9be-b24f4b52722c
+Meals_Food,421,2023-05-05,Nini Guo,11.6,Owner's Lunch,ad2cb33e-37e8-4cd4-b0fb-8717132dedcc
+Meals_Food,421,2023-05-08,Yardies,30.33,Owner's Lunch,7e6d837b-117b-4c55-8408-33b177c87ee6
+Meals_Food,421,2023-05-08,Yardie's,20.22,Owner's Lunch,6d39f8da-eea3-4cda-8e2e-8450870b7145
+Meals_Food,421,2023-05-08,Mc Donald's,16.45,Owner's Lunch,4e3d3db6-fd3a-4fe5-b326-7afd093e6e4d
+Meals_Food,421,2023-05-08,Yardie's,15.57,Owner's Lunch,68cb62ba-c690-44a5-b443-d3e72935038a
+Meals_Food,421,2023-05-22,Fortress,25.0,Lunch,5787c1ff-985e-4e6b-adc1-e9a59a8ffa21
+Meals_Food,421,2023-05-23,Yardies,10.11,Owner's Lunch,2d06d758-7567-4e0b-9802-02dcdd7032a2
+Meals_Food,421,2023-05-24,PJs Roast,5.5,Owner's Lunch,dd255845-8fd6-434c-8c54-28c564b0ba8b
+Meals_Food,421,2023-05-24,GYG,14.4,Owner's Lunch,6f10e41d-fb26-43f1-8426-de8e2a179362
+Meals_Food,421,2023-05-25,PJs Roast,8.0,Owner's Lunch,e3cbfe43-d09e-45e9-a3ca-efcbfc6344ad
+Meals_Food,421,2023-05-26,Hungry Jacks,14.05,Lunch,be0d5107-ea69-4f85-aabc-fc67ceef360f
+Meals_Food,421,2023-05-26,PJs Roast,4.0,Owner's Lunch,864ab9dd-545b-49d0-9557-bcfa1927b985
+Meals_Food,421,2023-05-29,KFC,15.95,Meals,ba00f651-e489-40cc-8106-5de26980ed41
+Meals_Food,421,2023-05-31,Louie Bell,11.95,,4e87c1cd-8813-4786-b7c0-758b11239c1c
+Meals_Food,421,2023-06-07,Mc Donald's,20.35,Meals,39712f0c-c1a0-4b2f-9c8f-c0dd699344ed
+Meals_Food,421,2023-08-14,McDonalds,12.46,Lunch,f885c435-6701-4b63-8ea6-86d4068a1291
+Meals_Food,421,2023-08-17,Nini Guo,12.61,,01d4060c-08ed-4d1c-97eb-12bbcb528d48
+Meals_Food,421,2023-08-18,Yardie's,26.19,Meals,35590bd1-03f4-4722-a41d-1633c1fe70ff
+Meals_Food,421,2023-08-21,Yardie's,20.22,Meals,87069c77-2560-4b2c-9239-702eae40fe98
+Meals_Food,421,2023-08-21,Yardie's,18.2,Meals,a8633e7e-00f2-4ca6-8069-b6fbc2abda66
+Meals_Food,421,2023-08-21,GYG,15.5,Meals,30053349-7979-4bd3-8974-295c25098b36
+Meals_Food,421,2023-08-21,Pinks,9.18,,1750d7b1-07ff-4dbc-8d0f-ca338d913c31
+Meals_Food,421,2023-08-21,Awesome Bar,27.0,,f36855e7-0725-45fb-abee-f92c86243f24
+Meals_Food,421,2023-08-21,Awesome Bar,18.0,,10a70e5b-ba5f-4bb2-9490-eb3b18a6460f
+Meals_Food,421,2023-08-21,All about fruit,4.0,,67629f3b-6916-4447-ba08-857d30d8f1a7
+Meals_Food,421,2023-08-25,Hare Krishna,13.0,Meals,23d9785a-dc7e-434b-8b68-7fa9b7353354
+Meals_Food,421,2023-09-01,Chatime,20.05,,3f96c6e6-aaa8-44ad-8375-5a94e351d770
+Meals_Food,421,2023-09-04,Red Emporer,19.73,Meals,123cf53f-9357-4051-9a47-f1fac570ccce
+Meals_Food,421,2023-09-04,KFC,14.45,,375a5d7e-1e7e-4149-a3e7-37fed3c36f63
+Meals_Food,421,2023-09-04,Liquor Land,32.0,,607f8c72-745d-4141-8085-03621c2a0628
+Meals_Food,421,2023-09-06,GYG,28.8,Meals,3c6a8a6a-0a8e-4d18-940b-06861bb0c909
+Meals_Food,421,2023-09-07,ALH,29.02,Meals,1b4d2d4e-ce72-44f3-9fd4-0bb55c151ae0
+Meals_Food,421,2023-09-07,McDonalds,7.45,Lunch,6ba9f853-cda9-436e-8ddb-37c1715b8425
+Meals_Food,421,2023-09-08,GYG,15.8,Meals,78ca8dd0-c6de-4d03-9a83-cf14aabb39c3
+Meals_Food,421,2023-09-11,Yardie's,6.07,Meals,32ed7a04-43b6-456a-ac38-269eb957e543
+Meals_Food,421,2023-09-12,Mc Donald's,7.8,meals,3b0e5b8f-600c-4b60-8704-eaf9f1156321
+Meals_Food,421,2023-09-15,McDonalds,21.5,Lunch,5cf1c03d-3147-4fde-8f7f-55b1663b1a12
+Meals_Food,421,2023-09-15,Milani,13.2,Meals,39a676d5-0946-4014-a0e4-aeb49a5a9053
+Meals_Food,421,2023-09-18,AA WLLN,19.94,Meals,b5ecfc27-6c24-411b-b38a-1d2a19bf20f5
+Meals_Food,421,2023-09-18,OPV,13.09,Meals,36573364-0117-4665-b779-8999f23e4c4d
+Meals_Food,421,2023-09-18,FB Salem,4.8,Meals,2658b296-ae55-4fc0-a364-e31c73c6836e
+Meals_Food,421,2023-09-18,Pie In the Sky,7.6,Meals,364f5d44-abf1-4944-be60-aef9a08374ea
+Meals_Food,421,2023-09-22,Hare Krishna,18.0,Meals,97f12a8b-04ac-4677-a0b2-c448f72c2131
+Meals_Food,421,2023-10-02,Yardie's,20.52,Meals,d7fd7114-c777-4528-8b4d-df1086ea64d1
+Meals_Food,421,2023-10-06,Mc Donald's,14.3,,f35f9a52-9ded-44ad-ba9a-df690d429c9f
+Meals_Food,421,2023-10-16,Paradise Alley,34.56,,23ac935e-7ca3-4f05-8e64-ccbf92d0af95
+Meals_Food,421,2023-10-16,Paradise Alley,25.41,,b564b206-2b4a-4e40-87b8-aa5a0955ce0d
+Meals_Food,421,2023-10-16,Dan Murphy,22.99,,8a337b0a-2b65-4e93-9ee6-e850c187140f
+Meals_Food,421,2023-10-16,Paradise Alley,4.07,,5dc6e447-42a5-4e06-a738-9593527a91d3
+Meals_Food,421,2023-10-18,PJs Roast,18.0,,92f4e777-75da-4051-af08-c9ee7f3db03d
+Meals_Food,421,2023-10-23,Yardie's,14.16,Meals,a6a20258-f805-41a0-82a3-00b39d364257
+Meals_Food,421,2023-10-23,Yardie's,14.16,Meals,26805ec6-f188-437d-b798-d4148ae06c58
+Meals_Food,421,2023-10-23,Archie Bros,20.0,,6838793a-38c6-4fbe-a2c0-70e64bec225e
+Meals_Food,421,2023-10-23,Shah Cafe,20.0,,78ca2d34-b781-48b0-abb0-2f0e096909e2
+Meals_Food,421,2023-10-23,Yardie's,7.08,Meals,317eeeba-60df-4a2d-a4b5-5476de98be2f
+Meals_Food,421,2023-10-27,Yardie's,28.31,Meals,e940ad58-52c9-413b-8166-6f55b92f8530
+Meals_Food,421,2023-10-30,Yardie's,19.21,Meals,be8fff04-1796-4591-aa6a-4d97ca64965d
+Meals_Food,421,2023-10-30,Yardie's,14.16,Meals,6dbfe765-3b76-4c7c-8cc5-d117731e189f
+Meals_Food,421,2023-10-30,Yardie's,7.08,Meals,41c8a21c-9e8e-44e5-b888-25ef51345dcf
+Meals_Food,421,2023-10-31,McDonalds,14.84,Lunch,6eda4a8c-8dc2-4429-8625-2f415aa79c7a
+Meals_Food,421,2023-11-06,Mc Donald's,11.1,,77468790-aabe-4402-9053-43dbae03433c
+Meals_Food,421,2023-11-17,Yiros,19.9,,db9b2efd-3c48-40ff-9df4-2a4055bdce45
+Meals_Food,421,2023-11-20,Mc Donald's,15.15,meals,9a96227b-1c10-48f5-882c-0544d2db56ab
+Meals_Food,421,2023-11-27,McDonalds,23.43,Lunch,e1499517-f5aa-4318-99c6-db1301a397a0
+Meals_Food,421,2023-12-05,Mc Donald's,7.99,,950a8235-37c8-4481-8e69-09a830917e2d
+Meals_Food,421,2023-12-06,Yiros,31.4,,0c7fa8ae-bcce-4aae-abf4-e130e8e77af2
+Meals_Food,421,2023-12-13,Hare Krishna,27.0,Meals,1a83c73e-5ef6-4dca-85b3-6176e38622c2
+Meals_Food,421,2023-12-18,Mc Donald's,6.3,,8cec36c4-2183-42f8-8262-904305e8040e
+Meals_Food,421,2023-12-20,Nini Guo,10.09,Director Lunch,a1ea773c-323b-4de0-90a9-d7dcd7804abf
+Meals_Food,421,2023-12-27,McDonalds,15.65,Lunch,258a98a4-f502-4280-987b-feec546e72da
+Meals_Food,421,2023-12-27,Village Bakery,5.56,,e3c9af5e-23c3-4248-9261-c8e0e2652643
+Meals_Food,421,2024-01-24,McDonalds,15.4,Lunch,cfc7ce10-a78d-40a0-b03d-cf8d945a6d8b
+Meals_Food,421,2024-02-15,Mc Donald's,31.5,meals,2d596eea-5698-4056-a499-e628aeb5ce97
+Entertainment,420,2019-07-01,EDEKA,55.79,Directors lunch,85948d6f-5871-434f-af2f-f9661620b27b
+Entertainment,420,2019-07-01,Baldon,36.83,,7cd1466a-a0cd-48f6-b178-0758be6b29f1
+Entertainment,420,2019-07-01,St Barts,117.18,,4bbe0787-4521-47f1-8a58-84effdd2ccc0
+Entertainment,420,2019-07-05,EDEKA,196.96,,28270adb-69d8-4f68-8168-167464e987ab
+Entertainment,420,2019-07-11,Frischeparadies,64.13,,a3f2daa2-e5d3-44e3-a72a-a70b505c53b7
+Entertainment,420,2019-09-24,Sisyphos,173.59,,4da168b7-1fb1-4eb8-a738-fc0c412ac032
+Entertainment,420,2019-11-20,Euro Giba,62.63,,5b36b205-c0d5-4c35-a121-ff59a3c15ace
+Entertainment,420,2019-11-25,REWE,56.2,,f7463438-e46b-4d9e-94b3-58dfd888ae18
+Entertainment,420,2019-11-25,Brlo,100.81,,33b56569-7f7c-42b2-bf32-778e711b1f78
+Entertainment,420,2019-11-29,WKD Lebensmittel,114.05,,73192446-1d39-4b48-b39e-5c562b1e71c0
+Entertainment,420,2020-01-06,Samgasat,109.0,,d431ae7d-9d9f-478c-8eb9-10bd150ed4e8
+Entertainment,420,2022-08-26,Light Years,66.48,Owner's Lunch,0cd432fc-462e-4952-b22f-b9721a25f6e2
+Entertainment,420,2022-08-29,7 11,73.47,Owner's Lunch,a2fbdb4e-65be-4199-a296-1d5692059539
+Entertainment,420,2022-09-05,Hurricanes Restuarant,46.18,Owner's Lunch,d0225d52-6bf7-45fd-ab5d-4c07c5a6562a
+Entertainment,420,2022-09-05,7 11,71.38,Owner's Lunch,f2776236-5a07-4cb9-9c50-bfb6f5f5b66a
+Entertainment,420,2022-11-04,Birdsnest Restuarant,55.25,Owner's Lunch,a3ae926e-64d0-44c2-a71b-2c6568f8f45c
+Entertainment,420,2022-11-07,Yardie's,42.0,Owner's Lunch,2665cc20-3cff-4c91-b858-770677883be0
+Entertainment,420,2022-11-07,Yardie's,60.0,Owner's Lunch,92e2c296-04b3-4e22-87fa-8e22b47c5918
+Entertainment,420,2022-11-07,Yardie's,63.0,Owner's Lunch,732828c2-4e6a-4c24-86dc-9aaabbbf4713
+Entertainment,420,2022-11-14,Windsor Bowls Club,45.32,Owner's Lunch,6eccf31c-5e8c-4775-a7f8-8041a667ca43
+Entertainment,420,2022-11-25,Hey Mr.,93.47,Owner's Lunch,54c376ee-83e7-42fe-88cd-9adfbb5b9b4f
+Entertainment,420,2022-11-28,HSW,70.72,Owner's Lunch,91417a70-e2fd-4706-8154-b600d113a2ff
+Entertainment,420,2022-12-05,Super What Not,59.0,Owner's Lunch,488c4b50-4d15-4828-bf90-27d1cc8c5b31
+Entertainment,420,2022-12-09,Freddy's,40.32,Owner's Lunch,b89f6ecf-3537-4780-877b-a9346691d4e1
+Entertainment,420,2022-12-14,Gresham,64.96,Owner's Lunch,66c1f2e4-ae2c-459b-9b74-016299949a72
+Entertainment,420,2022-12-21,Howlin Jays,53.53,Lunch,dcbddd07-be68-4ac3-97e0-22d9713c93d3
+Entertainment,420,2022-12-21,LIVIN KAALVOETKIND,61.25,Owner's Lunch,69de6f35-3132-46ad-b581-c7cf336b10a4
+Entertainment,420,2022-12-22,Cock & Bull,53.4,Lunch,b5aba11e-cbab-4015-a0ce-2085adc75e0f
+Entertainment,420,2022-12-22,Cafe China,36.2,Lunch,5dec7601-b302-4579-bffb-52c5b8cd3fd9
+Entertainment,420,2022-12-23,Code Cafe,141.54,Lunch,e10f4437-1d27-477c-9f7d-3d828090faa8
+Entertainment,420,2022-12-28,Cairns Bulk Meats,62.29,Owner's Lunch,d82f9a51-605a-454a-a8ad-fb6579242f1b
+Entertainment,420,2022-12-29,Smoked Paprika,52.6,Lunch,202f55b2-220b-4ac9-bf94-5262319ffc48
+Entertainment,420,2023-01-03,Yardie's,46.5,Owner's Lunch,45e00d3f-c471-4394-9f31-4309be797b53
+Entertainment,420,2023-01-03,HSW,90.0,Lunch,5d3f3eef-af57-4432-8b0e-6f1340a151ad
+Entertainment,420,2023-01-03,PORPOR Woka,72.81,Lunch,08681f93-45a6-443c-845b-9d1963172278
+Entertainment,420,2023-01-04,Rose That,50.7,Lunch,610755ad-4f7e-4515-bbf2-17f7f1933454
+Entertainment,420,2023-01-04,Marinara,191.0,Lunch,d1b1e9d4-2a3c-422e-a71b-b68d7a9a026c
+Entertainment,420,2023-01-06,Xin Chao,90.0,Lunch,24ec641b-8627-4b41-8af5-603f8861a8de
+Entertainment,420,2023-01-09,Modern Cafe,126.0,Lunch,110804dc-a874-462a-8d40-bacbe8af89bf
+Entertainment,420,2023-01-09,Morgan Schoermer,155.0,,da50e5da-4e3c-4eea-87bd-0d85b2841eee
+Entertainment,420,2023-01-16,Breakfast Creek,38.93,Owner's Lunch,f66c647e-fbf5-40a6-8f1f-35ec03d06ca1
+Entertainment,420,2023-01-18,Breakfast Creek,38.93,Owner's Lunch,39b009c7-c587-4c9e-b808-d6d3e392e5af
+Entertainment,420,2023-05-08,Cobbler Bar,140.0,Lunch,0df88201-996b-4ad3-94c9-47ad184d4dec
+Entertainment,420,2023-05-08,GYG,45.2,Owner's Lunch,5b126453-76e8-4b2f-907e-a4430f3c51f6
+Entertainment,420,2023-05-08,Golden BBQ,37.9,Owner's Lunch,d40fcdb5-18b8-4383-bb15-fb65117de09c
+Entertainment,420,2023-05-30,Hudson Corner,100.0,,084897ba-59a4-4230-bad6-51b0475c4c96
+Entertainment,420,2023-06-06,Louie Bell,39.95,Meals,9b5924d6-e1d0-456c-b624-6576d83ac625
+Entertainment,420,2023-06-23,Bear Boy Cafe,58.99,,5e91139e-90f7-45dc-be86-54432889b6a3
+Entertainment,420,2023-07-19,Bear Boy Cafe,60.0,Owners Lunch,138c2f31-e31c-4667-8277-a1317f4a09bc
+Entertainment,420,2023-08-15,McDonalds,40.0,Lunch,f53d361b-b308-459b-9140-e58610fb5fba
+Entertainment,420,2023-08-16,Mc Donald's,114.0,meals,7b9c2f2d-1f02-47d9-af8b-2a2cb5f6d402
+Entertainment,420,2023-08-16,McDonalds,72.6,Lunch,d9309256-0966-443b-8411-1dfbb4f06fea
+Entertainment,420,2023-08-16,McDonalds,38.6,Lunch,35235b7b-f930-44fb-809b-69ced43921f9
+Entertainment,420,2023-08-16,Oak Vine,38.0,,879e217c-a894-4987-9842-eaa5d9dc1fd4
+Entertainment,420,2023-08-18,Ricks,47.8,Meals,e73aaa08-b396-4871-962d-d412c4889f2f
+Entertainment,420,2023-08-18,Sound Garden,40.24,,08c82d85-e8d9-401a-be6e-c042843b7364
+Entertainment,420,2023-08-21,McDonalds,165.87,Lunch,e05d78e1-855a-4e3c-8f5a-d3e9448c4946
+Entertainment,420,2023-08-21,Yardie's,36.4,Meals,68bfdbba-615c-4fc7-8af9-c49f349b9f29
+Entertainment,420,2023-08-21,New Farm Deli,36.32,,a36d5573-37ae-4f82-90e3-0394c7920d63
+Entertainment,420,2023-08-28,McDonalds,202.01,Lunch,20eac43a-85e6-421e-b6bc-ab07eeffe90f
+Entertainment,420,2023-09-05,Woka Woka,166.82,Meals,a27ac91c-a467-46bf-9834-15168d9d674f
+Entertainment,420,2023-09-11,Yardie's,50.05,Meals,cfe58c41-9b79-45d5-8ede-1e23af65103c
+Entertainment,420,2023-09-11,McDonalds,232.15,Lunch,13ca1dba-57c3-46bf-a92e-fd81b1001860
+Entertainment,420,2023-09-13,Helenika,232.0,Meals,b9125153-bea3-4eba-b351-c648d95d950c
+Entertainment,420,2023-09-13,Brads Burgers,35.5,Meals,14ef249e-0d2d-468b-ab4d-6570f41c0b57
+Entertainment,420,2023-09-18,KFC,39.85,,4e8c2599-a7ec-4962-b00d-a3dbdbe4d3c8
+Entertainment,420,2023-09-18,McDonalds,309.63,Lunch,f3a1ab19-f11a-475f-9010-c051471931a3
+Entertainment,420,2023-09-21,T Mate,50.0,Meals,6c1c43c3-9791-4f9b-80d1-f11733b9a2bf
+Entertainment,420,2023-09-25,McDonalds,204.0,Lunch,9dda6120-f02f-41b6-835c-0e4cd8587c9a
+Entertainment,420,2023-09-25,McDonalds,199.19,Lunch,4857a7b1-a4f0-4830-9df2-544be8bed247
+Entertainment,420,2023-09-25,Woka Woka,48.65,Meals,a433909a-8bca-4c1c-b201-a33681b5c3ea
+Entertainment,420,2023-09-25,Ricks,50.0,Meals,5b80858b-7cbd-4a77-9f60-b3616cbb93ca
+Entertainment,420,2023-10-23,Ames,135.14,,cbd91d27-4c83-47cc-9ca4-2af6b5f8fa5f
+Entertainment,420,2023-10-23,Sound Garden,40.24,,cbdd7068-9e18-4a31-b358-8b72bc70cbd2
+Entertainment,420,2023-10-26,Tatsu Ramen,71.5,,d7835720-f70d-4851-8aa1-e0b852629582
+Entertainment,420,2023-11-02,Tap Room Spring Hill,50.4,,f4f2a03d-7d73-4deb-9083-45f004a1399a
+Entertainment,420,2023-11-10,Felons,40.62,,0d0d071e-b744-48d9-9ead-5d70dd783adb
+Entertainment,420,2023-11-20,Death & Taxes,162.44,,d828d07b-2ade-4fd5-bc58-1f32c7367c68
+Entertainment,420,2023-11-20,Okuman Japanese,77.5,,c0dd8fcc-c1ca-42c7-a112-d859cbeae9c3
+Entertainment,420,2023-12-06,Zakayagoku,41.0,,560e62bf-1b4d-416e-a9ea-49ee975c7e8a
+Entertainment,420,2023-12-11,Oak Vine,40.0,,e05a9a9b-ca1f-4b41-8a0e-1bc7d312572a
+Entertainment,420,2023-12-12,BEC,66.0,,b1d660d2-0dcc-4767-94eb-296ffc4e0788
+Entertainment,420,2023-12-19,McDonalds,55.0,Lunch,a86b3f4e-d82a-4b32-a020-9b84ff1c38b2
+Entertainment,420,2024-01-18,Mc Donald's,76.5,meals,451ec60e-c81f-4085-81dd-86b353c01eba
+Advertising,400,2023-09-27,Eddy Cobras,500.0,Photowork,ca74380c-57c8-4cde-b88b-a0bdeb70fd73
+Advertising,400,2023-10-20,Eddy Cobras,1500.0,Photowork,515bd8b4-b70a-4dfd-b024-fe861d421251
+Owner_Drawings,880,2022-07-11,Coles,69.04,Owner's Lunch,c1f9acbf-55a6-40f4-9e08-f509862b263d
+Owner_Drawings,880,2022-08-29,Woolworths,92.05,Owner's Lunch,d1ae836e-e4f1-4b01-921e-04fee406abce
+Owner_Drawings,880,2022-08-29,Coles,17.67,Owner's Lunch,1ba71f5c-0d05-4f91-8eb0-38cf3376ea3d
+Owner_Drawings,880,2022-09-01,Woolworths,12.0,Owner's Lunch,a87ab855-f4aa-410a-ac61-791891721538
+Owner_Drawings,880,2022-09-14,Coles,34.09,Owner's Lunch,ffbc577f-d58f-4e79-b795-a11a5188a59f
+Owner_Drawings,880,2022-09-14,Woolworths,13.39,Owner's Lunch,42435140-0787-4e45-a112-d47c4b7a1ffd
+Owner_Drawings,880,2022-11-07,IGA,39.22,Owner's Lunch,6be067df-3bed-4678-91f8-6a06913f3d81
+Owner_Drawings,880,2022-11-11,Coles,55.95,Owner's Lunch,14d3a9c0-8b6e-4c3b-bd97-1908f4a4d81d
+Owner_Drawings,880,2022-11-14,Coles,18.45,Owner's Lunch,888baef5-f5b3-435f-ba13-90e30aa11d69
+Owner_Drawings,880,2022-11-15,IGA,24.03,Owner's Lunch,ad9ed107-00dd-4e2f-9684-5f2e89e4abbc
+Owner_Drawings,880,2022-11-16,IGA,7.5,Owner's Lunch,f991f27b-2bc2-4dfe-bfd1-8748dbf71bbd
+Owner_Drawings,880,2022-11-17,Coles,57.46,Owner's Lunch,4c155fec-be66-41af-bc9a-3bf00fbae3bf
+Owner_Drawings,880,2022-11-21,Coles,34.54,Owner's Lunch,49da6b96-1d8d-4b0a-b0f8-f01f5062cc13
+Owner_Drawings,880,2022-12-05,Coles,125.8,Owner's Lunch,7963395f-89ad-4068-a62d-8ccdcba97b87
+Owner_Drawings,880,2022-12-05,Coles,34.03,Owner's Lunch,f769c489-2951-4e7b-85c2-48b2e36758cd
+Owner_Drawings,880,2022-12-07,Coles,61.7,Owner's Lunch,cdb94aa0-af5d-4afe-8a3f-b9c1935561c0
+Owner_Drawings,880,2022-12-12,VILLAGE ROADSHOW,238.0,,77442931-6717-47e9-9553-8d61ddbc7eda
+Owner_Drawings,880,2022-12-15,Coles,81.95,Owner's Lunch,e216e963-ed1c-4d91-99a6-6b0f7371c941
+Owner_Drawings,880,2022-12-16,Coles,3.7,Owner's Lunch,5830696b-374d-4e30-b6af-ae27f7039908
+Owner_Drawings,880,2022-12-19,Aldi,27.8,Lunch,4a6f32a4-7471-4d99-825b-8ddc472d845e
+Owner_Drawings,880,2022-12-21,Coles,44.51,Lunch,3c4795b1-7c0d-4f73-a8e4-20b83c05aacd
+Owner_Drawings,880,2022-12-21,Woolworths,3.6,Lunch,7e2e1f81-4e36-4c7e-a089-e69f3ea75e15
+Owner_Drawings,880,2022-12-22,Woolworths,13.5,Lunch,dbacc0ae-c47d-4f34-a4c9-5f4268c39660
+Owner_Drawings,880,2023-01-03,Coles,36.22,Owner's Lunch,b7cdd97c-e46e-4edc-89d3-1c3c33ea2fd9
+Owner_Drawings,880,2023-01-03,Coles,34.1,Owner's Lunch,e38ea3d0-6abe-48a3-a3d1-1ecd158a6fd6
+Owner_Drawings,880,2023-01-03,Coles,105.7,Owner's Lunch,97c9fbee-ae5c-4ff3-95c1-57dea6eaf92d
+Owner_Drawings,880,2023-01-03,Coles,21.65,Owner's Lunch,de1fb31b-a21e-4c20-97cd-d33449e3fd27
+Owner_Drawings,880,2023-01-06,Coles,12.0,Owner's Lunch,695b753f-0126-4e2b-ab22-f71264f230e0
+Owner_Drawings,880,2023-01-09,Coles,35.5,Owner's Lunch,a276774f-c4c5-4fae-b165-3f80ca023753
+Owner_Drawings,880,2023-01-09,Coles,19.1,Owner's Lunch,c92ef9e8-41f0-4e33-a39d-389a97df7254
+Owner_Drawings,880,2023-01-10,Coles,120.61,Owner's Lunch,748950a5-5b52-4912-ac98-b8d053cf4a03
+Owner_Drawings,880,2023-01-13,Coles,56.91,Owner's Lunch,e4224d81-f763-42b9-8414-ce2f25b53ca4
+Owner_Drawings,880,2023-04-13,Willowbank,80.0,Lunch,512b3195-ce99-4a5d-a09e-907468faeeea
+Owner_Drawings,880,2023-05-03,Coles,38.57,Owner's Lunch,fbf77fad-fdaa-4e05-bb85-803e284058be
+Owner_Drawings,880,2023-05-26,Coles,3.0,Lunch,b84a64e4-359a-4231-92a0-b3de77713cb2
+Owner_Drawings,880,2023-05-29,Coles,5.0,Directors Lunch,7b15c026-1fe1-4bae-bbcf-f3ae8061d2d7
+Owner_Drawings,880,2023-05-30,Coles,108.49,meals,dc067e05-757b-4be6-83b0-4577a47c71c3
+Owner_Drawings,880,2023-07-27,Coles,72.38,,29e4d4d2-4a59-4e01-9872-5e2d32e24305
+Owner_Drawings,880,2023-08-21,Coles,31.32,Meals,88251c63-fafd-40d5-99da-b85ced434331
+Owner_Drawings,880,2023-08-24,BWS,67.0,,736e3df9-4343-4597-9035-468b9cc14a5a
+Owner_Drawings,880,2023-09-11,Coles,94.43,Meals,3499f617-432c-48a1-a4c6-bf0f7ff4e074
+Owner_Drawings,880,2023-09-21,Coles,30.4,Lunch,c2925cc5-38c3-4d24-b1d4-29d59694a28a
+Owner_Drawings,880,2023-09-21,Woolworths,16.5,Meals,2212b880-ab0e-4e8d-a5bd-d86b7c013432
+Owner_Drawings,880,2023-09-25,1st Choice,50.0,,682691f5-b5a0-48e3-9857-ab94dd14188c
+Owner_Drawings,880,2023-09-27,Woolworths,124.41,Meals,9822c177-c5a2-400b-b684-f34236a1331e
+Owner_Drawings,880,2023-11-09,Sit Down Comedy,86.95,,a8ce3d5b-7b97-4339-bdd2-8e5ced5c9863
+Owner_Drawings,880,2023-11-24,Superbowl,73.75,,8ae49fda-cf28-4979-815b-d807a41b66f5

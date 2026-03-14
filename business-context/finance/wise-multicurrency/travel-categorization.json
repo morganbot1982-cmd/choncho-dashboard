@@ -1,0 +1,124 @@
+{
+  "travelCategorization": {
+    "international": {
+      "accountCode": "494",
+      "accountName": "Travel - International",
+      "taxType": "GST on Expenses",
+      "transactions": [
+        {
+          "date": "12-08-2025",
+          "merchant": "Flights On Booking.com Sydney",
+          "amount": -1530.99,
+          "notes": "International flight"
+        }
+      ],
+      "total": -1530.99
+    },
+    "domestic": {
+      "accountCode": "492",
+      "accountName": "Travel - National",
+      "taxType": "GST on Expenses",
+      "transactions": [
+        {
+          "date": "01-01-2026",
+          "merchant": "Hotel At Booking.com Sydney",
+          "amount": -530.10,
+          "notes": "Domestic hotel"
+        },
+        {
+          "date": "21-08-2025",
+          "merchant": "Hotel At Booking.com Sydney",
+          "amount": -258.82,
+          "notes": "Domestic hotel"
+        },
+        {
+          "date": "27-10-2024",
+          "merchant": "Jetstar Air",
+          "amount": -718.67,
+          "notes": "Domestic flight"
+        },
+        {
+          "date": "29-09-2024",
+          "merchant": "Jetstar Airways Co Lt",
+          "amount": -212.77,
+          "notes": "Domestic flight"
+        },
+        {
+          "date": "27-11-2024",
+          "merchant": "Virgin Australia",
+          "amount": -170.00,
+          "notes": "Domestic flight"
+        },
+        {
+          "date": "07-11-2025",
+          "merchant": "Jetstar Airways",
+          "amount": -8.00,
+          "notes": "Domestic airport fee"
+        },
+        {
+          "date": "07-10-2025",
+          "merchant": "Qantas Concourse",
+          "amount": -11.66,
+          "notes": "Domestic airport purchase"
+        },
+        {
+          "date": "05-11-2024",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": -682.83,
+          "notes": "Car rental charge"
+        },
+        {
+          "date": "05-11-2024",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": -200.00,
+          "notes": "Car rental charge"
+        },
+        {
+          "date": "07-04-2025",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": -660.98,
+          "notes": "Car rental charge"
+        },
+        {
+          "date": "07-04-2025",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": -200.00,
+          "notes": "Car rental charge"
+        }
+      ],
+      "total": -3653.83
+    },
+    "refunds": {
+      "accountCode": "265",
+      "accountName": "Refunds",
+      "taxType": "GST on Income",
+      "transactions": [
+        {
+          "date": "10-11-2024",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": 200.00,
+          "notes": "Car rental refund"
+        },
+        {
+          "date": "12-11-2024",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": 9.10,
+          "notes": "Car rental refund"
+        },
+        {
+          "date": "10-04-2025",
+          "merchant": "Ace Melbourne Tullamarine",
+          "amount": 200.00,
+          "notes": "Car rental refund"
+        }
+      ],
+      "total": 409.10
+    }
+  },
+  "summary": {
+    "totalTravelSpend": -5184.82,
+    "international": -1530.99,
+    "domestic": -3653.83,
+    "netAfterRefunds": -4775.72
+  }
+}

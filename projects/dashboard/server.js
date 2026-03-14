@@ -1,135 +1,222 @@
 const http = require('http');
-const fs = require('fs');
-const path = require('path');
+const https = require('https');
 
 const PORT = 3333;
-const WORKSPACE = path.resolve(__dirname, '../..');
+const LEANTIME_API = 'http://localhost:8080/api/jsonrpc';
+const LEANTIME_KEY = 'W2bKPo0rWZnVHKHiuq2Lhk6zp6CJnkWN'; // From leantime setup
 
-function readFile(relPath) {
-  try {
-    return fs.readFileSync(path.join(WORKSPACE, relPath), 'utf8');
-  } catch { return null; }
+let apiCallId = 1;
+
+function leantimeRPC(method, params = {}) {
+  return new Promise((resolve, reject) => {
+    const payload = JSON.stringify({
+      jsonrpc: '2.0',
+      method,
+      params,
+      id: apiCallId++
+    });
+
+    const url = new URL(LEANTIME_API);
+    const options = {
+      hostname: url.hostname,
+      port: url.port,
+      path: url.pathname,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': LEANTIME_KEY,
+        'Content-Length': Buffer.byteLength(payload)
+      }
+    };
+
+    const req = http.request(options, res => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.error) reject(new Error(parsed.error.message || 'API error'));
+          else resolve(parsed.result);
+        } catch (e) {
+          reject(e);
+        }
+      });
+    });
+
+    req.on('error', reject);
+    req.write(payload);
+    req.end();
+  });
 }
 
-function parseMarkdownSections(md) {
-  const sections = [];
-  let current = null;
-  for (const line of md.split('\n')) {
-    const h2 = line.match(/^## (.+)/);
-    const h3 = line.match(/^### (.+)/);
-    if (h2) {
-      current = { title: h2[1], level: 2, items: [], subsections: [] };
-      sections.push(current);
-    } else if (h3 && current) {
-      const sub = { title: h3[1], level: 3, items: [] };
-      current.subsections.push(sub);
-    } else if (current) {
-      const target = current.subsections.length > 0 ? current.subsections[current.subsections.length - 1] : current;
-      if (line.trim()) target.items.push(line);
+async function fetchDashboardData() {
+  try {
+    // Fetch all projects
+    const projectsResult = await leantimeRPC('leantime.rpc.Projects.Projects.getAll', {
+      userId: 1,
+      clientId: 1
+    });
+    
+    const projects = projectsResult?.data || [];
+    
+    // Fetch all tasks
+    const tasksResult = await leantimeRPC('leantime.rpc.Tickets.Tickets.getAll', {
+      userId: 1,
+      projectId: null // Get all tasks across projects
+    });
+    
+    const allTasks = tasksResult?.data || [];
+    
+    // Group tasks by project
+    const tasksByProject = {};
+    for (const task of allTasks) {
+      const pid = task.projectId || task.project;
+      if (!tasksByProject[pid]) tasksByProject[pid] = [];
+      tasksByProject[pid].push(task);
     }
+    
+    return { projects, tasksByProject, allTasks };
+  } catch (error) {
+    console.error('Leantime API error:', error.message);
+    return { projects: [], tasksByProject: {}, allTasks: [], error: error.message };
   }
-  return sections;
 }
 
-function getMemoryFiles() {
-  const memDir = path.join(WORKSPACE, 'memory');
-  try {
-    return fs.readdirSync(memDir)
-      .filter(f => f.match(/^\d{4}-\d{2}-\d{2}\.md$/))
-      .sort()
-      .reverse()
-      .slice(0, 7);
-  } catch { return []; }
+function getPriorityLabel(priority) {
+  const map = { 1: 'Low', 2: 'Medium', 3: 'High', 4: 'Critical' };
+  return map[priority] || 'Unknown';
 }
 
-function buildDashboard() {
-  const now = readFile('NOW.md') || '# No NOW.md found';
-  const sections = parseMarkdownSections(now);
-  const memoryFiles = getMemoryFiles();
+function getStatusLabel(status) {
+  const map = { 3: 'Open', 4: 'In Progress', 5: 'Done', 6: 'Blocked' };
+  return map[status] || 'Unknown';
+}
+
+function getStatusClass(status) {
+  if (status === 5) return 'active'; // Done
+  if (status === 6) return 'waiting'; // Blocked
+  if (status === 4) return 'active'; // In Progress
+  return 'planning'; // Open
+}
+
+async function buildDashboard() {
+  const { projects, tasksByProject, allTasks, error } = await fetchDashboardData();
   
-  // Read today's memory
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Australia/Brisbane' });
-  const todayMemory = readFile(`memory/${today}.md`);
+  if (error) {
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choncho Dashboard</title>
+<meta http-equiv="refresh" content="30">
+<style>
+  body { font-family: sans-serif; padding: 40px; background: #0d1117; color: #e6edf3; }
+  .error { background: #f85149; color: white; padding: 20px; border-radius: 8px; }
+</style>
+</head>
+<body>
+  <div class="error">
+    <h2>⚠️ Leantime API Error</h2>
+    <p>${error}</p>
+    <p>Make sure Leantime is running at http://localhost:8080</p>
+  </div>
+</body>
+</html>`;
+  }
 
   // Build project cards
   let projectCards = '';
-  const activeSection = sections.find(s => s.title === 'Active Projects');
-  if (activeSection) {
-    for (const sub of activeSection.subsections) {
-      const titleMatch = sub.title.match(/\d+\.\s*(.+)/);
-      const name = titleMatch ? titleMatch[1] : sub.title;
-      const statusLine = sub.items.find(i => i.includes('**Status:**'));
-      const status = statusLine ? statusLine.replace(/.*\*\*Status:\*\*\s*/, '').replace(/\*\*/g, '') : 'Unknown';
-      
-      const done = sub.items.filter(i => i.includes('✅')).length;
-      const pending = sub.items.filter(i => i.includes('⏳')).length;
-      const warning = sub.items.filter(i => i.includes('⚠️')).length;
-      const total = done + pending + warning || 1;
-      const pct = Math.round((done / total) * 100);
-      
-      const statusClass = status.toLowerCase().includes('waiting') || status.toLowerCase().includes('pending') ? 'waiting' :
-                          status.toLowerCase().includes('progress') ? 'active' :
-                          status.toLowerCase().includes('planning') || status.toLowerCase().includes('early') ? 'planning' : 'active';
-      
-      let itemsHtml = '';
-      for (const item of sub.items) {
-        if (item.startsWith('**Status:**')) continue;
-        const cleaned = item.replace(/^-\s*/, '').replace(/\*\*/g, '');
-        const icon = item.includes('✅') ? '✅' : item.includes('⏳') ? '⏳' : item.includes('⚠️') ? '⚠️' : item.includes('📄') ? '📄' : '•';
-        const text = cleaned.replace(/^[✅⏳⚠️📄]\s*/, '');
-        itemsHtml += `<div class="task-item"><span class="task-icon">${icon}</span><span>${text}</span></div>`;
-      }
-
-      projectCards += `
-        <div class="card project-card ${statusClass}">
-          <div class="card-header">
-            <h3>${name}</h3>
-            <span class="status-badge ${statusClass}">${status}</span>
-          </div>
-          <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="progress-label">${done} done · ${pending} pending · ${warning} issues</div>
-          <div class="task-list">${itemsHtml}</div>
-        </div>`;
+  
+  for (const project of projects) {
+    const tasks = tasksByProject[project.id] || [];
+    const done = tasks.filter(t => t.status === 5).length;
+    const open = tasks.filter(t => t.status === 3).length;
+    const inProgress = tasks.filter(t => t.status === 4).length;
+    const blocked = tasks.filter(t => t.status === 6).length;
+    const total = tasks.length || 1;
+    const pct = Math.round((done / total) * 100);
+    
+    const statusClass = blocked > 0 ? 'waiting' : inProgress > 0 ? 'active' : 'planning';
+    const statusLabel = blocked > 0 ? 'Blocked' : inProgress > 0 ? 'In Progress' : open > 0 ? 'Open' : 'Done';
+    
+    let tasksHtml = '';
+    const activeTasks = tasks.filter(t => t.status !== 5).slice(0, 8); // Show up to 8 active tasks
+    
+    for (const task of activeTasks) {
+      const icon = task.status === 5 ? '✅' : 
+                   task.status === 6 ? '🚧' : 
+                   task.status === 4 ? '⏳' : '📋';
+      const priorityBadge = task.priority >= 3 ? `<span style="color: #f85149; font-weight: bold;">[${getPriorityLabel(task.priority)}]</span>` : '';
+      tasksHtml += `<div class="task-item"><span class="task-icon">${icon}</span><span>${task.headline} ${priorityBadge}</span></div>`;
     }
+    
+    if (tasks.length > activeTasks.length) {
+      tasksHtml += `<div class="task-item"><span class="task-icon">•</span><span style="color: #8b949e;">...and ${tasks.length - activeTasks.length} more</span></div>`;
+    }
+    
+    projectCards += `
+      <div class="card project-card ${statusClass}">
+        <div class="card-header">
+          <h3>${project.name}</h3>
+          <span class="status-badge ${statusClass}">${statusLabel}</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+        <div class="progress-label">${done} done · ${inProgress} in progress · ${open} open · ${blocked} blocked</div>
+        <div class="task-list">${tasksHtml || '<div class="task-item" style="color: #8b949e;">No tasks yet</div>'}</div>
+      </div>`;
   }
-
-  // Blockers
-  const blockerSection = sections.find(s => s.title === 'Blockers');
-  let blockersHtml = '<div class="card blockers-card"><h3>🚧 Blockers</h3>';
-  if (blockerSection && blockerSection.items.length) {
-    for (const item of blockerSection.items) {
-      if (item.trim().startsWith('-')) {
-        blockersHtml += `<div class="blocker-item">${item.replace(/^-\s*/, '').replace(/\*\*/g, '<strong>').replace(/\*\*/g, '</strong>')}</div>`;
-      }
+  
+  // Blockers (tasks with status = blocked OR high priority open tasks)
+  const blockers = allTasks.filter(t => t.status === 6 || (t.priority >= 3 && t.status !== 5));
+  let blockersHtml = '<div class="card blockers-card"><h3>🚧 Blockers & Urgent</h3>';
+  if (blockers.length > 0) {
+    for (const task of blockers.slice(0, 10)) {
+      const projectName = projects.find(p => p.id === task.projectId)?.name || 'Unknown';
+      const priorityLabel = getPriorityLabel(task.priority);
+      blockersHtml += `<div class="blocker-item"><strong>${projectName}:</strong> ${task.headline} <span style="color: #d29922;">[${priorityLabel}]</span></div>`;
     }
   } else {
     blockersHtml += '<div class="blocker-item clear">No blockers 🎉</div>';
   }
   blockersHtml += '</div>';
-
-  // Next actions
-  const nextSection = sections.find(s => s.title === 'Next Actions');
+  
+  // Next actions (high priority open tasks, sorted by priority)
+  const nextActions = allTasks
+    .filter(t => t.priority >= 3 && t.status !== 5 && t.status !== 6)
+    .sort((a, b) => b.priority - a.priority)
+    .slice(0, 10);
+  
   let nextHtml = '<div class="card next-card"><h3>📋 Next Actions</h3>';
-  if (nextSection) {
-    for (const item of nextSection.items) {
-      if (item.trim().match(/^\d+\./)) {
-        nextHtml += `<div class="next-item">${item.replace(/^\d+\.\s*/, '').replace(/\*\*/g, '')}</div>`;
-      }
+  if (nextActions.length > 0) {
+    for (const task of nextActions) {
+      const projectName = projects.find(p => p.id === task.projectId)?.name || 'Unknown';
+      const priorityLabel = getPriorityLabel(task.priority);
+      nextHtml += `<div class="next-item">${task.headline} <span style="color: #8b949e; font-size: 11px;">(${projectName} · ${priorityLabel})</span></div>`;
     }
+  } else {
+    nextHtml += '<div class="next-item">All clear! 🎉</div>';
   }
   nextHtml += '</div>';
+  
+  // Stats
+  const totalTasks = allTasks.length;
+  const doneTasks = allTasks.filter(t => t.status === 5).length;
+  const openTasks = allTasks.filter(t => t.status === 3).length;
+  const inProgressTasks = allTasks.filter(t => t.status === 4).length;
+  const blockedTasks = allTasks.filter(t => t.status === 6).length;
+  
+  let statsHtml = '<div class="card stats-card"><h3>📊 Overview</h3>';
+  statsHtml += `<div class="stats-grid">`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">Projects</div><div class="stat-value">${projects.length}</div></div>`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">Total Tasks</div><div class="stat-value">${totalTasks}</div></div>`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">Done</div><div class="stat-value" style="color: #3fb950;">${doneTasks}</div></div>`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">In Progress</div><div class="stat-value" style="color: #58a6ff;">${inProgressTasks}</div></div>`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">Open</div><div class="stat-value">${openTasks}</div></div>`;
+  statsHtml += `<div class="stat-item"><div class="stat-label">Blocked</div><div class="stat-value" style="color: #f85149;">${blockedTasks}</div></div>`;
+  statsHtml += `</div></div>`;
 
-  // Recent activity
-  let activityHtml = '<div class="card activity-card"><h3>📅 Recent Activity</h3>';
-  for (const f of memoryFiles.slice(0, 5)) {
-    const date = f.replace('.md', '');
-    const content = readFile(`memory/${f}`);
-    const preview = content ? content.split('\n').filter(l => l.startsWith('- ')).slice(0, 3).map(l => l.replace(/^-\s*/, '').substring(0, 80)).join(' · ') : '';
-    activityHtml += `<div class="activity-item"><span class="activity-date">${date}</span><span class="activity-preview">${preview || 'No entries'}</span></div>`;
-  }
-  activityHtml += '</div>';
-
-  const lastUpdated = now.match(/\*Last updated: (.+)\*/)?.[1] || 'Unknown';
+  const now = new Date().toLocaleString('en-AU', { timeZone: 'Australia/Brisbane' });
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -210,23 +297,29 @@ function buildDashboard() {
   }
   .next-card { counter-reset: next-counter; }
   
-  .activity-card { border-left: 3px solid #8b949e; }
-  .activity-item { 
-    display: flex; gap: 12px; padding: 8px 0; font-size: 13px;
-    border-bottom: 1px solid #21262d;
+  .stats-card { border-left: 3px solid #8b949e; }
+  .stats-grid { 
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
   }
-  .activity-item:last-child { border-bottom: none; }
-  .activity-date { color: #58a6ff; font-family: monospace; white-space: nowrap; flex-shrink: 0; }
-  .activity-preview { color: #8b949e; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .stat-item { text-align: center; }
+  .stat-label { font-size: 11px; color: #8b949e; margin-bottom: 4px; text-transform: uppercase; }
+  .stat-value { font-size: 24px; font-weight: 700; color: #e6edf3; }
   
-  .bottom-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  @media (max-width: 900px) { .bottom-row { grid-template-columns: 1fr; } }
+  .leantime-badge {
+    display: inline-block;
+    background: #3fb95011;
+    color: #3fb950;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
 </style>
 </head>
 <body>
   <header>
-    <h1><span>🦬</span> Choncho Dashboard</h1>
-    <div class="meta">Last updated: ${lastUpdated} · Auto-refreshes every 30s</div>
+    <h1><span>🦬</span> Choncho Dashboard <span class="leantime-badge">● Leantime Live</span></h1>
+    <div class="meta">Last updated: ${now} · Auto-refreshes every 30s</div>
   </header>
   
   <div class="grid">${projectCards}</div>
@@ -234,16 +327,17 @@ function buildDashboard() {
   <div class="grid-3">
     ${blockersHtml}
     ${nextHtml}
-    ${activityHtml}
+    ${statsHtml}
   </div>
 </body>
 </html>`;
 }
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
   if (req.url === '/' || req.url === '/index.html') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.end(buildDashboard());
+    const html = await buildDashboard();
+    res.end(html);
   } else if (req.url === '/api/refresh') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({ status: 'ok', time: new Date().toISOString() }));
@@ -255,4 +349,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log(`🦬 Dashboard running at http://localhost:${PORT}`);
+  console.log(`📊 Pulling live data from Leantime API`);
 });
