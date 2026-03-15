@@ -4,7 +4,7 @@
 Lightweight proactive checks with low noise. If nothing needs attention, reply exactly `HEARTBEAT_OK`.
 
 ## Quiet Hours
-- 23:00–08:00 (Australia/Brisbane): only alert for urgent issues.
+- 23:00-08:00 (Australia/Brisbane): only alert for urgent issues.
 
 ## Health Checks (rotating)
 - OpenClaw/gateway status basics
@@ -23,14 +23,14 @@ Alert only when one of these is true:
 - service down/unhealthy
 - pipeline error/stall
 - node disconnected unexpectedly
-- urgent item requiring Morgan’s attention
+- urgent item requiring Morgan's attention
 
 Otherwise: `HEARTBEAT_OK`.
 
 ## Memory Hygiene Loop
 Every few hours during heartbeats:
-1. Update `NOW.md` (current focus, blockers, top 3 next actions)
-2. Append key bullets to today’s `memory/YYYY-MM-DD.md`
+1. Update `todo.md` (current tasks, blockers)
+2. Append completed work to `progress-log.md`
 3. Promote durable facts to `MEMORY.md` (curated only)
 
 ## Calendar Reminders (WhatsApp)
@@ -73,4 +73,6 @@ Use `memory/heartbeat-state.json` with at least:
 - `lastMemoryRecap`
 - `lastMoltbookCheck`
 - `lastCalendarReminder` (timestamp of last WhatsApp reminder sent)
+- `lastLeantimeCheck` (timestamp of last blocker check)
+last WhatsApp reminder sent)
 - `lastLeantimeCheck` (timestamp of last blocker check)
