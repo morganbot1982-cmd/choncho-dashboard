@@ -35,7 +35,7 @@ Capture new ideas and convert them into tracked projects with proper setup, seam
 **What happens:**
 - Discuss the idea
 - Refine the concept
-- **Agent identifies logical next steps** (becomes initial subtasks)
+- **Agent identifies logical next steps** (becomes initial checklist items)
 
 **Example:**
 ```
@@ -47,7 +47,7 @@ Agent: "Interesting. So we'd need:
 Want to make this a tracked project?"
 ```
 
-**Key:** Agent proposes subtasks during discussion, not after project creation
+**Key:** Agent proposes checklist items during discussion, not after project creation
 
 ---
 
@@ -57,7 +57,7 @@ Want to make this a tracked project?"
 ```
 Ready to create project "Receipt Scanner"?
 
-**Initial subtasks:**
+**Initial checklist:**
 1. Research OCR libraries (Claude vision vs Mindee)
 2. Set up WhatsApp webhook handler
 3. Design receipt data structure
@@ -93,7 +93,7 @@ Ready to create project "Receipt Scanner"?
 
 **Tags auto-generated** from discussion keywords
 
-#### 2. Initial Subtasks
+#### 2. Checklist Items
 `POST http://localhost:3004/api/projects/{projectId}/checklist` (for each)
 
 ```json
@@ -102,6 +102,8 @@ Ready to create project "Receipt Scanner"?
 {"text": "Design receipt data structure"}
 {"text": "Connect Xero API for transaction posting"}
 ```
+
+**REQUIRED:** text field must be present
 
 #### 3. Rolling Summary Note
 `POST http://localhost:3004/api/projects/{projectId}/notes`
@@ -114,6 +116,9 @@ Ready to create project "Receipt Scanner"?
   "pinned": true
 }
 ```
+
+**REQUIRED:** kind, content
+**MUST BE:** kind="summary", pinned=true
 
 #### 4. MEMORY.md Handoff Entry
 Add to `## Project Handoff` section:
@@ -153,11 +158,11 @@ git commit -m "Initial commit: project setup"
 ```
 ✅ Project "Receipt Scanner" created:
 - Dashboard: proj-abc123
-- 4 initial subtasks added
+- 4 checklist items added
+- Rolling summary created
 - Git repo initialized at ~/.openclaw/workspace/receipt-scanner
-- Ready to work on first subtask
 
-Which subtask do you want to start on?
+Ready to work. Which checklist item first?
 ```
 
 Then immediately transition to Scenario 1 workflow (working on existing project)
@@ -187,7 +192,7 @@ Then immediately transition to Scenario 1 workflow (working on existing project)
 - Empty initially
 
 **Checklist tab:**
-- ✅ All initial subtasks from discussion (unchecked)
+- ✅ All initial checklist items from discussion (unchecked)
 
 **Activity tab:**
 - Auto-populated:
