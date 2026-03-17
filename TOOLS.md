@@ -78,4 +78,98 @@ See `agents/accountant/AGENT.md` for full details.
 
 ---
 
+## Receipt Processing (Tradies Bookkeeping)
+
+When Morgan or a client sends a **receipt photo via WhatsApp**, process it as follows:
+
+### Step 1: Extract receipt data
+Use the `image` tool to analyse the photo with this prompt:
+```
+Extract all data from this receipt. Return ONLY a JSON object:
+{"vendor":"store name","date":"YYYY-MM-DD","total":number,"gst":number,"items":[{"description":"item","quantity":number,"amount":number}],"category":"materials|tools|fuel|vehicle|subcontractor|office|safety|other","payment_method":"cash/card/eftpos","abn":"ABN or null","reference":"receipt number or null"}
+Category guide: materials (timber,concrete,pipe,fittings,paint), tools (power tools,hand tools,blades,PPE), fuel (petrol,diesel), vehicle (rego,service,parts), subcontractor (labour hire), office (phone,internet,stationery), safety (first aid,signs).
+Return ONLY JSON.
+```
+
+### Step 2: Post to Xero
+Run the receipt handler script:
+```bash
+cd ~/.openclaw/workspace/tradies-bookkeeping && node receipt-handler.mjs <image-path> '<receipt-json>'
+```
+
+### Step 3: Reply
+Send the confirmation from the script output back via WhatsApp.
+
+### Command: "menu" / "help" / "commands"
+When the user asks for help, menu, or what commands are available, reply with:
+
+```
+📋 *What I can do:*
+
+1️⃣ *Snap a receipt* — Send a photo next
+2️⃣ *Who owes me* — See outstanding & overdue invoices
+3️⃣ *Chase [name]* — Resend an invoice to chase payment
+4️⃣ *Monthly summary* — How's business going this month
+5️⃣ *Job costs [job name]* — Spending on a specific job (coming soon)
+6️⃣ *Help* — Show this menu
+
+💡 _Voice notes work too — just say any command._
+```
+
+### Number shortcuts after menu
+If the user sends a number (1-6) right after seeing the menu, treat it as selecting that option:
+- **1** → Reply "📸 Send me the receipt photo now" then process the next image as a receipt (no caption needed)
+- **2** → Run "who owes me"
+- **3** → Reply "Who do you want to chase?" then run chase-invoice with their next reply
+- **4** → Run monthly summary
+- **5** → Reply "Which job?" then run job costs with their next reply (coming soon)
+- **6** → Show menu again
+
+When the user selects option 1, the NEXT image they send should be processed as a receipt regardless of caption.
+
+### Trigger
+ONLY process a WhatsApp image as a receipt if the message caption contains **"test receipt"** (case insensitive). This is a dev/testing trigger — Morgan's personal WhatsApp is the bot for now.
+
+If an image arrives WITHOUT "test receipt" in the caption, treat it as a normal message. Do not process it as a receipt.
+
+### Command: "who owes me" / "overdue invoices"
+When the user asks who owes them money, overdue invoices, or outstanding payments:
+```bash
+cd ~/.openclaw/workspace/tradies-bookkeeping && node who-owes-me.mjs
+```
+For overdue only:
+```bash
+cd ~/.openclaw/workspace/tradies-bookkeeping && node who-owes-me.mjs --overdue-only
+```
+Parse the JSON output and send the `reply` field back to the user.
+
+### Command: "chase [name]" / "send invoice to [name]"
+When the user wants to resend an invoice to chase payment:
+```bash
+# Step 1: DRY RUN (always do this first — shows what would be sent)
+cd ~/.openclaw/workspace/tradies-bookkeeping && node chase-invoice.mjs "<contact name>"
+
+# Step 2: ONLY if user confirms, add --send flag
+cd ~/.openclaw/workspace/tradies-bookkeeping && node chase-invoice.mjs "<contact name>" --send
+```
+**NEVER run with --send without the user explicitly confirming.** This sends a real email to a real client. Show the dry run first, ask "want me to send it?", then send only if they say yes.
+
+### Command: "monthly summary" / "how am I going" / option 4
+When the user asks for a monthly summary or how business is going:
+```bash
+cd ~/.openclaw/workspace/tradies-bookkeeping && node monthly-summary.mjs
+```
+For a specific month:
+```bash
+cd ~/.openclaw/workspace/tradies-bookkeeping && node monthly-summary.mjs 2026-02
+```
+Parse the JSON output and send the `reply` field back.
+
+### When NOT to process
+- No "test receipt" in caption — ignore as receipt, respond normally
+- If the image is clearly not a receipt even with the trigger — tell Morgan
+- If Morgan says "don't process this" or similar
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
