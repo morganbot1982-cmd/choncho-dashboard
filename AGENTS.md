@@ -270,9 +270,8 @@ Immediately switch to Session Startup Protocol (load the new project).
 
 ## Model Routing
 
-- Sonnet (default)
-- Opus (only when Morgan asks or deep reasoning needed)
-- Keep tokens lean
+- Opus (default)
+- Sonnet (fallback)
 
 ## Channels
 
@@ -312,6 +311,7 @@ Every project = git repo.
 - Before session end: commit, push, dashboard, handoff
 
 **Rules:**
+- All new repos = **private by default** (use `gh repo create --private`)
 - PR for shared repos, direct push for Morgan's
 - Never commit secrets (.env, tokens)
 - README = current state
