@@ -125,14 +125,24 @@ Format:
 **Current state:**
 {rolling summary from dashboard}
 
-**Unchecked subtasks:**
-{numbered list}
+**Top priorities:**
+1. {Most logical/blocking subtask} — {why it matters}
+2. {Next priority} — {why it matters}
+3. {Third priority} — {why it matters}
+
+{List remaining subtasks if any}
 
 **Git:** {status}
 **Server:** {port + status}
 
-Which subtask do you want to start on?
+Which one?
 ```
+
+**How to prioritize subtasks:**
+- Blockers first (blocks other work)
+- Ready-to-ship next (can deliver value now)
+- Foundation work (enables future work)
+- Use context from rolling summary to understand dependencies
 
 ### When no project mentioned:
 List all handoff entries with last-worked dates. Ask which project.
