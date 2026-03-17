@@ -273,7 +273,7 @@ Auto-loaded: SOUL.md, USER.md, MEMORY.md, todo.md, progress-log.md
 
 ## System Context
 
-- macOS, Mac Mini, Apple Silicon
+- macOS, Mac Mini, M4 chip, 16GB RAM, 512GB SSD
 - User: userclaw (daily, admin) | morgan (legacy, unused)
 - Tech: Node.js/TypeScript, Python, Docker Compose
 - Integrations: Dashboard (3004), Leantime, Xero
