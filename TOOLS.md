@@ -211,19 +211,27 @@ When the user asks for help, menu, or what commands are available, reply with:
 3️⃣ *Chase [name]* — Resend an invoice to chase payment
 4️⃣ *Monthly summary* — How's business going this month
 5️⃣ *Job costs [job name]* — Spending on a specific job (coming soon)
-6️⃣ *Help* — Show this menu
+6️⃣ *Dashboard* — Open Command Center on your phone
+7️⃣ *Help* — Show this menu
 
 💡 _Voice notes work too — just say any command._
 ```
 
+### Command: "dashboard" / "dash" / "open dashboard" / "command center"
+When the user asks for the dashboard, send the local network link:
+1. Get the Mac's local IP (cached: 192.168.20.29, or re-check with `python3 -c "import socket; s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM); s.connect(('8.8.8.8',80)); print(s.getsockname()[0])"`)
+2. Make sure the dev server is running on port 3005
+3. Reply with: `📊 *Command Center*\n\nhttp://{IP}:3005\n\n_Tap to open on your phone (same Wi-Fi network)_`
+
 ### Number shortcuts after menu
-If the user sends a number (1-6) right after seeing the menu, treat it as selecting that option:
+If the user sends a number (1-7) right after seeing the menu, treat it as selecting that option:
 - **1** → Reply "📸 Send me the receipt photo now" then process the next image as a receipt (no caption needed)
 - **2** → Run "who owes me"
 - **3** → Reply "Who do you want to chase?" then run chase-invoice with their next reply
 - **4** → Run monthly summary
 - **5** → Reply "Which job?" then run job costs with their next reply (coming soon)
-- **6** → Show menu again
+- **6** → Run dashboard command
+- **7** → Show menu again
 
 When the user selects option 1, the NEXT image they send should be processed as a receipt regardless of caption.
 
