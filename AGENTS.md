@@ -190,7 +190,25 @@ Edit MEMORY.md, add to `## Project Handoff` section:
 - **Port:** {if applicable}
 ```
 
-**Step 5: Create git repo** (ONLY if Morgan said code-based: yes)
+**Step 5: Spawn dedicated subagent**
+```bash
+sessions_spawn(
+  task: "You are the dedicated agent for project {Title}. Follow all protocols in AGENTS.md. This is your permanent workspace for this project.",
+  mode: "session",
+  thread: true,
+  runtime: "subagent",
+  label: "project:{projectId}",
+  cwd: "~/.openclaw/workspace/{repo-name}"
+)
+```
+**REQUIRED:** Capture returned sessionKey and store in project record:
+```bash
+curl -X PATCH http://localhost:3004/api/projects/{projectId} \
+  -H 'Content-Type: application/json' \
+  -d '{"sessionKey": "{returned sessionKey}"}'
+```
+
+**Step 6: Create git repo** (ONLY if code-based: yes)
 ```bash
 mkdir ~/.openclaw/workspace/{repo-name}
 cd ~/.openclaw/workspace/{repo-name}
@@ -203,12 +221,13 @@ git add README.md
 git commit -m "Initial commit: project setup"
 ```
 
-**Step 6: Confirm completion**
+**Step 7: Confirm completion**
 ```
 ✅ Project "{Title}" created:
 - Dashboard: {projectId}
 - {N} checklist items added
 - Rolling summary created
+- Dedicated subagent spawned
 - Git repo initialized (if code-based)
 
 Ready to work. Which checklist item first?
