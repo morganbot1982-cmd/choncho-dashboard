@@ -111,25 +111,111 @@ Which one?
 
 ## New Project Creation Protocol
 
-**Flow:**
-1. **Idea discussion** → identify 2-3+ subtasks
-2. **Suggest creation:**
+### Phase 1: Idea Discussion
+**Triggers:** "I've got an idea..." / "What if we built..." / "I'm thinking about..."
 
+**Action:**
+- Engage with questions
+- **Identify 2-3+ logical next steps** (becomes checklist items)
+- Don't create anything yet
+
+### Phase 2: Suggest Creation
+**When:** After identifying 2-3+ checklist items
+
+**Ask Morgan:**
 ```
-Ready to create "{Title}"?
+Ready to create project "{Title}"?
 
-Subtasks: {list}
-Code-based? (git repo + README)
-Priority: low | medium | high | critical
+**Initial checklist:**
+1. {Item from discussion}
+2. {Item from discussion}
+3. {Item from discussion}
+
+**Code-based project?** (will create git repo + README)
+**Priority:** low | medium | high | critical
 ```
 
-3. **Create** (if confirmed):
-   - Dashboard project (API)
-   - Subtasks (checklist API)
-   - Rolling summary (notes API)
-   - MEMORY.md handoff entry
-   - Git repo (if code-based)
-4. **Transition** to Session Startup
+Wait for confirmation + answers before proceeding.
+
+### Phase 3: Execute Creation (in this exact order)
+
+**Step 1: Create dashboard project**
+```bash
+curl -X POST http://localhost:3004/api/projects \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title": "{Title}",
+    "summary": "{1-2 sentence description from discussion}",
+    "stage": "active",
+    "priority": "{Morgan'\''s answer: low|medium|high|critical}",
+    "tags": ["{keyword1}", "{keyword2}", ...auto-generate from discussion]
+  }'
+```
+**REQUIRED:** title, summary, stage, priority
+**OPTIONAL:** tags
+Capture the returned `projectId` for next steps.
+
+**Step 2: Create checklist items**
+For EACH item identified in discussion:
+```bash
+curl -X POST http://localhost:3004/api/projects/{projectId}/checklist \
+  -H 'Content-Type: application/json' \
+  -d '{"text": "{checklist item text}"}'
+```
+**REQUIRED:** text
+
+**Step 3: Create rolling summary note**
+```bash
+curl -X POST http://localhost:3004/api/projects/{projectId}/notes \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "kind": "summary",
+    "title": "Project summary",
+    "content": "{Expanded description: what is this, what'\''s done (nothing yet), what'\''s next (first checklist item), what'\''s blocking (nothing)}",
+    "pinned": true
+  }'
+```
+**REQUIRED:** kind, content
+**MUST BE:** kind="summary", pinned=true
+
+**Step 4: Add MEMORY.md handoff**
+Edit MEMORY.md, add to `## Project Handoff` section:
+```markdown
+### {Project Title}
+- **Last worked:** {current timestamp: YYYY-MM-DD H:MM AM/PM Brisbane}
+- **Session key:** {current session key}
+- **Dashboard:** {projectId} → `curl -s http://localhost:3004/api/projects/{projectId}`
+- **Repo:** ~/.openclaw/workspace/{repo-name}
+- **GitHub:** (to be added)
+- **Port:** {if applicable}
+```
+
+**Step 5: Create git repo** (ONLY if Morgan said code-based: yes)
+```bash
+mkdir ~/.openclaw/workspace/{repo-name}
+cd ~/.openclaw/workspace/{repo-name}
+git init
+echo "# {Project Title}
+
+{Description from discussion}
+" > README.md
+git add README.md
+git commit -m "Initial commit: project setup"
+```
+
+**Step 6: Confirm completion**
+```
+✅ Project "{Title}" created:
+- Dashboard: {projectId}
+- {N} checklist items added
+- Rolling summary created
+- Git repo initialized (if code-based)
+
+Ready to work. Which checklist item first?
+```
+
+### Phase 4: Transition
+Immediately switch to Session Startup Protocol (load the new project).
 
 ---
 
