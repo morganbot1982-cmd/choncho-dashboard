@@ -78,6 +78,106 @@ See `agents/accountant/AGENT.md` for full details.
 
 ---
 
+## Personal Command Center (WhatsApp)
+
+Morgan's personal task/life management assistant. When a WhatsApp message arrives from Morgan that isn't a tradies bookkeeping command (receipt, "who owes me", "chase", "monthly summary"), route it through the Command Center.
+
+### How to process
+
+**Step 1: Send the message to the command API**
+```bash
+curl -s -X POST http://localhost:3005/api/command \
+  -H "Content-Type: application/json" \
+  -d '{"text":"<user message>"}'
+```
+
+**Step 2: Check the response**
+
+The API returns JSON with these possible shapes:
+
+```json
+// Direct reply — send back via WhatsApp
+{"reply": "formatted message", "intent": {...}}
+
+// Needs Claude classification — ambiguous input
+{"needsClassification": true, "classificationPrompt": "...", "originalText": "..."}
+
+// Task created with nuclear flag — set up persistent reminders
+{"reply": "...", "intent": {...}, "nuclear": true, "taskId": "..."}
+
+// Reminder requested — create an OpenClaw cron job
+{"reply": "...", "intent": {...}, "createReminder": true}
+```
+
+**Step 3: Handle each case**
+
+- **Direct reply:** Send `reply` field back via WhatsApp as-is
+- **Needs classification:** Use the `classificationPrompt` as a system prompt, get Claude's JSON response, then POST it back to `/api/command` with the classified intent as `{"text":"<original>"}` — or just handle the intent directly
+- **Nuclear flag:** Create an OpenClaw cron job that sends WhatsApp reminders every 3 min until Morgan replies "ok"/"done"/"stop". Use escalating messages from the API.
+- **Create reminder:** Parse the `when` field from the intent and create an OpenClaw cron job for that time
+
+### Auto-scheduling reminders for tasks with due dates
+
+When a task is created with a due date/time (either from `add_task` or `createReminder`):
+
+1. **Get the reminder schedule:**
+```bash
+curl -s http://localhost:3005/api/tasks/<taskId>/schedule
+```
+This returns pre-calculated reminders based on the task's tier:
+- **Gentle** (normal): 30 min before
+- **Persistent** (high priority): 1 hour + 30 min before
+- **Nuclear** (appointments/calls): 1 hour + 30 min + 15 min before + repeating at event time
+
+2. **Create each cron job** from the `cronJobs` array in the response. Each entry is ready to pass directly to the OpenClaw `cron` tool's `job` parameter.
+
+3. **Update each reminder** with the cron job ID:
+```bash
+curl -s -X PATCH http://localhost:3005/api/reminders/<dbReminderId> \
+  -H "Content-Type: application/json" \
+  -d '{"cronJobId":"<cron job id>"}'
+```
+
+### Handling `createReminder` responses (standalone reminders)
+
+When the command API returns `"createReminder": true` (e.g., "remind me to call mum Thursday"):
+
+1. **Parse the time** from `intent.when` (e.g., "thursday", "tomorrow 3pm", "in 2 hours")
+2. **Create a task** with the parsed due date via `/api/tasks` POST
+3. **Then call** `/api/tasks/<id>/schedule` to auto-schedule the reminders
+4. **Create the cron jobs** from the response
+
+### Handling `nuclear` task responses
+
+When the command API returns `"nuclear": true`:
+
+1. Call `/api/tasks/<taskId>/schedule` — it auto-detects nuclear tier
+2. Create all cron jobs from the response (includes escalating pre-reminders + repeating nuclear at event time)
+3. **On acknowledgment** ("ok"/"done"/"stop"): remove the nuclear cron jobs and mark reminders as sent
+
+### Handling acknowledgments ("ok", "done", "stop")
+
+When the command API returns `intent.type === "acknowledge"`:
+1. Check for any active nuclear cron jobs (query `/api/reminders?status=pending`)
+2. Remove/disable the cron jobs
+3. Mark reminders as sent
+4. Send the acknowledgment reply
+
+### Priority routing
+
+1. Check if message matches tradies bookkeeping triggers FIRST (receipt photo with "test receipt", "who owes me", "chase", "monthly summary")
+2. If no tradies match → route to Command Center (`/api/command`)
+3. If Command Center returns `needsClassification` → use your own judgment to classify and act
+
+### Command Center must be running
+
+Dashboard runs on port 3005. If it's down:
+```bash
+cd ~/.openclaw/workspace/personal-command-center && npx next dev --port 3005 &>/tmp/pcc-dev.log &
+```
+
+---
+
 ## Receipt Processing (Tradies Bookkeeping)
 
 When Morgan or a client sends a **receipt photo via WhatsApp**, process it as follows:
