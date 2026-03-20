@@ -347,6 +347,35 @@ Spawned 3 Claude Code agents in parallel on top projects. Each ran autonomously 
 3. Quick actions — contextual suggestions (overdue tasks, undone habits, low focus, lagging goals, overspend), WhatsApp: `next`
 4. Enhanced briefing — now includes yesterday score, goal progress, streak risks, budget remaining, focus time comparison
 
+---
+
+## 2026-03-21 (Saturday — Overnight Session Round 4: 7:30 AM - 9:00 AM)
+
+**Clarat — Polish (session: keen-gulf)**
+✅ 3 commits — Production-ready features
+1. Demo mode — "Try Demo" button creates sample tenant (Parca Sport Co.) with 90 days realistic daily data, auto-login
+2. Onboarding tour — 5-step guided walkthrough overlay (Today, Drivers, Dream, Compare, Import), localStorage persistence
+3. API docs page — public endpoint reference at `/docs` with examples, parameter docs, linked from footer
+
+**Cash Flow Tracker — Polish (session: tide-trail)**
+✅ 4 commits — Dashboard + mobile enhancements
+1. Quick Stats row — glassmorphism cards showing cash position (with delta), today revenue (% change), outstanding invoices, active deliveries
+2. PWA manifest — mobile installable app with teal theme, SVG icons, viewport/theme-color meta tags
+3. Help page — `/help` public WhatsApp command reference organized by category (8 sections)
+4. Data export page — `/export` with full JSON backup, per-table CSV/JSON downloads, date range filtering
+
+---
+
+## Session Summary (4:00 AM - 9:00 AM)
+
+**62 commits across 5 projects**  
+**4 rounds of parallel Claude Code agents**  
+**~10,000 lines of code**  
+
+All projects build green, all code pushed, zero blockers.
+
+See `OVERNIGHT-HANDOFF-2026-03-21.md` for full details.
+
 **Clarat — Shopify Integration (Claude Code agent: grand-cedar, 4:27 AM)**
 ✅ SaaS Phase 3 complete — Shopify OAuth + data sync + auto-import
 
