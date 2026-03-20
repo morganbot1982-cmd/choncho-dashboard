@@ -203,6 +203,44 @@ Spawned 3 Claude Code agents in parallel on top projects. Each ran autonomously 
    - Auto-populates summary, tags, subtasks, and initial notes on creation
    - Saves time on new project setup
 
+**Clarat — Shopify Integration (Claude Code agent: grand-cedar, 4:15 - 4:27 AM)**
+✅ Full Shopify OAuth + sync + import pipeline
+
+1. **Prisma Models** (commit: e698cc7) — ShopifyOrder + ShopifyProduct with line items, cost, inventory
+2. **Sync Routes** (commit: 3781f04) — paginated order fetch (90 days) + product sync, upsert to DB
+3. **Import + Products** (commit: e285d5e) — groups orders by day → DailyData records, COGS from product costs
+4. **Settings UI** (commit: 8b89d42) — Full Sync (90 days) button, product sync, last sync timestamp, disconnect confirmation
+5. **Docs** (commit: cc05eda) — Shopify app setup guide
+
+**Personal Command Center — Budget + Focus Timer (Claude Code agent: lucky-seaslug, 4:25 - 4:35 AM)**
+✅ 2 features delivered
+
+1. **Budget Tracker** (commit: 78dd5ba)
+   - BudgetCategory + Transaction models
+   - API: /api/budget, /api/budget/transactions
+   - WhatsApp: `spent $X on [desc] [category]`, `budget`, `budget [category]`
+   - Dashboard: color-coded progress bars (green/yellow/red by spend %)
+
+2. **Focus Timer** (commit: 767cd64)
+   - FocusSession model with optional Task relation
+   - API: /api/focus (start/end/today/weekly stats)
+   - WhatsApp: `focus [label]`, `done focusing`, `focus stats`
+   - Dashboard: live pulse animation, today's minutes, weekly mini bar chart
+
+**Clarat — Meta Ads Integration (Claude Code agent: rapid-harbor, 4:27 - 4:37 AM)**
+✅ Full Meta/Facebook Ads pipeline — 6 commits
+
+1. **MetaAdData Model** (commit: 414ef52) — campaign-level daily insights (spend, impressions, clicks, purchases, ROAS)
+2. **Meta OAuth v21.0** (commit: 800960e) — upgraded from v19.0 to v21.0 Marketing API
+3. **Campaign-Level Sync** (commit: 06f44c0) — paginated fetch, campaign listing, daily aggregation
+4. **Ads Dashboard** (commit: 4710fc1) — /ads page: ROAS trends, spend charts, campaign table, spend vs revenue
+5. **P&L Import** (commit: 9152210) — aggregates ad spend into DailyData + ComprehensiveDailyData
+6. **Integrations UI** (commit: 67c0aff) — Meta sync button, campaign count, sidebar "Ad Performance" link
+
+**WhatsApp Router Skill Update (4:37 AM)**
+- Updated PCC reference with new budget + focus timer commands
+- Extended PCC menu with budget, focus, notes, habits shortcuts
+
 **Dashboard Updates & Verification (4:50 - 5:10 AM)**
 - Dashboard had build error (missing chunk module), resolved with fresh build
 - Restarted dev server on port 3004 — fully operational
