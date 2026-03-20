@@ -1,0 +1,13 @@
+name = "Chonchoclaw"
+client_id = "7d26042738e351ec17ef93b32b15c072"
+application_url = "https://example.com"
+embedded = false
+
+[access_scopes]
+scopes = "write_products,read_products,write_content,read_content,write_themes,read_themes,read_orders,write_online_store_pages,read_online_store_pages,read_locales"
+
+[auth]
+redirect_urls = [ "https://example.com/auth/callback" ]
+
+[webhooks]
+api_version = "2026-01"

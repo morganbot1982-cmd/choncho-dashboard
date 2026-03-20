@@ -241,6 +241,35 @@ Spawned 3 Claude Code agents in parallel on top projects. Each ran autonomously 
 - Updated PCC reference with new budget + focus timer commands
 - Extended PCC menu with budget, focus, notes, habits shortcuts
 
+**Clarat — Shopify Integration (Claude Code agent: grand-cedar, 4:15 - 4:40 AM)**
+✅ Full Shopify sync pipeline built in 5 commits:
+- ShopifyOrder + ShopifyProduct Prisma models
+- Sync API: paginated orders (90 days), products, import to DailyData
+- Settings UI: Full Sync button, last sync timestamp, disconnect confirmation
+- Setup docs at docs/shopify-setup.md
+
+**Clarat — Meta Ads Integration (Claude Code agent: rapid-harbor, 4:25 - 4:47 AM)**
+✅ Full Meta Ads pipeline built in 6 commits:
+- MetaAdData model (campaign-level daily insights)
+- Meta OAuth upgraded to v21.0
+- Campaign-level sync with pagination + derived metrics (CTR, CPC, ROAS)
+- Full Ads Dashboard (/ads): spend/ROAS/CTR/CPA cards, 30-day trends, campaign table
+- P&L import: aggregates ad spend into DailyData/ComprehensiveDailyData
+- Settings UI: Full Sync (30 days), campaign count, sidebar "Ad Performance" link
+
+**Personal Command Center — Budget Tracker + Focus Timer (Claude Code agent: lucky-seaslug, 4:30 - 4:47 AM)**
+✅ 2 features shipped:
+1. Budget Tracker (commit: 78dd5ba)
+   - BudgetCategory + Transaction models
+   - API: /api/budget (categories with monthly summaries), /api/budget/transactions
+   - WhatsApp: `spent $X on [desc] [category]`, `budget`, `budget [category]`
+   - Dashboard: color-coded progress bars (green <60%, yellow 60-90%, red >90%)
+2. Focus Timer (commit: 767cd64)
+   - FocusSession model with Task relation
+   - API: /api/focus (start/end/stats)
+   - WhatsApp: `focus [label]`, `done focusing`/`break`, `focus stats`
+   - Dashboard: live pulse indicator, today's minutes, weekly mini bar chart
+
 **Dashboard Updates & Verification (4:50 - 5:10 AM)**
 - Dashboard had build error (missing chunk module), resolved with fresh build
 - Restarted dev server on port 3004 — fully operational

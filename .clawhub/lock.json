@@ -4,6 +4,10 @@
     "nano-banana-2-skill": {
       "version": "1.0.1",
       "installedAt": 1773242163631
+    },
+    "shopify-admin-api": {
+      "version": "1.0.0",
+      "installedAt": 1773813726498
     }
   }
 }
