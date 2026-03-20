@@ -213,6 +213,38 @@ Spawned 3 Claude Code agents in parallel on top projects. Each ran autonomously 
 - All commits pushed to GitHub
 - All builds verified green
 
+**Clarat — Shopify Integration (Claude Code agent: grand-cedar, 4:27 AM)**
+✅ SaaS Phase 3 complete — Shopify OAuth + data sync + auto-import
+
+1. **ShopifyOrder + ShopifyProduct Models** (commit: e698cc7) — schema additions
+2. **Sync Routes** (commit: 3781f04) — paginated fetch of orders (90d) + products, upsert to DB
+3. **Import to DailyData** (commit: e285d5e) — groups Shopify orders by day, creates/updates daily records with revenue/orders
+4. **Integrations UI** (commit: 8b89d42) — full sync button, product sync, last sync timestamp, disconnect confirm
+5. **Documentation** (commit: cc05eda) — Shopify app setup guide
+
+**Cash Flow Tracker — Cron Endpoints (4:30 - 4:45 AM)**
+- Automated weekly reporting: `GET /api/cron/weekly-report` — P&L digest for Monday WhatsApp delivery
+- Daily summary: `GET /api/cron/daily-summary` — end-of-day cash position + alerts for 8 PM delivery
+- Stock check: `GET /api/cron/stock-check` — low inventory alerts (2x daily), only fires when stock is low
+- Public paths added to middleware for cron access
+- Cron documentation in docs/cron-jobs.md
+- Commits: e774e43, 7a8ebee — pushed to GitHub
+
+**Personal Command Center — Budget + Focus Timer (Claude Code agent: lucky-seaslug, ~4:50 AM)**
+✅ Both features shipped
+
+1. **Budget Tracker** (commit: 78dd5ba)
+   - Schema: BudgetCategory + Transaction models
+   - API: GET/POST /api/budget (categories + monthly summaries), GET/POST /api/budget/transactions
+   - WhatsApp commands: `spent $X on [desc] [category]`, `budget`, `budget [category]`
+   - Dashboard widget: color-coded progress bars (green <60%, yellow 60-90%, red >90%)
+
+2. **Focus Timer** (commit: 767cd64)
+   - Schema: FocusSession model with optional Task relation
+   - API: POST /api/focus (start), PATCH /api/focus/[id] (end), GET /api/focus (today), GET /api/focus/stats (weekly)
+   - WhatsApp commands: `focus [label]`, `done focusing`/`break`, `focus stats`
+   - Dashboard widget: live session indicator with pulse animation, today's minutes + sessions, weekly mini bar chart
+
 **PCC — Weekly Review Command (8:00 - 8:15 AM)**
 - WhatsApp command: "weekly review", "recap", "how did my week go"
 - Shows tasks completed/created/open/overdue grouped by area
