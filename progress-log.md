@@ -376,6 +376,19 @@ All projects build green, all code pushed, zero blockers.
 
 See `OVERNIGHT-HANDOFF-2026-03-21.md` for full details.
 
+---
+
+## 2026-03-22 (Sunday — Overnight Session: 2:00 AM - 2:30 AM)
+
+**Cash Flow Tracker** (2 commits)
+- Realistic demo seed script — 10 customers, 50 sales, 7 purchases, 18 expenses, 4 deliveries over 30 days
+- WhatsApp command test script — bash script testing 14 commands with pass/fail summary
+
+**OpenClaw Dashboard** (3 commits)
+- Archive/Restore UI — buttons on cards + detail page, archive count in header
+- Dashboard home stats — 4 stat cards (active projects, subtasks done this week, at-risk count, last updated)
+- Project export — GET /api/projects/[id]/export returns comprehensive markdown summary
+
 **Clarat — Shopify Integration (Claude Code agent: grand-cedar, 4:27 AM)**
 ✅ SaaS Phase 3 complete — Shopify OAuth + data sync + auto-import
 
